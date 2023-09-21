@@ -13,6 +13,7 @@
 		F1619ADF2AB8280E00D8FCEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */; };
 		F1619AE12AB8280E00D8FCEE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1619AE02AB8280E00D8FCEE /* Persistence.swift */; };
 		F1619AE42AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1619AE22AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld */; };
+		F1C533952ABC884200C0ED18 /* Tamagoshi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C533942ABC884200C0ED18 /* Tamagoshi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1619AE02AB8280E00D8FCEE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F1619AE32AB8280E00D8FCEE /* HealthBuddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthBuddy.xcdatamodel; sourceTree = "<group>"; };
+		F1C533942ABC884200C0ED18 /* Tamagoshi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tamagoshi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		F1619AD62AB8280D00D8FCEE /* HealthBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				F1C533932ABC882400C0ED18 /* Models */,
 				F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */,
 				F1619AD92AB8280D00D8FCEE /* ContentView.swift */,
 				F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */,
@@ -71,6 +74,14 @@
 				F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1C533932ABC882400C0ED18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1C533942ABC884200C0ED18 /* Tamagoshi.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 				F1619AE12AB8280E00D8FCEE /* Persistence.swift in Sources */,
 				F1619ADA2AB8280D00D8FCEE /* ContentView.swift in Sources */,
 				F1619AE42AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld in Sources */,
+				F1C533952ABC884200C0ED18 /* Tamagoshi.swift in Sources */,
 				F1619AD82AB8280D00D8FCEE /* HealthBuddyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
