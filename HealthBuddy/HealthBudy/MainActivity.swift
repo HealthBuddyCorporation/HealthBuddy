@@ -10,8 +10,7 @@ import SwiftUI
 struct MainActivity: View {
     var body: some View {
         
-        //SplashScreen
-        Text("text")
+        LoginPage()
     }
 }
 

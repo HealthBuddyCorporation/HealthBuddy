@@ -154,18 +154,11 @@
 			path = "Login View";
 			sourceTree = "<group>";
 		};
-		571C039D2AC6A8EB002F34D9 /* Login Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Login Model";
-			sourceTree = "<group>";
-		};
 		571C039E2AC6A8F5002F34D9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				571C039C2AC6A8D1002F34D9 /* Login View */,
-				571C039D2AC6A8EB002F34D9 /* Login Model */,
+				576019592AC7029A000CD937 /* Login Model */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -174,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				576019502AC6CB4C000CD937 /* New Account View */,
+				576019582AC7028A000CD937 /* New Account Model */,
 			);
 			path = "New Account";
 			sourceTree = "<group>";
@@ -186,6 +180,20 @@
 				576019532AC6CB78000CD937 /* NewAccountAnimation.swift */,
 			);
 			path = "New Account View";
+			sourceTree = "<group>";
+		};
+		576019582AC7028A000CD937 /* New Account Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Account Model";
+			sourceTree = "<group>";
+		};
+		576019592AC7029A000CD937 /* Login Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Login Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
