@@ -15,27 +15,27 @@ struct LoginPopUp: View {
     var body: some View {
         VStack(alignment: .center, spacing: 20.0) {
             
-            // Logo HealthBuddy
+            // MARK: - Logo HealthBuddy
             Image(systemName: "swift")
                 .imageScale(.large)
                 .foregroundColor(.white)
                 .font(.system(size: 50))
                 .fontWeight(.thin)
             
-            // Title logo Text
+            // MARK: - Title logo Text
             Text("Health Buddy".uppercased())
                 .font(.largeTitle.width(.condensed))
                 .fontWeight(.bold)
                 .foregroundColor(.white)
             
-            // Welcome Text
+            // MARK: - Welcome Text
             Text("Get ready for a unique adventure where you'll have to make smart decisions to keep your HealthBuddy in great shape while improving your own health.")
                 .font(.system(size: 14))
                 .multilineTextAlignment(.center)
                 .foregroundColor(.white.opacity(0.8))
                 .fontWeight(.medium)
             
-            // Email TextField
+            // MARK: - Email TextField
             TextField("Email/Login", text: $text)
                 .padding(.horizontal)
                 .font(.system(size: 14))
@@ -52,7 +52,7 @@ struct LoginPopUp: View {
                 .accentColor(.primary)
                 .shadow(radius: 10)
             
-            // Password TextField
+            // MARK: - Password TextField
             SecureField("Password", text: $text)
                 .padding(.horizontal)
                 .font(.system(size: 14))
@@ -69,7 +69,7 @@ struct LoginPopUp: View {
                 .accentColor(.primary)
                 .shadow(radius: 10)
             
-            // Create account button
+            // MARK: - Create account button
             
             Button {
                 // TO DO : Action
@@ -81,10 +81,10 @@ struct LoginPopUp: View {
                     .foregroundColor(.white)
             }
             
-            // Login With Buttons
+            // MARK: - Login With Buttons
             HStack {
                 
-                // Apple Button
+                // MARK: - Apple Button
                 Button {
                     // TO DO : Action
                 } label: {
@@ -106,7 +106,7 @@ struct LoginPopUp: View {
                 )
                 .shadow(radius: 2)
                 
-                // Google Button
+                // MARK: - Google Button
                 Button {
                     // TO DO : Action
                 } label: {
@@ -133,7 +133,7 @@ struct LoginPopUp: View {
                 .shadow(radius: 2)
             }
             
-            // Play button
+            // MARK: - Play button
             Button {
                 // TO DO : Action
                 withAnimation(Animation.interpolatingSpring(mass: 1.0, stiffness: 100, damping: 10, initialVelocity: 0)) {

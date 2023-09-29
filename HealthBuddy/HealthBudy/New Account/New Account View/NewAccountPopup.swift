@@ -15,7 +15,7 @@ struct NewAccountPopup: View {
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
             
-            // Logo HealthBuddy
+            // MARK: - Logo HealthBuddy
             Image(systemName: "swift")
                 .imageScale(.large)
                 .foregroundColor(.white)
@@ -23,13 +23,13 @@ struct NewAccountPopup: View {
                 .fontWeight(.thin)
                 .padding(-10)
             
-            // Title logo Text
+            // MARK: - Title logo Text
             Text("Health Buddy".uppercased())
                 .font(.title.width(.condensed))
                 .fontWeight(.bold)
                 .foregroundColor(.white)
             
-            // Welcome Text
+            // MARK: - Welcome Text
             Text("Create your account and get to the adventure!")
                 .font(.system(size: 14))
                 .multilineTextAlignment(.center)
@@ -37,7 +37,7 @@ struct NewAccountPopup: View {
                 .fontWeight(.medium)
                 .padding(-10)
             
-            // FirstName TextField
+            // MARK: - FirstName TextField
             TextField("Enter your firstname", text: $text)
                 .padding(.horizontal)
                 .font(.system(size: 14))
@@ -54,7 +54,7 @@ struct NewAccountPopup: View {
                 .accentColor(.primary)
                 .shadow(radius: 10)
             
-            // LastName TextField
+            // MARK: - LastName TextField
             TextField("Enter your lastname", text: $text)
                 .padding(.horizontal)
                 .font(.system(size: 14))
@@ -71,7 +71,7 @@ struct NewAccountPopup: View {
                 .accentColor(.primary)
                 .shadow(radius: 10)
             
-            // NickName TextField
+            // MARK: - NickName TextField
             TextField("Enter your nickname", text: $text)
                 .padding(.horizontal)
                 .font(.system(size: 14))
@@ -88,7 +88,7 @@ struct NewAccountPopup: View {
                 .accentColor(.primary)
                 .shadow(radius: 10)
             
-            // Email TextField
+            // MARK: - Email TextField
             SecureField("Enter your Email", text: $text)
                 .padding(.horizontal)
                 .font(.system(size: 14))
@@ -105,7 +105,7 @@ struct NewAccountPopup: View {
                 .accentColor(.primary)
                 .shadow(radius: 10)
             
-            // Email TextField
+            // MARK: - Email TextField
             TextField("Enter your PhoneNumber", text: $text)
                 .padding(.horizontal)
                 .font(.system(size: 14))
@@ -122,7 +122,7 @@ struct NewAccountPopup: View {
                 .accentColor(.primary)
                 .shadow(radius: 10)
             
-            // Adress TextField
+            // MARK: - Adress TextField
             TextField("Enter your adress", text: $text)
                 .padding(.horizontal)
                 .font(.system(size: 14))
@@ -139,7 +139,7 @@ struct NewAccountPopup: View {
                 .accentColor(.primary)
                 .shadow(radius: 10)
             
-            // Zip Code TextField
+            // MARK: - Zip Code TextField
             TextField("Enter your Zip code", text: $text)
                 .padding(.horizontal)
                 .font(.system(size: 14))
@@ -156,7 +156,7 @@ struct NewAccountPopup: View {
                 .accentColor(.primary)
                 .shadow(radius: 10)
             
-            // Country Code TextField
+            // MARK: - Country Code TextField
             TextField("Enter your country", text: $text)
                 .padding(.horizontal)
                 .font(.system(size: 14))
@@ -173,23 +173,21 @@ struct NewAccountPopup: View {
                 .accentColor(.primary)
                 .shadow(radius: 10)
             
+            // MARK: - Read RGPD Button
             Button {
                 
             } label: {
-                Text("Read RGP")
+                Text("Read RGPD")
                     .underline(true, color: .white)
                     .font(.system(size: 12))
                     .foregroundColor(.white)
             }
-
-            HStack{
-                Text("Test")
-                Toggle(isOn: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is On@*/.constant(true)/*@END_MENU_TOKEN@*/) {
-                    
-                }
-                
-            }
-            // Play button
+            // MARK: - I accept Switch
+            
+            
+            
+            
+            // MARK: - Play button
             Button {
                 // TO DO : Action
                 withAnimation(Animation.interpolatingSpring(mass: 1.0, stiffness: 100, damping: 10, initialVelocity: 0)) {

@@ -14,6 +14,7 @@ struct LoginAnimation: View {
     var body: some View {
         
         ZStack {
+            // MARK: - Background Animation
             Color.clear
                 .frame(maxWidth: .infinity)
                 .background {

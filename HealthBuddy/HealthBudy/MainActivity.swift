@@ -10,7 +10,7 @@ import SwiftUI
 struct MainActivity: View {
     var body: some View {
         
-        LoginPage()
+        NewAccountPage()
     }
 }
 
