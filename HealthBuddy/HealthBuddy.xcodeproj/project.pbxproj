@@ -23,7 +23,6 @@
 		F1B740A02B0C990B0084417F /* CircledFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7409C2B0C990B0084417F /* CircledFood.swift */; };
 		F1B740A12B0C990B0084417F /* BuddyStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7409D2B0C990B0084417F /* BuddyStat.swift */; };
 		F1B740A22B0C990B0084417F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7409E2B0C990B0084417F /* ContentView.swift */; };
-		F1B740A42B0C99350084417F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1B740A32B0C99350084417F /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +43,6 @@
 		F1B7409C2B0C990B0084417F /* CircledFood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircledFood.swift; sourceTree = "<group>"; };
 		F1B7409D2B0C990B0084417F /* BuddyStat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddyStat.swift; sourceTree = "<group>"; };
 		F1B7409E2B0C990B0084417F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F1B740A32B0C99350084417F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +75,6 @@
 		F1619AD62AB8280D00D8FCEE /* HealthBuddy */ = {
 			isa = PBXGroup;
 			children = (
-				F1B740A32B0C99350084417F /* Info.plist */,
 				F1B740992B0C990B0084417F /* Views */,
 				F1B7408E2B0C99050084417F /* Models */,
 				F1B740872B0C98F90084417F /* Ressources */,
@@ -215,7 +212,6 @@
 				F1B7408C2B0C98F90084417F /* buddyData.json in Resources */,
 				F1B7408D2B0C98F90084417F /* foodList.json in Resources */,
 				F1619ADF2AB8280E00D8FCEE /* Preview Assets.xcassets in Resources */,
-				F1B740A42B0C99350084417F /* Info.plist in Resources */,
 				F1619ADC2AB8280E00D8FCEE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +365,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HealthBuddy/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthBuddy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -397,6 +394,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HealthBuddy/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthBuddy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
