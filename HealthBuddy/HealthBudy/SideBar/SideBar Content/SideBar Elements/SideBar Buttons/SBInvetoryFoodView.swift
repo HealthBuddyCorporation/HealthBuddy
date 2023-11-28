@@ -1,21 +1,20 @@
 //
-//  SBItemOneView.swift
+//  SBInvetoryFoodView.swift
 //  HealthBudy
 //
-//  Created by Raphael Fassotte on 27/11/2023.
+//  Created by Raphael Fassotte on 28/11/2023.
 //
 
 import SwiftUI
 
-struct SBItemOneView: View {
-    
+struct SBInvetoryFoodView: View {
     @State private var isPopoverPresented = false
 
     var body: some View {
         Button(action: {
             isPopoverPresented.toggle()
         }) {
-            Image(systemName: "wake.circle.fill")
+            Image(systemName: "fork.knife.circle.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
@@ -26,7 +25,7 @@ struct SBItemOneView: View {
         }
         .popover(isPresented: $isPopoverPresented, arrowEdge: .top, content: {
             VStack {
-                SideBarItemOneView()
+                SideBarInvetoryFoodView()
                     .padding()
                 // Ajoutez d'autres éléments au besoin
             }
@@ -39,5 +38,5 @@ struct SBItemOneView: View {
 }
 
 #Preview {
-    SBItemOneView()
+    SBInvetoryFoodView()
 }

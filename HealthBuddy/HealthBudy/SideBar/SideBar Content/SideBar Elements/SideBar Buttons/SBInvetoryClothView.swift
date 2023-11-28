@@ -1,13 +1,13 @@
 //
-//  SBItemThreeView.swift
+//  SBInvetoryClothView.swift
 //  HealthBudy
 //
-//  Created by Raphael Fassotte on 27/11/2023.
+//  Created by Raphael Fassotte on 28/11/2023.
 //
 
 import SwiftUI
 
-struct SBItemThreeView: View {
+struct SBInvetoryClothView: View {
     
     @State private var isPopoverPresented = false
 
@@ -15,7 +15,7 @@ struct SBItemThreeView: View {
         Button(action: {
             isPopoverPresented.toggle()
         }) {
-            Image(systemName: "wake.circle.fill")
+            Image(systemName: "hanger")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
@@ -26,7 +26,7 @@ struct SBItemThreeView: View {
         }
         .popover(isPresented: $isPopoverPresented, arrowEdge: .top, content: {
             VStack {
-                SideBarItemThreeView()
+                SideBarInvetoryClothView()
                     .padding()
                 // Ajoutez d'autres éléments au besoin
             }
@@ -39,5 +39,5 @@ struct SBItemThreeView: View {
 }
 
 #Preview {
-    SBItemThreeView()
+    SBInvetoryClothView()
 }

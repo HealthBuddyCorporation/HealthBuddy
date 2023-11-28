@@ -1,23 +1,23 @@
 //
-//  SideBarItemThreeView.swift
+//  SideBarInvetoryFoodView.swift
 //  HealthBudy
 //
-//  Created by Raphael Fassotte on 27/11/2023.
+//  Created by Raphael Fassotte on 28/11/2023.
 //
 
 import SwiftUI
 
-struct SideBarItemThreeView: View {
-    let rows = 15
-    let columns = 3
-
+struct SideBarInvetoryFoodView: View {
+    let rows = 2
+    let columns = 40
+    
     var body: some View {
         ZStack {
             Rectangle()
-                .foregroundColor(.gray)
-                .frame(width: 350, height: 650)
+                .foregroundColor(.black)
+                .frame(width: 350, height: 300)
                 .cornerRadius(10)
-
+            
             VStack {
                 Button(action: {}) {
                     Image(systemName: "xmark.circle.fill")
@@ -28,35 +28,35 @@ struct SideBarItemThreeView: View {
                         .padding(3)
                         .background(Color.gray)
                         .clipShape(Circle())
-                        .offset(x: 170)
-                        .offset(y: -30)
+                        .offset(x: 172)
+                        .offset(y: -4)
                 }
-                Text("SideBar Item 3")
+                Text("Inventory : food")
                     .foregroundColor(.white)
-
-                ScrollView {
-                    LazyVGrid(columns: Array(repeating: GridItem(), count: columns), spacing: 10) {
-                        ForEach(0..<rows) { row in
-                            ForEach(0..<columns) { column in
+                
+                ScrollView(.horizontal) {
+                    LazyHGrid(rows: Array(repeating: GridItem(), count: rows), spacing: 10) {
+                        ForEach(0..<columns) { column in
+                            ForEach(0..<rows) { row in
                                 Text("Item \(row * columns + column + 1)")
                                     .frame(width: 50, height: 50)
                                     .padding()
                                     .background(Color.white)
+                                    .foregroundColor(.white)
                                     .opacity(0.5)
                                     .cornerRadius(8)
-                                    .border(Color.gray, width: 1)
                             }
                         }
                     }
                 }
                 .padding()
-                .frame(maxHeight: 550)  // Adjust the maxHeight as needed
+                .frame(maxHeight: 250)
+                .frame(maxWidth: 350)
             }
         }
-        .background(Color.clear)
     }
 }
 
 #Preview {
-    SideBarItemThreeView()
+    SideBarInvetoryFoodView()
 }
