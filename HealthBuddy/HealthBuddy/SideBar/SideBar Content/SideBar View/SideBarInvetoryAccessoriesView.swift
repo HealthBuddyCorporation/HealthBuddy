@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct SideBarInvetoryAccessoriesView: View {
+    
+    @Binding var isShown : Bool
+    @Binding var isBarVisible: Bool
+    
     let rows = 2
     let columns = 40
     
@@ -19,18 +23,21 @@ struct SideBarInvetoryAccessoriesView: View {
                 .cornerRadius(10)
             
             VStack {
-                Button(action: {}) {
-                    Image(systemName: "xmark.circle.fill")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 20, height: 20)
-                        .foregroundColor(.white)
-                        .padding(3)
-                        .background(Color.gray)
-                        .clipShape(Circle())
-                        .offset(x: 172)
-                        .offset(y: -4)
-                }
+                Button {
+                    isBarVisible = false
+                    isShown = false
+                    print("Click click")} label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 20, height: 20)
+                            .foregroundColor(.white)
+                            .padding(3)
+                            .background(Color.gray)
+                            .clipShape(Circle())
+                            .offset(x: 172)
+                            .offset(y: -4)
+                    }
                 Text("Inventory : accessories")
                     .foregroundColor(.white)
                 
@@ -53,10 +60,10 @@ struct SideBarInvetoryAccessoriesView: View {
                 .frame(maxHeight: 250)
                 .frame(maxWidth: 350)
             }
-        }
+        }.offset(y: -100)
     }
 }
 
-#Preview {
-    SideBarInvetoryAccessoriesView()
-}
+//#Preview {
+//    SideBarInvetoryAccessoriesView()
+//}

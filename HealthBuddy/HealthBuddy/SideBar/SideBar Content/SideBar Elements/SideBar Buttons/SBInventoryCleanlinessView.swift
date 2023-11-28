@@ -1,13 +1,13 @@
 //
-//  SBInvetoryClothView.swift
-//  HealthBudy
+//  SBInventoryCleanlinessView.swift
+//  HealthBuddy
 //
 //  Created by Raphael Fassotte on 28/11/2023.
 //
 
 import SwiftUI
 
-struct SBInvetoryClothView: View {
+struct SBInventoryCleanlinessView: View {
     
     @Binding var isPopoverPresented : Bool
     @Binding var isVisible : Bool
@@ -17,7 +17,7 @@ struct SBInvetoryClothView: View {
             isPopoverPresented.toggle()
             isVisible = false
         }) {
-            Image(systemName: "hanger")
+            Image(systemName: "wake.circle.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
@@ -30,5 +30,5 @@ struct SBInvetoryClothView: View {
 }
 
 //#Preview {
-//    SBInvetoryClothView()
+//    SBInventoryCleanlinessView()
 //}

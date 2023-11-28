@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SBItemSevenView: View {
     @State private var isPopoverPresented = false
-
+    
     var body: some View {
         Button(action: {
             isPopoverPresented.toggle()

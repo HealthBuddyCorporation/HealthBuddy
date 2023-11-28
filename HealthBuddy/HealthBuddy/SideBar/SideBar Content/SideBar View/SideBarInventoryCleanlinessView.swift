@@ -1,13 +1,13 @@
 //
-//  SideBarInvetoryFoodView.swift
-//  HealthBudy
+//  SideBarInventoryCleanlinessView.swift
+//  HealthBuddy
 //
 //  Created by Raphael Fassotte on 28/11/2023.
 //
 
 import SwiftUI
 
-struct SideBarInvetoryFoodView: View {
+struct SideBarInventoryCleanlinessView: View {
     
     @Binding var isShown : Bool
     @Binding var isBarVisible: Bool
@@ -35,11 +35,11 @@ struct SideBarInvetoryFoodView: View {
                             .padding(3)
                             .background(Color.gray)
                             .clipShape(Circle())
-                            .offset(x: 172)
-                            .offset(y: -4)
+                            .offset(x: 170)
+                            .offset(y: -30)
                     }
                 
-                Text("Inventory : food")
+                Text("Inventory : Cleanliness")
                     .foregroundColor(.white)
                 
                 ScrollView(.horizontal) {
@@ -66,5 +66,5 @@ struct SideBarInvetoryFoodView: View {
 }
 
 //#Preview {
-//    SideBarInvetoryFoodView()
+//    SideBarInventoryCleanlinessView()
 //}

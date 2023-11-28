@@ -10,14 +10,14 @@ import SwiftUI
 struct SideBarItemFiveView: View {
     let rows = 15
     let columns = 3
-
+    
     var body: some View {
         ZStack {
             Rectangle()
                 .foregroundColor(.gray)
                 .frame(width: 350, height: 650)
                 .cornerRadius(10)
-
+            
             VStack {
                 Button(action: {}) {
                     Image(systemName: "xmark.circle.fill")
@@ -33,7 +33,7 @@ struct SideBarItemFiveView: View {
                 }
                 Text("SideBar Item 5")
                     .foregroundColor(.white)
-
+                
                 ScrollView {
                     LazyVGrid(columns: Array(repeating: GridItem(), count: columns), spacing: 10) {
                         ForEach(0..<rows) { row in

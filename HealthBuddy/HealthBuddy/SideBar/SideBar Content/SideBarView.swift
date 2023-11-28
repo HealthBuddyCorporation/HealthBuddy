@@ -11,6 +11,7 @@ struct SideBarView: View {
     
     @State private var isSideBarVisible = false
     @State private var isFoodPresented = false
+    @State private var isCleanlinessPresented = false
     @State private var isClothPresented = false
     @State private var isAccessoriesPresented = false
     
@@ -24,7 +25,7 @@ struct SideBarView: View {
                     .offset(x: isSideBarVisible ? 165 : 240)
                     .id("SideBarContent")
                     .animation(.easeInOut(duration: 0.5))
-
+                
                 
                 Rectangle()
                     .cornerRadius(3)
@@ -37,6 +38,9 @@ struct SideBarView: View {
                         isSideBarVisible.toggle()
                         if isSideBarVisible{
                             isFoodPresented = false
+                            isAccessoriesPresented = false
+                            isClothPresented = false
+                            isCleanlinessPresented = false
                             
                         }
                     }
@@ -47,19 +51,23 @@ struct SideBarView: View {
                     .foregroundColor(.white)
                     .offset(x: isSideBarVisible ? 120 : 187)
                     .animation(.easeInOut(duration: 0.5))
-                    
+                
             }
             
             if(isFoodPresented){
                 SideBarInvetoryFoodView(isShown: $isFoodPresented, isBarVisible: $isSideBarVisible)
             }
             
+            if(isCleanlinessPresented){
+                SideBarInventoryCleanlinessView(isShown: $isCleanlinessPresented, isBarVisible: $isSideBarVisible)
+            }
+            
             if(isClothPresented){
-                SideBarInvetoryClothView()
+                SideBarInvetoryClothView(isShown: $isClothPresented, isBarVisible: $isSideBarVisible)
             }
             
             if(isAccessoriesPresented){
-                SideBarInvetoryAccessoriesView()
+                SideBarInvetoryAccessoriesView(isShown: $isAccessoriesPresented, isBarVisible: $isSideBarVisible)
             }
             
             VStack{
@@ -68,17 +76,17 @@ struct SideBarView: View {
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.5))
                 
-                SBInvetoryClothView(isPopoverPresented: $isClothPresented)
+                SBInventoryCleanlinessView(isPopoverPresented: $isCleanlinessPresented, isVisible: $isSideBarVisible)
                     .offset(y: -30)
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.5))
                 
-                SBInvetoryAccessoriesView(isPopoverPresented: $isAccessoriesPresented)
+                SBInvetoryClothView(isPopoverPresented: $isClothPresented, isVisible: $isSideBarVisible)
                     .offset(y: -15)
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.5))
                 
-                SBItemFourView()
+                SBInvetoryAccessoriesView(isPopoverPresented: $isAccessoriesPresented, isVisible: $isSideBarVisible)
                     .offset(y: 0)
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.5))

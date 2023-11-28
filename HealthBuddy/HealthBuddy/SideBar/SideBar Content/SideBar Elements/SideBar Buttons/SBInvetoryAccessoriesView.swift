@@ -10,10 +10,12 @@ import SwiftUI
 struct SBInvetoryAccessoriesView: View {
     
     @Binding var isPopoverPresented : Bool
-
+    @Binding var isVisible : Bool
+    
     var body: some View {
         Button(action: {
             isPopoverPresented.toggle()
+            isVisible = false
         }) {
             Image(systemName: "sunglasses.fill")
                 .resizable()
@@ -24,7 +26,7 @@ struct SBInvetoryAccessoriesView: View {
                 .background(Color.gray)
                 .clipShape(Circle())
         }
-       
+        
     }
 }
 
