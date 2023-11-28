@@ -12,6 +12,8 @@ struct HealthBudyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                
+
         }
     }
 }

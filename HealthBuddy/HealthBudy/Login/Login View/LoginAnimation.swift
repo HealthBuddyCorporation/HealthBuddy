@@ -15,9 +15,9 @@ struct LoginAnimation: View {
         
         ZStack {
             // MARK: - Background Animation
-            Color.clear
-                .frame(maxWidth: .infinity)
-                .background {
+//            Color.clear
+//                .frame(maxWidth: .infinity)
+//                .background {
                     LinearGradient(colors: [.red, .purple, .pink], startPoint: .topLeading, endPoint: .bottomTrailing)
                         .edgesIgnoringSafeArea(.all)
                         .hueRotation(.degrees(animatedGradient ? 45 : 0))
@@ -25,13 +25,15 @@ struct LoginAnimation: View {
                             withAnimation(.easeInOut(duration: 5).repeatForever(autoreverses: true)) {
                                 animatedGradient.toggle()
                             }
-                            
                         }
-                }
+//                }
         }
     }
 }
 
+//#Preview {
+//    LoginAnimation()
+//}
 #Preview {
     LoginAnimation()
 }

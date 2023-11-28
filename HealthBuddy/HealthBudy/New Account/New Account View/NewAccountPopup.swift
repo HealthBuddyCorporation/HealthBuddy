@@ -1,6 +1,6 @@
 //
 //  NewAccountPopup.swift
-//  HealthBudy
+//  HealthBuddy
 //
 //  Created by Raphael Fassotte on 29/09/2023.
 //
@@ -9,7 +9,14 @@ import SwiftUI
 
 struct NewAccountPopup: View {
     
-    @State private var text: String = ""
+    @State private var createFirstName: String = ""
+    @State private var createLastName: String = ""
+    @State private var createNickName: String = ""
+    @State private var createEmail: String = ""
+    @State private var createPhoneNumber: String = ""
+    @State private var createAdress: String = ""
+    @State private var createZipCode: String = ""
+    @State private var createCountry: String = ""
     @State private var isBouncing = false
     
     var body: some View {
@@ -38,140 +45,36 @@ struct NewAccountPopup: View {
                 .padding(-10)
             
             // MARK: - FirstName TextField
-            TextField("Enter your firstname", text: $text)
-                .padding(.horizontal)
-                .font(.system(size: 14))
-                .fontWeight(.light)
-                .frame(maxWidth: .infinity)
-                .frame(maxHeight: 30)
-                .background(.white.opacity(0.2).gradient)
-                .cornerRadius(4)
-                .background(
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke()
-                        .foregroundStyle(.linearGradient(colors:[.white.opacity(10), .clear], startPoint: .top, endPoint: .bottom))
-                )
-                .accentColor(.primary)
-                .shadow(radius: 10)
+            TextField("Enter your firstname", text: $createFirstName)
+                .depthStyle()
             
             // MARK: - LastName TextField
-            TextField("Enter your lastname", text: $text)
-                .padding(.horizontal)
-                .font(.system(size: 14))
-                .fontWeight(.light)
-                .frame(maxWidth: .infinity)
-                .frame(maxHeight: 30)
-                .background(.white.opacity(0.2).gradient)
-                .cornerRadius(4)
-                .background(
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke()
-                        .foregroundStyle(.linearGradient(colors:[.white.opacity(10), .clear], startPoint: .top, endPoint: .bottom))
-                )
-                .accentColor(.primary)
-                .shadow(radius: 10)
+            TextField("Enter your lastname", text: $createLastName)
+                .depthStyle()
             
             // MARK: - NickName TextField
-            TextField("Enter your nickname", text: $text)
-                .padding(.horizontal)
-                .font(.system(size: 14))
-                .fontWeight(.light)
-                .frame(maxWidth: .infinity)
-                .frame(maxHeight: 30)
-                .background(.white.opacity(0.2).gradient)
-                .cornerRadius(4)
-                .background(
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke()
-                        .foregroundStyle(.linearGradient(colors:[.white.opacity(10), .clear], startPoint: .top, endPoint: .bottom))
-                )
-                .accentColor(.primary)
-                .shadow(radius: 10)
+            TextField("Enter your nickname", text: $createNickName)
+                .depthStyle()
             
             // MARK: - Email TextField
-            SecureField("Enter your Email", text: $text)
-                .padding(.horizontal)
-                .font(.system(size: 14))
-                .fontWeight(.light)
-                .frame(maxWidth: .infinity)
-                .frame(maxHeight: 30)
-                .background(.white.opacity(0.2).gradient)
-                .cornerRadius(4)
-                .background(
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke()
-                        .foregroundStyle(.linearGradient(colors:[.white.opacity(10), .clear], startPoint: .top, endPoint: .bottom))
-                )
-                .accentColor(.primary)
-                .shadow(radius: 10)
+            TextField("Enter your Email", text: $createEmail)
+                .depthStyle()
             
             // MARK: - Email TextField
-            TextField("Enter your PhoneNumber", text: $text)
-                .padding(.horizontal)
-                .font(.system(size: 14))
-                .fontWeight(.light)
-                .frame(maxWidth: .infinity)
-                .frame(maxHeight: 30)
-                .background(.white.opacity(0.2).gradient)
-                .cornerRadius(4)
-                .background(
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke()
-                        .foregroundStyle(.linearGradient(colors:[.white.opacity(10), .clear], startPoint: .top, endPoint: .bottom))
-                )
-                .accentColor(.primary)
-                .shadow(radius: 10)
+            TextField("Enter your PhoneNumber", text: $createPhoneNumber)
+                .depthStyle()
             
             // MARK: - Adress TextField
-            TextField("Enter your adress", text: $text)
-                .padding(.horizontal)
-                .font(.system(size: 14))
-                .fontWeight(.light)
-                .frame(maxWidth: .infinity)
-                .frame(maxHeight: 30)
-                .background(.white.opacity(0.2).gradient)
-                .cornerRadius(4)
-                .background(
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke()
-                        .foregroundStyle(.linearGradient(colors:[.white.opacity(10), .clear], startPoint: .top, endPoint: .bottom))
-                )
-                .accentColor(.primary)
-                .shadow(radius: 10)
+            TextField("Enter your adress", text: $createAdress)
+                .depthStyle()
             
             // MARK: - Zip Code TextField
-            TextField("Enter your Zip code", text: $text)
-                .padding(.horizontal)
-                .font(.system(size: 14))
-                .fontWeight(.light)
-                .frame(maxWidth: .infinity)
-                .frame(maxHeight: 30)
-                .background(.white.opacity(0.2).gradient)
-                .cornerRadius(4)
-                .background(
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke()
-                        .foregroundStyle(.linearGradient(colors:[.white.opacity(10), .clear], startPoint: .top, endPoint: .bottom))
-                )
-                .accentColor(.primary)
-                .shadow(radius: 10)
+            TextField("Enter your Zip code", text: $createZipCode)
+                .depthStyle()
             
             // MARK: - Country Code TextField
-            TextField("Enter your country", text: $text)
-                .padding(.horizontal)
-                .font(.system(size: 14))
-                .fontWeight(.light)
-                .frame(maxWidth: .infinity)
-                .frame(maxHeight: 30)
-                .background(.white.opacity(0.2).gradient)
-                .cornerRadius(4)
-                .background(
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke()
-                        .foregroundStyle(.linearGradient(colors:[.white.opacity(10), .clear], startPoint: .top, endPoint: .bottom))
-                )
-                .accentColor(.primary)
-                .shadow(radius: 10)
+            TextField("Enter your country", text: $createCountry)
+                .depthStyle()
             
             // MARK: - Read RGPD Button
             Button {
@@ -179,6 +82,14 @@ struct NewAccountPopup: View {
             } label: {
                 Text("Read RGPD")
                     .underline(true, color: .white)
+                    .font(.system(size: 12))
+                    .foregroundColor(.white)
+            }
+            
+            Button {
+                
+            } label: {
+                Text("Cancel")
                     .font(.system(size: 12))
                     .foregroundColor(.white)
             }
@@ -236,4 +147,34 @@ struct NewAccountPopup: View {
 #Preview {
     NewAccountPopup()
         .background(Image("Wallpaper 2"))
+}
+
+struct DepthStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .padding(.horizontal)
+            .font(.system(size: 14))
+            .fontWeight(.light)
+            .frame(maxWidth: .infinity)
+            .frame(maxHeight: 30)
+            .background(.white.opacity(0.2).gradient)
+            .cornerRadius(4)
+            .background(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke()
+                    .foregroundStyle(.linearGradient(colors:[.white.opacity(10), .clear], startPoint: .top, endPoint: .bottom))
+            )
+            .accentColor(.primary)
+            .shadow(radius: 10)
+    }
+}
+
+extension View {
+    func depthStyle() -> some View {
+        modifier(DepthStyle())
+    }
+}
+
+#Preview {
+    NewAccountPopup()
 }

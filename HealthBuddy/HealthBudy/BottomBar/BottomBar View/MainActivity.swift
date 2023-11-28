@@ -9,9 +9,9 @@ import SwiftUI
 
 struct MainActivity: View {
     var body: some View {
-        
-        NewAccountPage()
+        HomeActivity()
     }
+        
 }
 
 #Preview {

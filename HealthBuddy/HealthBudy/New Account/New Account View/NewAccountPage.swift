@@ -11,9 +11,7 @@ struct NewAccountPage: View {
     var body: some View {
         
         ZStack {
-            
             NewAccountAnimation()
-            
             NewAccountPopup()
         }
     }

@@ -8,15 +8,26 @@
 import SwiftUI
 
 struct LoginPage: View {
+    @State var displayedPage: DisplayedPage = .login
+    @StateObject private var viewModel = LoginViewModel()
+    
     var body: some View {
         
-        ZStack{
-            // Show Login Animation in Background
-            LoginAnimation()
-            // Show Login PopUp in Foreground
-            LoginPopUp()
+        switch displayedPage {
+        case .login:
+            Button("Cancel", role: .cancel){}
+            ZStack{
+                LoginAnimation()
+                LoginPopUp(displayedPage: $displayedPage)
+            }
+        case .newAccount:
+            ZStack{
+                NewAccountAnimation()
+                NewAccountPopup()
+            }
         }
     }
+    
 }
 
 struct LoginPage_Previews: PreviewProvider {

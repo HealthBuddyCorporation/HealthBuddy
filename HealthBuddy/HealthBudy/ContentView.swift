@@ -9,12 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            LoginPage()
-                
+        NavigationView {
+            ZStack{
+                VStack{
+                    TopBarView()
+                        .offset(y: 32)
+                    MainContentView()
+                        .offset(y: 21)
+                    BottomBarView()
+                        .offset(y: -57)
+                }
+                ZStack{
+                    SideBarView()
+                }
+            }
         }
-        .ignoresSafeArea()
-        
     }
 }
 
