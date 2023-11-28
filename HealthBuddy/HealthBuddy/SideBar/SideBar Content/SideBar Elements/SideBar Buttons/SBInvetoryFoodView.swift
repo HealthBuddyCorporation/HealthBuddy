@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct SBInvetoryFoodView: View {
-    @State private var isPopoverPresented = false
-
+    @Binding var isPopoverPresented : Bool
+    @Binding var isVisible : Bool
+    
     var body: some View {
         Button(action: {
             isPopoverPresented.toggle()
+            isVisible = false
         }) {
             Image(systemName: "fork.knife.circle.fill")
                 .resizable()
@@ -23,20 +25,9 @@ struct SBInvetoryFoodView: View {
                 .background(Color.gray)
                 .clipShape(Circle())
         }
-        .popover(isPresented: $isPopoverPresented, arrowEdge: .top, content: {
-            VStack {
-                SideBarInvetoryFoodView()
-                    .padding()
-                // Ajoutez d'autres éléments au besoin
-            }
-            .onTapGesture {
-                // Fermer la popover lorsqu'on clique à l'extérieur
-                isPopoverPresented = false
-            }
-        })
     }
 }
 
-#Preview {
-    SBInvetoryFoodView()
-}
+//#Preview {
+//    SBInvetoryFoodView(isPopoverPresented: <#Binding<Bool>#>)
+//}
