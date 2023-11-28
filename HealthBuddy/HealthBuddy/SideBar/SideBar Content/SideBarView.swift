@@ -10,7 +10,7 @@ import SwiftUI
 struct SideBarView: View {
     
     @State private var isSideBarVisible = false
-    
+    //@State var foodSelected = 
     var body: some View {
         ZStack{
             ZStack{
