@@ -1,14 +1,15 @@
 //
-//  ContentView.swift
-//  HealthBuddy
+//  HomeActivity.swift
+//  HealthBudy
 //
-//  Created by Raphael Fassotte on 28/09/2023.
+//  Created by Raphael Fassotte on 21/11/2023.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeActivity: View {
     var body: some View {
+        
         NavigationView {
             ZStack{
                 VStack{
@@ -28,5 +29,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    HomeActivity()
 }
