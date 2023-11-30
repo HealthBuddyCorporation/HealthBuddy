@@ -24,17 +24,6 @@ struct SBItemSevenView: View {
                 .background(Color.gray)
                 .clipShape(Circle())
         }
-        .popover(isPresented: $isPopoverPresented, arrowEdge: .top, content: {
-            VStack {
-                SideBarItemSevenView()
-                    .padding()
-                // Ajoutez d'autres éléments au besoin
-            }
-            .onTapGesture {
-                // Fermer la popover lorsqu'on clique à l'extérieur
-                isPopoverPresented = false
-            }
-        })
     }
 }
 

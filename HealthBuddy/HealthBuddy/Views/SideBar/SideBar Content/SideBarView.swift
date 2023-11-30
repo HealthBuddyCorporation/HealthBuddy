@@ -55,7 +55,7 @@ struct SideBarView: View {
             }
             
             if(isClothPresented){
-                SideBarInvetoryClothView()
+                SBInvetoryClothView(isPopoverPresented: $isClothPresented)
             }
             
             if(isAccessoriesPresented){

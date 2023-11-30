@@ -7,46 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5725F9852B16290700289B71 /* BuildSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9842B16290700289B71 /* BuildSheet.swift */; };
-		5725F9932B16292B00289B71 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9872B16292B00289B71 /* TopBarView.swift */; };
-		5725F9942B16292B00289B71 /* charNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F98B2B16292B00289B71 /* charNameView.swift */; };
 		5725F9952B16292B00289B71 /* charLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F98C2B16292B00289B71 /* charLevelView.swift */; };
-		5725F9962B16292B00289B71 /* ProfilButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F98E2B16292B00289B71 /* ProfilButtonView.swift */; };
-		5725F9972B16292B00289B71 /* SettingsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F98F2B16292B00289B71 /* SettingsButtonView.swift */; };
 		5725F9982B16292B00289B71 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9912B16292B00289B71 /* ProfilView.swift */; };
-		5725F9992B16292B00289B71 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9922B16292B00289B71 /* SettingsView.swift */; };
-		5725F9D22B16294E00289B71 /* ItemTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99C2B16294E00289B71 /* ItemTwoView.swift */; };
-		5725F9D32B16294F00289B71 /* MainActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99D2B16294E00289B71 /* MainActivity.swift */; };
 		5725F9D42B16294F00289B71 /* ItemFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99E2B16294E00289B71 /* ItemFourView.swift */; };
 		5725F9D52B16294F00289B71 /* ItemFiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99F2B16294E00289B71 /* ItemFiveView.swift */; };
-		5725F9D62B16294F00289B71 /* ItemThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A02B16294E00289B71 /* ItemThreeView.swift */; };
-		5725F9D72B16294F00289B71 /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A22B16294E00289B71 /* BottomBarView.swift */; };
 		5725F9D82B16294F00289B71 /* ItemFiveButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A52B16294E00289B71 /* ItemFiveButtonView.swift */; };
-		5725F9D92B16294F00289B71 /* ItemTwoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A62B16294E00289B71 /* ItemTwoButtonView.swift */; };
 		5725F9DA2B16294F00289B71 /* ItemFourButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A72B16294E00289B71 /* ItemFourButtonView.swift */; };
 		5725F9DB2B16294F00289B71 /* ItemThreeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A82B16294E00289B71 /* ItemThreeButtonView.swift */; };
-		5725F9DC2B16294F00289B71 /* HomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A92B16294E00289B71 /* HomeButtonView.swift */; };
-		5725F9DD2B16294F00289B71 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9AB2B16294E00289B71 /* MainContentView.swift */; };
-		5725F9DE2B16294F00289B71 /* NewAccountPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9AE2B16294E00289B71 /* NewAccountPage.swift */; };
 		5725F9DF2B16294F00289B71 /* NewAccountAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9AF2B16294E00289B71 /* NewAccountAnimation.swift */; };
-		5725F9E02B16294F00289B71 /* NewAccountPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9B02B16294E00289B71 /* NewAccountPopup.swift */; };
 		5725F9E12B16294F00289B71 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9B42B16294E00289B71 /* SideBarView.swift */; };
-		5725F9E22B16294F00289B71 /* SBItemSixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9B82B16294E00289B71 /* SBItemSixView.swift */; };
 		5725F9E32B16294F00289B71 /* SBInvetoryFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9B92B16294E00289B71 /* SBInvetoryFoodView.swift */; };
 		5725F9E42B16294F00289B71 /* SBInvetoryClothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9BA2B16294E00289B71 /* SBInvetoryClothView.swift */; };
 		5725F9E52B16294F00289B71 /* SBInvetoryAccessoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9BB2B16294E00289B71 /* SBInvetoryAccessoriesView.swift */; };
 		5725F9E62B16294F00289B71 /* SBItemFiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9BC2B16294E00289B71 /* SBItemFiveView.swift */; };
-		5725F9E72B16294F00289B71 /* SBItemFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9BD2B16294E00289B71 /* SBItemFourView.swift */; };
 		5725F9E82B16294F00289B71 /* SBItemSevenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9BE2B16294E00289B71 /* SBItemSevenView.swift */; };
-		5725F9E92B16294F00289B71 /* SideBarInvetoryClothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9C02B16294E00289B71 /* SideBarInvetoryClothView.swift */; };
-		5725F9EA2B16294F00289B71 /* SideBarInvetoryAccessoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9C12B16294E00289B71 /* SideBarInvetoryAccessoriesView.swift */; };
 		5725F9EB2B16294F00289B71 /* SideBarItemFiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9C22B16294E00289B71 /* SideBarItemFiveView.swift */; };
 		5725F9EC2B16294F00289B71 /* SideBarInvetoryFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9C32B16294E00289B71 /* SideBarInvetoryFoodView.swift */; };
 		5725F9ED2B16294F00289B71 /* SideBarItemFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9C42B16294E00289B71 /* SideBarItemFourView.swift */; };
 		5725F9EE2B16294F00289B71 /* SideBarItemSixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9C52B16294E00289B71 /* SideBarItemSixView.swift */; };
-		5725F9EF2B16294F00289B71 /* SideBarItemSevenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9C62B16294E00289B71 /* SideBarItemSevenView.swift */; };
 		5725F9F02B16294F00289B71 /* LoginAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9C92B16294E00289B71 /* LoginAnimation.swift */; };
-		5725F9F12B16294F00289B71 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9CA2B16294E00289B71 /* LoginPage.swift */; };
 		5725F9F22B16294F00289B71 /* LoginPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9CB2B16294E00289B71 /* LoginPopUp.swift */; };
 		5725F9F32B16294F00289B71 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9CD2B16294E00289B71 /* LoginViewModel.swift */; };
 		5725F9F42B16294F00289B71 /* HomeActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9D02B16294E00289B71 /* HomeActivity.swift */; };
@@ -67,6 +46,27 @@
 		F1B740A02B0C990B0084417F /* CircledFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7409C2B0C990B0084417F /* CircledFood.swift */; };
 		F1B740A12B0C990B0084417F /* BuddyStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7409D2B0C990B0084417F /* BuddyStat.swift */; };
 		F1B740A22B0C990B0084417F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7409E2B0C990B0084417F /* ContentView.swift */; };
+		F1EA983F2B1893FC005309D2 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9872B16292B00289B71 /* TopBarView.swift */; };
+		F1EA98402B189425005309D2 /* ProfilButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F98E2B16292B00289B71 /* ProfilButtonView.swift */; };
+		F1EA98412B189428005309D2 /* SettingsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F98F2B16292B00289B71 /* SettingsButtonView.swift */; };
+		F1EA98422B189430005309D2 /* charNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F98B2B16292B00289B71 /* charNameView.swift */; };
+		F1EA98432B18944C005309D2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9922B16292B00289B71 /* SettingsView.swift */; };
+		F1EA98442B189473005309D2 /* BuildSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9842B16290700289B71 /* BuildSheet.swift */; };
+		F1EA98452B189475005309D2 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9AB2B16294E00289B71 /* MainContentView.swift */; };
+		F1EA98462B189487005309D2 /* ItemTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99C2B16294E00289B71 /* ItemTwoView.swift */; };
+		F1EA98472B18948A005309D2 /* MainActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99D2B16294E00289B71 /* MainActivity.swift */; };
+		F1EA98482B189490005309D2 /* ItemThreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A02B16294E00289B71 /* ItemThreeView.swift */; };
+		F1EA98492B189493005309D2 /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A22B16294E00289B71 /* BottomBarView.swift */; };
+		F1EA984A2B189499005309D2 /* ItemTwoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A62B16294E00289B71 /* ItemTwoButtonView.swift */; };
+		F1EA984B2B1894E4005309D2 /* HomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A92B16294E00289B71 /* HomeButtonView.swift */; };
+		F1EA984C2B1894F1005309D2 /* SBItemSixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9B82B16294E00289B71 /* SBItemSixView.swift */; };
+		F1EA984D2B1894F9005309D2 /* SBItemFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9BD2B16294E00289B71 /* SBItemFourView.swift */; };
+		F1EA984E2B189500005309D2 /* SideBarInvetoryClothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9C02B16294E00289B71 /* SideBarInvetoryClothView.swift */; };
+		F1EA984F2B189502005309D2 /* SideBarInvetoryAccessoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9C12B16294E00289B71 /* SideBarInvetoryAccessoriesView.swift */; };
+		F1EA98502B18951A005309D2 /* SideBarItemSevenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9C62B16294E00289B71 /* SideBarItemSevenView.swift */; };
+		F1EA98512B189528005309D2 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9CA2B16294E00289B71 /* LoginPage.swift */; };
+		F1EA98522B18952F005309D2 /* NewAccountPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9AE2B16294E00289B71 /* NewAccountPage.swift */; };
+		F1EA98532B189532005309D2 /* NewAccountPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9B02B16294E00289B71 /* NewAccountPopup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -211,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				5725F99C2B16294E00289B71 /* ItemTwoView.swift */,
-				5725F99D2B16294E00289B71 /* MainActivity.swift */,
 				5725F99E2B16294E00289B71 /* ItemFourView.swift */,
 				5725F99F2B16294E00289B71 /* ItemFiveView.swift */,
 				5725F9A02B16294E00289B71 /* ItemThreeView.swift */,
@@ -323,8 +322,8 @@
 				5725F9B92B16294E00289B71 /* SBInvetoryFoodView.swift */,
 				5725F9BA2B16294E00289B71 /* SBInvetoryClothView.swift */,
 				5725F9BB2B16294E00289B71 /* SBInvetoryAccessoriesView.swift */,
-				5725F9BC2B16294E00289B71 /* SBItemFiveView.swift */,
 				5725F9BD2B16294E00289B71 /* SBItemFourView.swift */,
+				5725F9BC2B16294E00289B71 /* SBItemFiveView.swift */,
 				5725F9BE2B16294E00289B71 /* SBItemSevenView.swift */,
 			);
 			path = "SideBar Buttons";
@@ -348,7 +347,6 @@
 			isa = PBXGroup;
 			children = (
 				5725F9C82B16294E00289B71 /* Login View */,
-				5725F9CC2B16294E00289B71 /* Login Model */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -383,6 +381,7 @@
 		5725F9CF2B16294E00289B71 /* Home Activity View */ = {
 			isa = PBXGroup;
 			children = (
+				5725F99D2B16294E00289B71 /* MainActivity.swift */,
 				5725F9D02B16294E00289B71 /* HomeActivity.swift */,
 			);
 			path = "Home Activity View";
@@ -417,17 +416,8 @@
 				F1B740992B0C990B0084417F /* Views */,
 				F1B7408E2B0C99050084417F /* Models */,
 				F1B740872B0C98F90084417F /* Ressources */,
-				5725F9842B16290700289B71 /* BuildSheet.swift */,
 				F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */,
-				5725F9AB2B16294E00289B71 /* MainContentView.swift */,
-				F1619AD92AB8280D00D8FCEE /* ContentView.swift */,
 				5725F9F52B16299100289B71 /* WatchView.swift */,
-				5725F9862B16292B00289B71 /* TopBar */,
-				5725F99A2B16294E00289B71 /* BottomBar */,
-				5725F9B22B16294E00289B71 /* SideBar */,
-				5725F9CE2B16294E00289B71 /* Home Activity */,
-				5725F9C72B16294E00289B71 /* Login */,
-				5725F9AC2B16294E00289B71 /* New Account */,
 				F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */,
 				F1619AE02AB8280E00D8FCEE /* Persistence.swift */,
 				F1619AE22AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld */,
@@ -458,6 +448,7 @@
 			isa = PBXGroup;
 			children = (
 				F1B7408F2B0C99050084417F /* DataModel.swift */,
+				5725F9CC2B16294E00289B71 /* Login Model */,
 				F1B740902B0C99050084417F /* BuddyModels */,
 				F1B740932B0C99050084417F /* FoodModels */,
 			);
@@ -484,8 +475,15 @@
 		F1B740992B0C990B0084417F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F1B7409A2B0C990B0084417F /* TestViews */,
 				F1B7409E2B0C990B0084417F /* ContentView.swift */,
+				F1EA983E2B1890EE005309D2 /* MainPage */,
+				5725F9862B16292B00289B71 /* TopBar */,
+				5725F99A2B16294E00289B71 /* BottomBar */,
+				5725F9B22B16294E00289B71 /* SideBar */,
+				5725F9CE2B16294E00289B71 /* Home Activity */,
+				5725F9C72B16294E00289B71 /* Login */,
+				5725F9AC2B16294E00289B71 /* New Account */,
+				F1B7409A2B0C990B0084417F /* TestViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -498,6 +496,15 @@
 				F1B7409D2B0C990B0084417F /* BuddyStat.swift */,
 			);
 			path = TestViews;
+			sourceTree = "<group>";
+		};
+		F1EA983E2B1890EE005309D2 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				5725F9842B16290700289B71 /* BuildSheet.swift */,
+				5725F9AB2B16294E00289B71 /* MainContentView.swift */,
+			);
+			path = MainPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -572,8 +579,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1EA98462B189487005309D2 /* ItemTwoView.swift in Sources */,
 				F1B7408B2B0C98F90084417F /* JsonFunctions.swift in Sources */,
 				5725F9F32B16294F00289B71 /* LoginViewModel.swift in Sources */,
+				F1EA984A2B189499005309D2 /* ItemTwoButtonView.swift in Sources */,
 				5725F9DB2B16294F00289B71 /* ItemThreeButtonView.swift in Sources */,
 				5725F9E62B16294F00289B71 /* SBItemFiveView.swift in Sources */,
 				5725F9DF2B16294F00289B71 /* NewAccountAnimation.swift in Sources */,
@@ -581,33 +590,51 @@
 				5725F9ED2B16294F00289B71 /* SideBarItemFourView.swift in Sources */,
 				5725F9F42B16294F00289B71 /* HomeActivity.swift in Sources */,
 				5725F9DA2B16294F00289B71 /* ItemFourButtonView.swift in Sources */,
+				F1EA984C2B1894F1005309D2 /* SBItemSixView.swift in Sources */,
+				F1EA98402B189425005309D2 /* ProfilButtonView.swift in Sources */,
 				5725F9F22B16294F00289B71 /* LoginPopUp.swift in Sources */,
+				F1EA98502B18951A005309D2 /* SideBarItemSevenView.swift in Sources */,
+				F1EA983F2B1893FC005309D2 /* TopBarView.swift in Sources */,
 				5725F9EC2B16294F00289B71 /* SideBarInvetoryFoodView.swift in Sources */,
 				5725F9E42B16294F00289B71 /* SBInvetoryClothView.swift in Sources */,
 				5725F9D52B16294F00289B71 /* ItemFiveView.swift in Sources */,
+				F1EA98532B189532005309D2 /* NewAccountPopup.swift in Sources */,
 				5725F9E12B16294F00289B71 /* SideBarView.swift in Sources */,
 				5725F9982B16292B00289B71 /* ProfilView.swift in Sources */,
 				F1619AE12AB8280E00D8FCEE /* Persistence.swift in Sources */,
 				F1B740962B0C99050084417F /* Buddy.swift in Sources */,
 				5725F9F02B16294F00289B71 /* LoginAnimation.swift in Sources */,
-				F1619ADA2AB8280D00D8FCEE /* ContentView.swift in Sources */,
 				F1619AE42AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld in Sources */,
 				F1B740982B0C99050084417F /* Food.swift in Sources */,
 				F1B740A12B0C990B0084417F /* BuddyStat.swift in Sources */,
 				F1B740A02B0C990B0084417F /* CircledFood.swift in Sources */,
 				F1B7409F2B0C990B0084417F /* MainTestingView.swift in Sources */,
+				F1EA98432B18944C005309D2 /* SettingsView.swift in Sources */,
 				F1619AD82AB8280D00D8FCEE /* HealthBuddyApp.swift in Sources */,
 				F1B740A22B0C990B0084417F /* ContentView.swift in Sources */,
+				F1EA98422B189430005309D2 /* charNameView.swift in Sources */,
+				F1EA984F2B189502005309D2 /* SideBarInvetoryAccessoriesView.swift in Sources */,
+				F1EA984B2B1894E4005309D2 /* HomeButtonView.swift in Sources */,
 				F1B740972B0C99050084417F /* Buddy+Food.swift in Sources */,
 				F1B740952B0C99050084417F /* DataModel.swift in Sources */,
 				5725F9952B16292B00289B71 /* charLevelView.swift in Sources */,
+				F1EA98492B189493005309D2 /* BottomBarView.swift in Sources */,
+				F1EA98522B18952F005309D2 /* NewAccountPage.swift in Sources */,
 				5725F9D82B16294F00289B71 /* ItemFiveButtonView.swift in Sources */,
 				5725F9EE2B16294F00289B71 /* SideBarItemSixView.swift in Sources */,
+				F1EA98472B18948A005309D2 /* MainActivity.swift in Sources */,
+				F1EA984D2B1894F9005309D2 /* SBItemFourView.swift in Sources */,
 				5725F9E82B16294F00289B71 /* SBItemSevenView.swift in Sources */,
+				F1EA98442B189473005309D2 /* BuildSheet.swift in Sources */,
 				5725F9F62B16299100289B71 /* WatchView.swift in Sources */,
+				F1EA98512B189528005309D2 /* LoginPage.swift in Sources */,
+				F1EA98482B189490005309D2 /* ItemThreeView.swift in Sources */,
 				5725F9E52B16294F00289B71 /* SBInvetoryAccessoriesView.swift in Sources */,
+				F1EA98412B189428005309D2 /* SettingsButtonView.swift in Sources */,
 				5725F9EB2B16294F00289B71 /* SideBarItemFiveView.swift in Sources */,
 				5725F9E32B16294F00289B71 /* SBInvetoryFoodView.swift in Sources */,
+				F1EA984E2B189500005309D2 /* SideBarInvetoryClothView.swift in Sources */,
+				F1EA98452B189475005309D2 /* MainContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
