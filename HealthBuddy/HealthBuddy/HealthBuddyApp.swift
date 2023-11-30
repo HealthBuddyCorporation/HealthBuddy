@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct HealthBuddyApp: App {
-    let persistenceController = PersistenceController.shared
+    @StateObject var data = DataModel()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(data)
         }
     }
 }

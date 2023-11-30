@@ -52,11 +52,21 @@
 		5725F9F42B16294F00289B71 /* HomeActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9D02B16294E00289B71 /* HomeActivity.swift */; };
 		5725F9F62B16299100289B71 /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9F52B16299100289B71 /* WatchView.swift */; };
 		F1619AD82AB8280D00D8FCEE /* HealthBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */; };
-		F1619ADA2AB8280D00D8FCEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1619AD92AB8280D00D8FCEE /* ContentView.swift */; };
 		F1619ADC2AB8280E00D8FCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */; };
 		F1619ADF2AB8280E00D8FCEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */; };
 		F1619AE12AB8280E00D8FCEE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1619AE02AB8280E00D8FCEE /* Persistence.swift */; };
 		F1619AE42AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1619AE22AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld */; };
+		F1B7408B2B0C98F90084417F /* JsonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B740882B0C98F90084417F /* JsonFunctions.swift */; };
+		F1B7408C2B0C98F90084417F /* buddyData.json in Resources */ = {isa = PBXBuildFile; fileRef = F1B740892B0C98F90084417F /* buddyData.json */; };
+		F1B7408D2B0C98F90084417F /* foodList.json in Resources */ = {isa = PBXBuildFile; fileRef = F1B7408A2B0C98F90084417F /* foodList.json */; };
+		F1B740952B0C99050084417F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7408F2B0C99050084417F /* DataModel.swift */; };
+		F1B740962B0C99050084417F /* Buddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B740912B0C99050084417F /* Buddy.swift */; };
+		F1B740972B0C99050084417F /* Buddy+Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B740922B0C99050084417F /* Buddy+Food.swift */; };
+		F1B740982B0C99050084417F /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B740942B0C99050084417F /* Food.swift */; };
+		F1B7409F2B0C990B0084417F /* MainTestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7409B2B0C990B0084417F /* MainTestingView.swift */; };
+		F1B740A02B0C990B0084417F /* CircledFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7409C2B0C990B0084417F /* CircledFood.swift */; };
+		F1B740A12B0C990B0084417F /* BuddyStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7409D2B0C990B0084417F /* BuddyStat.swift */; };
+		F1B740A22B0C990B0084417F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7409E2B0C990B0084417F /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,11 +116,21 @@
 		5725F9F52B16299100289B71 /* WatchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
 		F1619AD42AB8280D00D8FCEE /* HealthBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBuddyApp.swift; sourceTree = "<group>"; };
-		F1619AD92AB8280D00D8FCEE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1619AE02AB8280E00D8FCEE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F1619AE32AB8280E00D8FCEE /* HealthBuddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthBuddy.xcdatamodel; sourceTree = "<group>"; };
+		F1B740882B0C98F90084417F /* JsonFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonFunctions.swift; sourceTree = "<group>"; };
+		F1B740892B0C98F90084417F /* buddyData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = buddyData.json; sourceTree = "<group>"; };
+		F1B7408A2B0C98F90084417F /* foodList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodList.json; sourceTree = "<group>"; };
+		F1B7408F2B0C99050084417F /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		F1B740912B0C99050084417F /* Buddy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buddy.swift; sourceTree = "<group>"; };
+		F1B740922B0C99050084417F /* Buddy+Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Buddy+Food.swift"; sourceTree = "<group>"; };
+		F1B740942B0C99050084417F /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		F1B7409B2B0C990B0084417F /* MainTestingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTestingView.swift; sourceTree = "<group>"; };
+		F1B7409C2B0C990B0084417F /* CircledFood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircledFood.swift; sourceTree = "<group>"; };
+		F1B7409D2B0C990B0084417F /* BuddyStat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddyStat.swift; sourceTree = "<group>"; };
+		F1B7409E2B0C990B0084417F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +414,9 @@
 		F1619AD62AB8280D00D8FCEE /* HealthBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				F1B740992B0C990B0084417F /* Views */,
+				F1B7408E2B0C99050084417F /* Models */,
+				F1B740872B0C98F90084417F /* Ressources */,
 				5725F9842B16290700289B71 /* BuildSheet.swift */,
 				5725F9862B16292B00289B71 /* TopBar */,
 				F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */,
@@ -419,6 +442,62 @@
 				F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1B740872B0C98F90084417F /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				F1B740882B0C98F90084417F /* JsonFunctions.swift */,
+				F1B740892B0C98F90084417F /* buddyData.json */,
+				F1B7408A2B0C98F90084417F /* foodList.json */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		F1B7408E2B0C99050084417F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1B7408F2B0C99050084417F /* DataModel.swift */,
+				F1B740902B0C99050084417F /* BuddyModels */,
+				F1B740932B0C99050084417F /* FoodModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1B740902B0C99050084417F /* BuddyModels */ = {
+			isa = PBXGroup;
+			children = (
+				F1B740912B0C99050084417F /* Buddy.swift */,
+				F1B740922B0C99050084417F /* Buddy+Food.swift */,
+			);
+			path = BuddyModels;
+			sourceTree = "<group>";
+		};
+		F1B740932B0C99050084417F /* FoodModels */ = {
+			isa = PBXGroup;
+			children = (
+				F1B740942B0C99050084417F /* Food.swift */,
+			);
+			path = FoodModels;
+			sourceTree = "<group>";
+		};
+		F1B740992B0C990B0084417F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1B7409A2B0C990B0084417F /* TestViews */,
+				F1B7409E2B0C990B0084417F /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1B7409A2B0C990B0084417F /* TestViews */ = {
+			isa = PBXGroup;
+			children = (
+				F1B7409B2B0C990B0084417F /* MainTestingView.swift */,
+				F1B7409C2B0C990B0084417F /* CircledFood.swift */,
+				F1B7409D2B0C990B0084417F /* BuddyStat.swift */,
+			);
+			path = TestViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,6 +558,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B7408C2B0C98F90084417F /* buddyData.json in Resources */,
+				F1B7408D2B0C98F90084417F /* foodList.json in Resources */,
 				F1619ADF2AB8280E00D8FCEE /* Preview Assets.xcassets in Resources */,
 				F1619ADC2AB8280E00D8FCEE /* Assets.xcassets in Resources */,
 			);
@@ -491,6 +572,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B7408B2B0C98F90084417F /* JsonFunctions.swift in Sources */,
 				5725F9F32B16294F00289B71 /* LoginViewModel.swift in Sources */,
 				5725F9DB2B16294F00289B71 /* ItemThreeButtonView.swift in Sources */,
 				5725F9E62B16294F00289B71 /* SBItemFiveView.swift in Sources */,
@@ -506,31 +588,18 @@
 				5725F9E12B16294F00289B71 /* SideBarView.swift in Sources */,
 				5725F9982B16292B00289B71 /* ProfilView.swift in Sources */,
 				F1619AE12AB8280E00D8FCEE /* Persistence.swift in Sources */,
+				F1B740962B0C99050084417F /* Buddy.swift in Sources */,
 				5725F9F02B16294F00289B71 /* LoginAnimation.swift in Sources */,
 				F1619ADA2AB8280D00D8FCEE /* ContentView.swift in Sources */,
 				F1619AE42AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld in Sources */,
-				5725F9E22B16294F00289B71 /* SBItemSixView.swift in Sources */,
-				5725F9F12B16294F00289B71 /* LoginPage.swift in Sources */,
-				5725F9942B16292B00289B71 /* charNameView.swift in Sources */,
-				5725F9D32B16294F00289B71 /* MainActivity.swift in Sources */,
-				5725F9962B16292B00289B71 /* ProfilButtonView.swift in Sources */,
-				5725F9E92B16294F00289B71 /* SideBarInvetoryClothView.swift in Sources */,
-				5725F9E02B16294F00289B71 /* NewAccountPopup.swift in Sources */,
-				5725F9DD2B16294F00289B71 /* MainContentView.swift in Sources */,
-				5725F9D72B16294F00289B71 /* BottomBarView.swift in Sources */,
-				5725F9D22B16294E00289B71 /* ItemTwoView.swift in Sources */,
-				5725F9DE2B16294F00289B71 /* NewAccountPage.swift in Sources */,
-				5725F9EF2B16294F00289B71 /* SideBarItemSevenView.swift in Sources */,
-				5725F9972B16292B00289B71 /* SettingsButtonView.swift in Sources */,
-				5725F9852B16290700289B71 /* BuildSheet.swift in Sources */,
-				5725F9DC2B16294F00289B71 /* HomeButtonView.swift in Sources */,
-				5725F9EA2B16294F00289B71 /* SideBarInvetoryAccessoriesView.swift in Sources */,
-				5725F9932B16292B00289B71 /* TopBarView.swift in Sources */,
-				5725F9D92B16294F00289B71 /* ItemTwoButtonView.swift in Sources */,
-				5725F9992B16292B00289B71 /* SettingsView.swift in Sources */,
-				5725F9D62B16294F00289B71 /* ItemThreeView.swift in Sources */,
-				5725F9E72B16294F00289B71 /* SBItemFourView.swift in Sources */,
+				F1B740982B0C99050084417F /* Food.swift in Sources */,
+				F1B740A12B0C990B0084417F /* BuddyStat.swift in Sources */,
+				F1B740A02B0C990B0084417F /* CircledFood.swift in Sources */,
+				F1B7409F2B0C990B0084417F /* MainTestingView.swift in Sources */,
 				F1619AD82AB8280D00D8FCEE /* HealthBuddyApp.swift in Sources */,
+				F1B740A22B0C990B0084417F /* ContentView.swift in Sources */,
+				F1B740972B0C99050084417F /* Buddy+Food.swift in Sources */,
+				F1B740952B0C99050084417F /* DataModel.swift in Sources */,
 				5725F9952B16292B00289B71 /* charLevelView.swift in Sources */,
 				5725F9D82B16294F00289B71 /* ItemFiveButtonView.swift in Sources */,
 				5725F9EE2B16294F00289B71 /* SideBarItemSixView.swift in Sources */,
@@ -669,6 +738,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HealthBuddy/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthBuddy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -697,6 +767,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HealthBuddy/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthBuddy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
