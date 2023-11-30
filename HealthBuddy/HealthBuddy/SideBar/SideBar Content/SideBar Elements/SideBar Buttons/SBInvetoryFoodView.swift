@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct SBInvetoryFoodView: View {
-    @Binding var isPopoverPresented :Bool
-
+    @Binding var isPopoverPresented : Bool
+    @Binding var isVisible : Bool
+    
     var body: some View {
         Button(action: {
             isPopoverPresented.toggle()
+            isVisible = false
         }) {
             Image(systemName: "fork.knife.circle.fill")
                 .resizable()
@@ -27,5 +29,5 @@ struct SBInvetoryFoodView: View {
 }
 
 //#Preview {
-//    SBInvetoryFoodView()
+//    SBInvetoryFoodView(isPopoverPresented: <#Binding<Bool>#>)
 //}

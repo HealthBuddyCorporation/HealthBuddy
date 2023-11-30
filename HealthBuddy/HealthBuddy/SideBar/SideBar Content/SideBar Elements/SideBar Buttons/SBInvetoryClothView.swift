@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SBInvetoryClothView: View {
     
-    @State private var isPopoverPresented = false
+    @Binding var isPopoverPresented : Bool
 
     var body: some View {
         Button(action: {
@@ -24,20 +24,9 @@ struct SBInvetoryClothView: View {
                 .background(Color.gray)
                 .clipShape(Circle())
         }
-        .popover(isPresented: $isPopoverPresented, arrowEdge: .top, content: {
-            VStack {
-                SideBarInvetoryClothView()
-                    .padding()
-                // Ajoutez d'autres éléments au besoin
-            }
-            .onTapGesture {
-                // Fermer la popover lorsqu'on clique à l'extérieur
-                isPopoverPresented = false
-            }
-        })
     }
 }
 
-#Preview {
-    SBInvetoryClothView()
-}
+//#Preview {
+//    SBInvetoryClothView()
+//}

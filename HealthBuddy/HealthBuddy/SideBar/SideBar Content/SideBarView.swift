@@ -10,7 +10,10 @@ import SwiftUI
 struct SideBarView: View {
     
     @State private var isSideBarVisible = false
-    //@State var foodSelected = 
+    @State private var isFoodPresented = false
+    @State private var isClothPresented = false
+    @State private var isAccessoriesPresented = false
+    
     var body: some View {
         ZStack{
             ZStack{
@@ -32,6 +35,10 @@ struct SideBarView: View {
                     .animation(.easeInOut(duration: 0.5))
                     .onTapGesture {
                         isSideBarVisible.toggle()
+                        if isSideBarVisible{
+                            isFoodPresented = false
+                            
+                        }
                     }
                 
                 Image(systemName: isSideBarVisible ? "arrowtriangle.forward.fill" : "arrowtriangle.backward.fill")
@@ -43,18 +50,30 @@ struct SideBarView: View {
                     
             }
             
+            if(isFoodPresented){
+                SideBarInvetoryFoodView(isShown: $isFoodPresented, isBarVisible: $isSideBarVisible)
+            }
+            
+            if(isClothPresented){
+                SideBarInvetoryClothView()
+            }
+            
+            if(isAccessoriesPresented){
+                SideBarInvetoryAccessoriesView()
+            }
+            
             VStack{
-                SBInvetoryFoodView()
+                SBInvetoryFoodView(isPopoverPresented: $isFoodPresented, isVisible: $isSideBarVisible)
                     .offset(y: -40)
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.5))
                 
-                SBInvetoryClothView()
+                SBInvetoryClothView(isPopoverPresented: $isClothPresented)
                     .offset(y: -30)
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.5))
                 
-                SBInvetoryAccessoriesView()
+                SBInvetoryAccessoriesView(isPopoverPresented: $isAccessoriesPresented)
                     .offset(y: -15)
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.5))

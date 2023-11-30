@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct SideBarInvetoryFoodView: View {
+    
+    @Binding var isShown : Bool
+    @Binding var isBarVisible: Bool
+    
     let rows = 2
     let columns = 40
     
@@ -17,9 +21,12 @@ struct SideBarInvetoryFoodView: View {
                 .foregroundColor(.black)
                 .frame(width: 350, height: 300)
                 .cornerRadius(10)
-            
+                
             VStack {
-                Button(action: {}) {
+                Button {
+                    isBarVisible = true
+                    isShown = false
+                print("click click")} label: {
                     Image(systemName: "xmark.circle.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -31,6 +38,7 @@ struct SideBarInvetoryFoodView: View {
                         .offset(x: 172)
                         .offset(y: -4)
                 }
+                
                 Text("Inventory : food")
                     .foregroundColor(.white)
                 
@@ -53,10 +61,10 @@ struct SideBarInvetoryFoodView: View {
                 .frame(maxHeight: 250)
                 .frame(maxWidth: 350)
             }
-        }
+        }.offset(y: -100)
     }
 }
 
-#Preview {
-    SideBarInvetoryFoodView()
-}
+//#Preview {
+//    SideBarInvetoryFoodView()
+//}
