@@ -10,5 +10,5 @@ import Foundation
 class DataModel :ObservableObject {
     @Published var buddy :Buddy = load("buddyData.json")
     @Published var foodList :[Food] = load("foodList.json")
-    
+    @Published var cleanerList :[Cleaner] = load("cleaningList.json")
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CircledFood: View {
     var food :Food
+    var available :Bool
     
     var body: some View {
         VStack{
@@ -16,11 +17,12 @@ struct CircledFood: View {
             Text("quantity: \(food.quantity)")
                 .font(.caption2)
         }
+        .frame(width: 50, height: 50)
         .padding()
-        .background(
-            Circle()
-                .stroke(Color.blue)
-        )
+        .background(available ? Color.white : Color.red)
+        .foregroundColor(.black)
+        .opacity(0.5)
+        .cornerRadius(8)
     }
 }
 

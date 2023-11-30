@@ -1,13 +1,13 @@
 //
-//  SideBarInvetoryFoodView.swift
-//  HealthBudy
+//  SideBarInventoryCleanerView.swift
+//  HealthBuddy
 //
-//  Created by Raphael Fassotte on 28/11/2023.
+//  Created by Student04 on 30/11/2023.
 //
 
 import SwiftUI
 
-struct SideBarInvetoryFoodView: View {
+struct SideBarInventoryCleanerView: View {
     @EnvironmentObject var data :DataModel
     @Binding var isShown : Bool
     @Binding var isBarVisible: Bool
@@ -37,20 +37,20 @@ struct SideBarInvetoryFoodView: View {
                         isBarVisible = true
                     }
                 
-                Text("Inventory : food")
+                Text("Inventory : Hygiene")
                     .foregroundColor(.white)
                 
                 ScrollView(.horizontal) {
                     LazyHGrid(rows: Array(repeating: GridItem(), count: rows), spacing: 10) {
-                        ForEach(data.foodList){ food in
-                            if(food.quantity > 0){
-                                ItemBox(food: food, available: true)
-                                    .draggable(food)
+                        ForEach(data.cleanerList){ cleaner in
+                            if(cleaner.quantity > 0){
+                                ItemBox(cleaner: cleaner, available: true)
+                                    .draggable(cleaner)
                                     .onTapGesture {
-                                        data.handleFoodDrop([food])
+                                        data.handleCleanDrop([cleaner])
                                     }
                             }else{
-                                ItemBox(food: food, available: false)
+                                ItemBox(cleaner: cleaner, available: false)
                             }
                         }
                     }
@@ -64,5 +64,5 @@ struct SideBarInvetoryFoodView: View {
 }
 
 //#Preview {
-//    SideBarInvetoryFoodView()
+//    SideBarInventoryCleanerView()
 //}

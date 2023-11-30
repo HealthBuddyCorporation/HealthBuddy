@@ -30,8 +30,8 @@ struct MainTestingView: View {
                 guard let food = foods.first else {
                     return false
                 }
-                if let item = data.foodList.filter({$0.id == food.id}).first {
-                    data.buddy.feed(item)
+                if let index = data.foodList.firstIndex(of: food) {
+                    data.feed(data.foodList[index])
                     print(data.buddy.nutrition)
                 }
                 return true
@@ -43,7 +43,7 @@ struct MainTestingView: View {
                 ScrollView(.horizontal){
                     LazyHStack{
                         ForEach(data.foodList){ food in
-                            CircledFood(food: food)
+                            CircledFood(food: food, available: true)
                                 .draggable(food)
                         }
                     }

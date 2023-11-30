@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import UniformTypeIdentifiers
 
-class Food: Hashable, Codable, Identifiable, Transferable{
+struct Food: Hashable, Codable, Identifiable, Transferable{
     var id :Int
     var name :String
     var quantity :Int
@@ -19,13 +19,6 @@ class Food: Hashable, Codable, Identifiable, Transferable{
 }
 
 extension Food{
-    static func == (lhs: Food, rhs: Food) -> Bool {
-        lhs.id == rhs.id
-    }
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
-    
     static var transferRepresentation: some TransferRepresentation{
         CodableRepresentation(for: Food.self,contentType: .food)
     }

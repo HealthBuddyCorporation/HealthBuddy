@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Buddy :Hashable, Codable, Identifiable{
+struct Buddy :Hashable, Codable, Identifiable{
     var id :Int
     var hp :Double
     var maxHP :Double
@@ -18,14 +18,4 @@ class Buddy :Hashable, Codable, Identifiable{
     var currentXP :Int
     var neededXP :Int
     var isAlive :Bool
-}
-
-extension Buddy {
-    static func == (lhs: Buddy, rhs: Buddy) -> Bool {
-        lhs.id == rhs.id
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
 }

@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct SideBarInvetoryClothView: View {
-    let rows = 2
-    let columns = 40
+    @EnvironmentObject var data :DataModel
+    @Binding var isShown : Bool
+    @Binding var isBarVisible: Bool
+    
+    var rows = 2
     
     var body: some View {
         ZStack {
@@ -19,32 +22,35 @@ struct SideBarInvetoryClothView: View {
                 .cornerRadius(10)
             
             VStack {
-                Button(action: {}) {
-                    Image(systemName: "xmark.circle.fill")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 20, height: 20)
-                        .foregroundColor(.white)
-                        .padding(3)
-                        .background(Color.gray)
-                        .clipShape(Circle())
-                        .offset(x: 172)
-                        .offset(y: -4)
-                }
-                Text("Inventory : cloth")
+                Image(systemName: "xmark.circle.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 20, height: 20)
+                    .foregroundColor(.white)
+                    .padding(3)
+                    .background(Color.gray)
+                    .clipShape(Circle())
+                    .offset(x: 172)
+                    .offset(y: -4)
+                    .onTapGesture {
+                        isShown = false
+                        isBarVisible = true
+                    }
+                
+                Text("Inventory : Hygiene")
                     .foregroundColor(.white)
                 
                 ScrollView(.horizontal) {
                     LazyHGrid(rows: Array(repeating: GridItem(), count: rows), spacing: 10) {
-                        ForEach(0..<columns) { column in
-                            ForEach(0..<rows) { row in
-                                Text("Item \(row * columns + column + 1)")
-                                    .frame(width: 50, height: 50)
-                                    .padding()
-                                    .background(Color.white)
-                                    .foregroundColor(.white)
-                                    .opacity(0.5)
-                                    .cornerRadius(8)
+                        ForEach(data.cleanerList){ cleaner in
+                            if(cleaner.quantity > 0){
+                                ItemBox(cleaner: cleaner, available: true)
+                                    .draggable(cleaner)
+                                    .onTapGesture {
+                                        data.handleCleanDrop([cleaner])
+                                    }
+                            }else{
+                                ItemBox(cleaner: cleaner, available: false)
                             }
                         }
                     }
@@ -53,10 +59,10 @@ struct SideBarInvetoryClothView: View {
                 .frame(maxHeight: 250)
                 .frame(maxWidth: 350)
             }
-        }
+        }.offset(y: -100)
     }
 }
 
-#Preview {
-    SideBarInvetoryClothView()
-}
+//#Preview {
+//    SideBarInvetoryClothView()
+//}

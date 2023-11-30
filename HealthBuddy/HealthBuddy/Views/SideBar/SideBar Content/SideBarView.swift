@@ -11,7 +11,7 @@ struct SideBarView: View {
     
     @State private var isSideBarVisible = false
     @State private var isFoodPresented = false
-    @State private var isClothPresented = false
+    @State private var isCleanerPresented = false
     @State private var isAccessoriesPresented = false
     
     var body: some View {
@@ -54,8 +54,8 @@ struct SideBarView: View {
                 SideBarInvetoryFoodView(isShown: $isFoodPresented, isBarVisible: $isSideBarVisible)
             }
             
-            if(isClothPresented){
-                SBInvetoryClothView(isPopoverPresented: $isClothPresented)
+            if(isCleanerPresented){
+                SideBarInventoryCleanerView(isShown: $isCleanerPresented, isBarVisible: $isSideBarVisible)
             }
             
             if(isAccessoriesPresented){
@@ -68,7 +68,7 @@ struct SideBarView: View {
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.5))
                 
-                SBInvetoryClothView(isPopoverPresented: $isClothPresented)
+                SBInventoryCleanerView(isPopoverPresented: $isCleanerPresented, isVisible: $isSideBarVisible)
                     .offset(y: -30)
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.5))

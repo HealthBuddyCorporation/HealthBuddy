@@ -1,13 +1,13 @@
 //
-//  SBInvetoryClothView.swift
-//  HealthBudy
+//  SBInventoryCleanerView.swift
+//  HealthBuddy
 //
-//  Created by Raphael Fassotte on 28/11/2023.
+//  Created by Student04 on 30/11/2023.
 //
 
 import SwiftUI
 
-struct SBInvetoryClothView: View {
+struct SBInventoryCleanerView: View {
     @Binding var isPopoverPresented : Bool
     @Binding var isVisible : Bool
     
@@ -29,5 +29,5 @@ struct SBInvetoryClothView: View {
 }
 
 //#Preview {
-//    SBInvetoryClothView()
+//    SBInventoryCleanerView()
 //}
