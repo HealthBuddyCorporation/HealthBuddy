@@ -8,19 +8,6 @@
 import Foundation
 
 extension DataModel{
-    func handleFoodDrop(_ foods: [Food]) -> Bool{
-        guard let food = foods.first else {
-            return false
-        }
-        if let index = foodList.firstIndex(of: food) {
-            print("\(foodList[index].name) : \(foodList[index].quantity)")
-            feed(foodList[index])
-            foodList[index].quantity -= 1
-            print(buddy.nutrition)
-            print("\(foodList[index].name) : \(foodList[index].quantity)")
-        }
-        return true
-    }
     func feed(_ food :Food){
         if(food.id == 100){
             buddy.hp = buddy.maxHP

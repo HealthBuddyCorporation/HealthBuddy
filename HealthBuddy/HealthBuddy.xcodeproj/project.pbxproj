@@ -35,6 +35,7 @@
 		F1619ADF2AB8280E00D8FCEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */; };
 		F1619AE12AB8280E00D8FCEE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1619AE02AB8280E00D8FCEE /* Persistence.swift */; };
 		F1619AE42AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1619AE22AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld */; };
+		F1AC8A792B1DCFB600236EA7 /* Droppable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AC8A782B1DCFB600236EA7 /* Droppable.swift */; };
 		F1B7408B2B0C98F90084417F /* JsonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B740882B0C98F90084417F /* JsonFunctions.swift */; };
 		F1B7408C2B0C98F90084417F /* buddyData.json in Resources */ = {isa = PBXBuildFile; fileRef = F1B740892B0C98F90084417F /* buddyData.json */; };
 		F1B7408D2B0C98F90084417F /* foodList.json in Resources */ = {isa = PBXBuildFile; fileRef = F1B7408A2B0C98F90084417F /* foodList.json */; };
@@ -127,6 +128,7 @@
 		F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1619AE02AB8280E00D8FCEE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F1619AE32AB8280E00D8FCEE /* HealthBuddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthBuddy.xcdatamodel; sourceTree = "<group>"; };
+		F1AC8A782B1DCFB600236EA7 /* Droppable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Droppable.swift; sourceTree = "<group>"; };
 		F1B740882B0C98F90084417F /* JsonFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonFunctions.swift; sourceTree = "<group>"; };
 		F1B740892B0C98F90084417F /* buddyData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = buddyData.json; sourceTree = "<group>"; };
 		F1B7408A2B0C98F90084417F /* foodList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foodList.json; sourceTree = "<group>"; };
@@ -451,6 +453,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F1AC8A772B1DCF7900236EA7 /* Droppables */ = {
+			isa = PBXGroup;
+			children = (
+				F1AC8A782B1DCFB600236EA7 /* Droppable.swift */,
+				F1EA985F2B18CAA6005309D2 /* CleanerModels */,
+				F1B740932B0C99050084417F /* FoodModels */,
+			);
+			path = Droppables;
+			sourceTree = "<group>";
+		};
 		F1B740872B0C98F90084417F /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,10 +479,9 @@
 			isa = PBXGroup;
 			children = (
 				F1B7408F2B0C99050084417F /* DataModel.swift */,
+				F1AC8A772B1DCF7900236EA7 /* Droppables */,
 				5725F9CC2B16294E00289B71 /* Login Model */,
 				F1B740902B0C99050084417F /* BuddyModels */,
-				F1B740932B0C99050084417F /* FoodModels */,
-				F1EA985F2B18CAA6005309D2 /* CleanerModels */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -673,6 +684,7 @@
 				5725F9F62B16299100289B71 /* WatchView.swift in Sources */,
 				F1EA98512B189528005309D2 /* LoginPage.swift in Sources */,
 				F1EA98482B189490005309D2 /* ItemThreeView.swift in Sources */,
+				F1AC8A792B1DCFB600236EA7 /* Droppable.swift in Sources */,
 				5725F9E52B16294F00289B71 /* SBInvetoryAccessoriesView.swift in Sources */,
 				F1EA98412B189428005309D2 /* SettingsButtonView.swift in Sources */,
 				5725F9EB2B16294F00289B71 /* SideBarItemFiveView.swift in Sources */,
