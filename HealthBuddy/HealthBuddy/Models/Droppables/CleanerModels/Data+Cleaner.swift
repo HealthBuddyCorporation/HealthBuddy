@@ -8,19 +8,6 @@
 import Foundation
 
 extension DataModel{
-    func handleCleanDrop(_ cleaners: [Cleaner]) -> Bool{
-        guard let cleaner = cleaners.first else {
-            return false
-        }
-        if let index = cleanerList.firstIndex(of: cleaner) {
-            print("\(cleanerList[index].name) : \(cleanerList[index].quantity)")
-            cleansed(cleanerList[index])
-            cleanerList[index].quantity -= 1
-            print(buddy.hygiene)
-            print("\(cleanerList[index].name) : \(cleanerList[index].quantity)")
-        }
-        return true
-    }
     func cleansed(_ cleaner :Cleaner){
         if(cleaner.id == 100){
             buddy.hp = buddy.maxHP

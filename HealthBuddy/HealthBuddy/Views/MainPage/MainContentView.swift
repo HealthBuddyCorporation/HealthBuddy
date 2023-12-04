@@ -58,8 +58,9 @@ struct MainContentView: View {
                 .foregroundColor(.black)
                 .frame(width: 100, height: 100)
                 .offset(y: 200)
-                .dropDestination(for: Food.self) { foods, location in
-                    data.handleFoodDrop(foods)
+                .dropDestination(for: Droppable.self) { items, location in
+                    print(items.self)
+                    return data.handleDrop(items)
                 } isTargeted: { targeted in
                     isTargeted = targeted
                 }

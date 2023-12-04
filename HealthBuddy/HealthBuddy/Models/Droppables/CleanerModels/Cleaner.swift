@@ -20,7 +20,7 @@ struct Cleaner: Hashable, Codable, Identifiable, Transferable{
 
 extension Cleaner{
     static var transferRepresentation: some TransferRepresentation{
-        CodableRepresentation(for: Cleaner.self,contentType: .food)
+        CodableRepresentation(for: Cleaner.self,contentType: .cleaner)
     }
 }
 
