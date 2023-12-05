@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ItemTwoButtonView: View {
+struct ShopButtonView: View {
     
-    @State private var isItemTwoButtonViewActive = false
+    @State private var isShopButtonViewActive = false
     
     var body: some View {
-        NavigationLink(destination: ItemTwoView(), isActive: $isItemTwoButtonViewActive){
+        NavigationLink(destination: ShopView(), isActive: $isShopButtonViewActive){
             EmptyView()
         }
         .hidden()
@@ -21,22 +21,22 @@ struct ItemTwoButtonView: View {
             Rectangle()
                 .cornerRadius(40)
                 .foregroundColor(.gray)
-                .frame(width: 50, height: 50)
+                .frame(width: 35, height: 35)
                 .onTapGesture {
-                    isItemTwoButtonViewActive = true
-                    print ("Item Two Button tapped!")
+                    isShopButtonViewActive = true
+                    print ("Shop Button tapped!")
                 }
-                .id("bottomBarItem2")
+                .id("ShopButton")
             
-            Image(systemName: "wake.circle.fill")
+            Image(systemName: "cart.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .foregroundColor(.white)
-                .frame(width: 20, height: 20)
+                .frame(width: 25, height: 25)
         }
     }
 }
 
 #Preview {
-    ItemTwoButtonView()
+    ShopButtonView()
 }

@@ -10,8 +10,8 @@ import SwiftUI
 struct charNameView: View {
     var body: some View {
         Text("Tamagochi Name")
-            .background(Color.black)
-            .foregroundColor(.white)
+            .font(.title2)
+            .foregroundColor(.black)
             .offset(y: -60)
             .id("charName")
     }

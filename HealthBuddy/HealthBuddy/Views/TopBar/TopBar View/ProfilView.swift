@@ -7,31 +7,34 @@
 
 import SwiftUI
 
+extension Color {
+    static let customColor = Color("mainYellow")
+}
+
 struct ProfilView: View {
     var body: some View {
         
         VStack{
             TopBarView()
-            
-            ZStack{
-                Rectangle()
-                    .foregroundColor(.gray)
-                    .frame(width: 80, height: 80)
-                    .cornerRadius(80)
-                Rectangle()
-                    .foregroundColor(.white)
-                    .opacity(0.4)
-                    .frame(width: 70, height: 70)
-                    .cornerRadius(60)
-                
-                Image(systemName: "person.circle")
-                    .resizable()
-                    .background(Color.gray)
-                    .cornerRadius(40)
-                    .frame(width: 50, height: 50)
-                    .foregroundColor(.white)
+                ZStack{
+                    Rectangle()
+                        .foregroundColor(.gray)
+                        .frame(width: 80, height: 80)
+                        .cornerRadius(80)
+                    
+                    Rectangle()
+                        .foregroundColor(.white)
+                        .opacity(0.4)
+                        .frame(width: 70, height: 70)
+                        .cornerRadius(60)
+                    
+                    Image(systemName: "person.circle")
+                        .resizable()
+                        .background(Color.gray)
+                        .cornerRadius(40)
+                        .frame(width: 50, height: 50)
+                        .foregroundColor(.white)
             }
-            
             Text("User Name")
                 .padding()
             HStack{

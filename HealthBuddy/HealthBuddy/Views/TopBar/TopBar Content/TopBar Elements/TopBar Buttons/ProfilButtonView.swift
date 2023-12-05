@@ -18,9 +18,9 @@ struct ProfilButtonView: View {
                Image(systemName: "person.circle.fill")
                    .resizable()
                    .aspectRatio(contentMode: .fit)
-                   .frame(width: 40, height: 40)
+                   .frame(width: 30, height: 30)
                    .foregroundColor(.white)
-                   .padding(5)
+                   .padding(2)
                    .background(Color.gray)
                    .clipShape(Circle())
            }

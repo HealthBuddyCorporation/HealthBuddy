@@ -11,26 +11,33 @@ struct BottomBarView: View {
     var body: some View {
         
         ZStack{
-            Rectangle()
-                .foregroundColor(.black)
-                .frame(width: 430, height: 100)
-                .id("BottomBarContent")
+            VStack{
+                
+                Rectangle()
+                    .foregroundColor(.white)
+                    .frame(width: 430, height: 100)
+                    .id("BottomBarContent")
+                
+                Color("mainYellow")
+                    .frame(width: 400, height: 3)
+                    .padding(EdgeInsets(top: -110, leading: 0, bottom: 0, trailing: 0))
+            }
             
             HomeButtonView()
                 .offset(x: -155)
-                .offset(y: 0)
-            
-            ItemTwoButtonView()
+                .offset(y: -10)
+            ScoreButtonView()
                 .offset(x: -77)
-                .offset(y: 0)
-            ItemThreeButtonView()
-            
+                .offset(y: -10)
+            ShopButtonView()
+                .offset(x: 0)
+                .offset(y: -10)
             ItemFourButtonView()
                 .offset(x: 77)
-                .offset(y: 0)
+                .offset(y: -10)
             ItemFiveButtonView()
                 .offset(x: 155)
-                .offset(y: 0)
+                .offset(y: -10)
         }
     }
 }

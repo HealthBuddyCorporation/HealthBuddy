@@ -47,7 +47,7 @@ struct SideBarInvetoryFoodView: View {
                                 ItemBox(food: food, available: true)
                                     .draggable(food)
                                     .onTapGesture {
-                                        data.handleFoodDrop([food])
+                                        data.feed(food)
                                     }
                             }else{
                                 ItemBox(food: food, available: false)

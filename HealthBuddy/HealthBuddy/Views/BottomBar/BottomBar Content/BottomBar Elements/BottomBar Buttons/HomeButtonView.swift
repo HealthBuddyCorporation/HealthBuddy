@@ -22,7 +22,7 @@ struct HomeButtonView: View {
             Rectangle()
                 .cornerRadius(40)
                 .foregroundColor(.gray)
-                .frame(width: 50, height: 50)
+                .frame(width: 35, height: 35)
                 .onTapGesture {
                 isHomeButtonViewActive = true
                 print("Home Button Tapped!")
@@ -33,7 +33,7 @@ struct HomeButtonView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .foregroundColor(.white)
-                .frame(width: 20, height: 20)
+                .frame(width: 25, height: 25)
         }
     }
 }

@@ -14,7 +14,7 @@ struct MainContentView: View {
     var body: some View {
         ZStack{
             Rectangle()
-                .foregroundColor(.gray)
+                .foregroundColor(.gray.opacity(0.3))
                 .opacity(0.4)
                 .frame(width: 430, height: 706)
                 .background()
@@ -22,34 +22,78 @@ struct MainContentView: View {
             
             VStack{
                 HStack{
-                    Rectangle()
-                        .foregroundColor(.blue)
-                        .frame(width: 50, height: 10)
-                        .padding(.trailing, 20)
+                    VStack{
+                        ZStack{
+                            Rectangle()
+                                .foregroundColor(.gray)
+                                .frame(width: 53, height: 13)
+                                .cornerRadius(3.0)
+                            
+                            Rectangle()
+                                .foregroundColor(.red)
+                                .frame(width: 50, height: 10)
+                                .cornerRadius(3.0)
+                        }
+                        
+                        Text("Health")
+                            .font(.system(size: 12))
+                            .foregroundColor(.black)
+                    }.padding(.trailing)
                     
-                    Rectangle()
-                        .foregroundColor(.yellow)
-                        .frame(width: 50, height: 10)
-                        .padding(.trailing, 20)
+                    VStack{
+                        ZStack{
+                            Rectangle()
+                                .foregroundColor(.gray)
+                                .frame(width: 53, height: 13)
+                                .cornerRadius(3.0)
+                            
+                            Rectangle()
+                                .foregroundColor(.blue)
+                                .frame(width: 50, height: 10)
+                                .cornerRadius(3.0)
+                        }
+                        
+                        Text("Cleanliness")
+                            .font(.system(size: 12))
+                            .foregroundColor(.black)
+                        
+                    }.padding(.trailing)
                     
-                    Rectangle()
-                        .foregroundColor(.orange)
-                        .frame(width: 50, height: 10)
-                        .padding(.trailing, 20)
+                    VStack{
+                        ZStack{
+                            Rectangle()
+                                .foregroundColor(.gray)
+                                .frame(width: 53, height: 13)
+                                .cornerRadius(3.0)
+                            
+                            Rectangle()
+                                .foregroundColor(.green)
+                                .frame(width: 50, height: 10)
+                            
+                        }
+                        
+                        Text("Hungry")
+                            .font(.system(size: 12))
+                            .foregroundColor(.black)
+                        
+                    }.padding(.trailing)
                     
-                    Rectangle()
-                        .foregroundColor(.red)
-                        .frame(width: 50, height: 10)
-                }
-                
-                HStack{
-                    Text("bar 1")
-                        .padding(.trailing, 30)
-                    Text("bar 2")
-                        .padding(.trailing, 30)
-                    Text("bar 3")
-                        .padding(.trailing, 30)
-                    Text("bar 4")
+                    VStack{
+                        ZStack{
+                            Rectangle()
+                                .foregroundColor(.gray)
+                                .frame(width: 53, height: 13)
+                                .cornerRadius(3.0)
+                            
+                            Rectangle()
+                                .foregroundColor(.yellow)
+                                .frame(width: 50, height: 10)
+                            
+                        }
+                        Text("Hapiness")
+                            .font(.system(size: 12))
+                            .foregroundColor(.black)
+                    }
                 }
             }
             .offset(y: -310)

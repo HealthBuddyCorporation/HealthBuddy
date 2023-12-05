@@ -19,8 +19,8 @@ struct ItemFiveButtonView: View {
         ZStack{
             Rectangle()
                 .foregroundColor(.gray)
-                .cornerRadius(40)
-                .frame(width: 50, height: 50)
+                .cornerRadius(37)
+                .frame(width: 35, height: 35)
                 .onTapGesture {
                     isItemFiveViewActive = true
                     print("Item five button tapped!")
@@ -31,7 +31,7 @@ struct ItemFiveButtonView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .foregroundColor(.white)
-                .frame(width: 20, height: 20)
+                .frame(width: 30, height: 30)
         }
     }
 }

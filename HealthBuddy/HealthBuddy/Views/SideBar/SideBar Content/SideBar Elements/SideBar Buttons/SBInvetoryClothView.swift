@@ -19,10 +19,10 @@ struct SBInvetoryClothView: View {
             Image(systemName: "shower.handheld.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 40, height: 40)
-                .foregroundColor(.white)
-                .padding(5)
-                .background(Color.gray)
+                .frame(width: 30, height: 30)
+                .foregroundColor(.gray)
+                .padding(2)
+                .background(Color.customColor)
                 .clipShape(Circle())
         }
     }

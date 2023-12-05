@@ -20,7 +20,7 @@ struct ItemFourButtonView: View {
             Rectangle()
                 .foregroundColor(.gray)
                 .cornerRadius(40)
-                .frame(width: 50, height: 50)
+                .frame(width: 35, height: 35)
                 .onTapGesture {
                     isItemFourViewActive = true
                     print("Item four Button tapped!")
@@ -31,7 +31,7 @@ struct ItemFourButtonView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .foregroundColor(.white)
-                .frame(width: 20, height: 20)
+                .frame(width: 30, height: 30)
         }
     }
 }

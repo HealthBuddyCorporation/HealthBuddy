@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ItemThreeButtonView: View {
+struct ScoreButtonView: View {
     
-    @State private var isItemThreeViewActive = false
+    @State private var isScoreButtonViewActive = false
     
     var body: some View {
-        NavigationLink(destination: ItemThreeView(), isActive: $isItemThreeViewActive){
+        NavigationLink(destination: ScoreView(), isActive: $isScoreButtonViewActive){
             EmptyView()
         }
         .hidden()
@@ -20,22 +20,22 @@ struct ItemThreeButtonView: View {
             Rectangle()
                 .foregroundColor(.gray)
                 .cornerRadius(40)
-                .frame(width: 50, height: 50)
+                .frame(width: 35, height: 35)
                 .onTapGesture {
-                    isItemThreeViewActive = true
-                    print("Item Three Button tapped!")
+                    isScoreButtonViewActive = true
+                    print("Score Button tapped!")
                 }
-                .id("ItemThreeButton")
+                .id("ScoreButton")
             
-            Image(systemName: "wake.circle.fill")
+            Image(systemName: "medal.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .foregroundColor(.white)
-                .frame(width: 20, height: 20)
+                .frame(width: 25, height: 25)
         }
     }
 }
 
 #Preview {
-    ItemThreeButtonView()
+    ScoreButtonView()
 }

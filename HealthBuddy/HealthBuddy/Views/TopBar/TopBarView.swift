@@ -11,10 +11,16 @@ struct TopBarView: View {
     var body: some View {
         
         ZStack{
-            Rectangle()
-                .foregroundColor(.black)
-                .frame(width: 430, height: 126)
-                .id("TopBarContent")
+            VStack{
+                Rectangle()
+                    .foregroundColor(.white)
+                    .frame(width: 400, height: 126)
+                    .id("TopBarContent")
+                
+                Color("mainYellow")
+                    .frame(width: 400, height: 3)
+                    
+            }
             
             ProfilButtonView()
                 .offset(x: -155)

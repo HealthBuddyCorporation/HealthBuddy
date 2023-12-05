@@ -47,7 +47,7 @@ struct SideBarInvetoryClothView: View {
                                 ItemBox(cleaner: cleaner, available: true)
                                     .draggable(cleaner)
                                     .onTapGesture {
-                                        data.handleCleanDrop([cleaner])
+                                        data.cleansed(cleaner)
                                     }
                             }else{
                                 ItemBox(cleaner: cleaner, available: false)
