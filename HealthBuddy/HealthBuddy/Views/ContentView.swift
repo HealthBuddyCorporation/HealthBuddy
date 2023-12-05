@@ -11,6 +11,7 @@ import CoreData
 struct ContentView: View {
     var body: some View {
         MainActivity()
+        //un slash slash qqch
     }
 }
 
