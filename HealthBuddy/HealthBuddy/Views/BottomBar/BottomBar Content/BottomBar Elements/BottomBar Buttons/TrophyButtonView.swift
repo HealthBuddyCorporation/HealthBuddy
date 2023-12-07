@@ -1,5 +1,5 @@
 //
-//  ItemFourButtonView.swift
+//  TrophyButtonView.swift
 //  HealthBudy
 //
 //  Created by Raphael Fassotte on 27/11/2023.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ItemFourButtonView: View {
+struct TrophyButtonView: View {
     
-    @State private var isItemFourViewActive = false
+    @State private var isTrophyViewActive = false
     
     var body: some View {
-        NavigationLink(destination: ItemFourView(), isActive: $isItemFourViewActive){
+        NavigationLink(destination: TrophyView(), isActive: $isTrophyViewActive){
             EmptyView()
         }
         .hidden()
@@ -22,20 +22,20 @@ struct ItemFourButtonView: View {
                 .cornerRadius(40)
                 .frame(width: 35, height: 35)
                 .onTapGesture {
-                    isItemFourViewActive = true
+                    isTrophyViewActive = true
                     print("Item four Button tapped!")
                 }
                 .id("ItemFour")
             
-            Image(systemName: "wake.circle.fill")
+            Image(systemName: "trophy.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .foregroundColor(.white)
-                .frame(width: 30, height: 30)
+                .frame(width: 25, height: 25)
         }
     }
 }
 
 #Preview {
-    ItemFourButtonView()
+    TrophyView()
 }

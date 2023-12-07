@@ -1,5 +1,5 @@
 //
-//  ItemFiveButtonView.swift
+//  MapButtonView.swift
 //  HealthBudy
 //
 //  Created by Raphael Fassotte on 27/11/2023.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ItemFiveButtonView: View {
+struct MapButtonView: View {
     
-    @State private var isItemFiveViewActive = false
+    @State private var isMapViewActive = false
     
     var body: some View {
-        NavigationLink(destination: ItemFiveView(), isActive: $isItemFiveViewActive) {
+        NavigationLink(destination: MapView(), isActive: $isMapViewActive) {
             EmptyView()
         }
         .hidden()
@@ -22,20 +22,20 @@ struct ItemFiveButtonView: View {
                 .cornerRadius(37)
                 .frame(width: 35, height: 35)
                 .onTapGesture {
-                    isItemFiveViewActive = true
-                    print("Item five button tapped!")
+                    isMapViewActive = true
+                    print("Map button tapped!")
                 }
-                .id("ItemFiveButton")
+                .id("MapButton")
             
-            Image(systemName: "wake.circle.fill")
+            Image(systemName: "map.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .foregroundColor(.white)
-                .frame(width: 30, height: 30)
+                .frame(width: 25, height: 25)
         }
     }
 }
 
 #Preview {
-    ItemFiveButtonView()
+    MapButtonView()
 }

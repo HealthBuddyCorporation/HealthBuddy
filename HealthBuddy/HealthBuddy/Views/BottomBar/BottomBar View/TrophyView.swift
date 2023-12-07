@@ -1,5 +1,5 @@
 //
-//  ItemFiveView.swift
+//  TrophyView.swift
 //  HealthBudy
 //
 //  Created by Raphael Fassotte on 27/11/2023.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ItemFiveView: View {
+struct TrophyView: View {
     var body: some View {
-        Text("Item Five View")
+        Text("Trophy View")
     }
 }
 
 #Preview {
-    ItemFiveView()
+    TrophyView()
 }

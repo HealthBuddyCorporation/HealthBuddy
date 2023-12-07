@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		5725F9952B16292B00289B71 /* charLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F98C2B16292B00289B71 /* charLevelView.swift */; };
 		5725F9982B16292B00289B71 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9912B16292B00289B71 /* ProfilView.swift */; };
-		5725F9D42B16294F00289B71 /* ItemFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99E2B16294E00289B71 /* ItemFourView.swift */; };
-		5725F9D52B16294F00289B71 /* ItemFiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99F2B16294E00289B71 /* ItemFiveView.swift */; };
-		5725F9D82B16294F00289B71 /* ItemFiveButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A52B16294E00289B71 /* ItemFiveButtonView.swift */; };
-		5725F9DA2B16294F00289B71 /* ItemFourButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A72B16294E00289B71 /* ItemFourButtonView.swift */; };
+		5725F9D42B16294F00289B71 /* TrophyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99E2B16294E00289B71 /* TrophyView.swift */; };
+		5725F9D52B16294F00289B71 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99F2B16294E00289B71 /* MapView.swift */; };
+		5725F9D82B16294F00289B71 /* MapButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A52B16294E00289B71 /* MapButtonView.swift */; };
+		5725F9DA2B16294F00289B71 /* TrophyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A72B16294E00289B71 /* TrophyButtonView.swift */; };
 		5725F9DB2B16294F00289B71 /* ScoreButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A82B16294E00289B71 /* ScoreButtonView.swift */; };
 		5725F9DF2B16294F00289B71 /* NewAccountAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9AF2B16294E00289B71 /* NewAccountAnimation.swift */; };
 		5725F9E12B16294F00289B71 /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9B42B16294E00289B71 /* SideBarView.swift */; };
@@ -32,6 +32,23 @@
 		5725F9F62B16299100289B71 /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9F52B16299100289B71 /* WatchView.swift */; };
 		5749E3612B1F2BA800DA6482 /* PopupBackgroundBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749E3602B1F2BA800DA6482 /* PopupBackgroundBox.swift */; };
 		5749E3652B1F321E00DA6482 /* PopupContentBackgroundBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749E3642B1F321E00DA6482 /* PopupContentBackgroundBox.swift */; };
+		575EAB952B208F76000E3AEC /* MapSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EAB942B208F76000E3AEC /* MapSearchView.swift */; };
+		575EAB972B2093CB000E3AEC /* MapContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EAB962B2093CB000E3AEC /* MapContentView.swift */; };
+		575EAB992B209401000E3AEC /* MapActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EAB982B209401000E3AEC /* MapActionView.swift */; };
+		575EAB9D2B21A9CF000E3AEC /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 575EAB9C2B21A9CF000E3AEC /* RiveRuntime */; };
+		575EAB9F2B21AA24000E3AEC /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EAB9E2B21AA24000E3AEC /* CharacterView.swift */; };
+		575EABA42B21C67B000E3AEC /* ProfilPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EABA32B21C67B000E3AEC /* ProfilPictureView.swift */; };
+		575EABA62B21C6EE000E3AEC /* ProfilInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EABA52B21C6EE000E3AEC /* ProfilInfoView.swift */; };
+		575EABA82B21C759000E3AEC /* ProfilListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EABA72B21C759000E3AEC /* ProfilListView.swift */; };
+		575EABAA2B21C928000E3AEC /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EABA92B21C928000E3AEC /* ExtensionColor.swift */; };
+		575EABAD2B21C9B4000E3AEC /* SettingsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EABAC2B21C9B4000E3AEC /* SettingsInfoView.swift */; };
+		575EABAF2B21C9C1000E3AEC /* SettingsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EABAE2B21C9C1000E3AEC /* SettingsListView.swift */; };
+		575EABB22B21D0A9000E3AEC /* HealthBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EABB12B21D0A8000E3AEC /* HealthBarView.swift */; };
+		575EABB42B21D156000E3AEC /* CleanlinessBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EABB32B21D156000E3AEC /* CleanlinessBarView.swift */; };
+		575EABB62B21D282000E3AEC /* HungryBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EABB52B21D282000E3AEC /* HungryBarView.swift */; };
+		575EABB82B21D329000E3AEC /* HappynessBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EABB72B21D329000E3AEC /* HappynessBarView.swift */; };
+		575EABBA2B21D626000E3AEC /* LifeCycleBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EABB92B21D626000E3AEC /* LifeCycleBarView.swift */; };
+		575EABBC2B21DB05000E3AEC /* MoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EABBB2B21DB05000E3AEC /* MoneyView.swift */; };
 		57ABEDC82B1E58700096F920 /* DeathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABEDC72B1E58700096F920 /* DeathView.swift */; };
 		57ABEDCB2B1E589C0096F920 /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABEDCA2B1E589C0096F920 /* SleepView.swift */; };
 		F1619AD82AB8280D00D8FCEE /* HealthBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */; };
@@ -92,13 +109,13 @@
 		5725F9922B16292B00289B71 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		5725F99C2B16294E00289B71 /* ShopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		5725F99D2B16294E00289B71 /* MainActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainActivity.swift; sourceTree = "<group>"; };
-		5725F99E2B16294E00289B71 /* ItemFourView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemFourView.swift; sourceTree = "<group>"; };
-		5725F99F2B16294E00289B71 /* ItemFiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemFiveView.swift; sourceTree = "<group>"; };
+		5725F99E2B16294E00289B71 /* TrophyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrophyView.swift; sourceTree = "<group>"; };
+		5725F99F2B16294E00289B71 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		5725F9A02B16294E00289B71 /* ScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		5725F9A22B16294E00289B71 /* BottomBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
-		5725F9A52B16294E00289B71 /* ItemFiveButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemFiveButtonView.swift; sourceTree = "<group>"; };
+		5725F9A52B16294E00289B71 /* MapButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapButtonView.swift; sourceTree = "<group>"; };
 		5725F9A62B16294E00289B71 /* ShopButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopButtonView.swift; sourceTree = "<group>"; };
-		5725F9A72B16294E00289B71 /* ItemFourButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemFourButtonView.swift; sourceTree = "<group>"; };
+		5725F9A72B16294E00289B71 /* TrophyButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrophyButtonView.swift; sourceTree = "<group>"; };
 		5725F9A82B16294E00289B71 /* ScoreButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreButtonView.swift; sourceTree = "<group>"; };
 		5725F9A92B16294E00289B71 /* HomeButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeButtonView.swift; sourceTree = "<group>"; };
 		5725F9AB2B16294E00289B71 /* MainContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
@@ -128,6 +145,23 @@
 		5725F9F52B16299100289B71 /* WatchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
 		5749E3602B1F2BA800DA6482 /* PopupBackgroundBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupBackgroundBox.swift; sourceTree = "<group>"; };
 		5749E3642B1F321E00DA6482 /* PopupContentBackgroundBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupContentBackgroundBox.swift; sourceTree = "<group>"; };
+		575EAB942B208F76000E3AEC /* MapSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchView.swift; sourceTree = "<group>"; };
+		575EAB962B2093CB000E3AEC /* MapContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContentView.swift; sourceTree = "<group>"; };
+		575EAB982B209401000E3AEC /* MapActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapActionView.swift; sourceTree = "<group>"; };
+		575EAB9E2B21AA24000E3AEC /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		575EABA02B21ACA1000E3AEC /* mixing_animations.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = mixing_animations.riv; sourceTree = "<group>"; };
+		575EABA32B21C67B000E3AEC /* ProfilPictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilPictureView.swift; sourceTree = "<group>"; };
+		575EABA52B21C6EE000E3AEC /* ProfilInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilInfoView.swift; sourceTree = "<group>"; };
+		575EABA72B21C759000E3AEC /* ProfilListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilListView.swift; sourceTree = "<group>"; };
+		575EABA92B21C928000E3AEC /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
+		575EABAC2B21C9B4000E3AEC /* SettingsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInfoView.swift; sourceTree = "<group>"; };
+		575EABAE2B21C9C1000E3AEC /* SettingsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListView.swift; sourceTree = "<group>"; };
+		575EABB12B21D0A8000E3AEC /* HealthBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBarView.swift; sourceTree = "<group>"; };
+		575EABB32B21D156000E3AEC /* CleanlinessBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanlinessBarView.swift; sourceTree = "<group>"; };
+		575EABB52B21D282000E3AEC /* HungryBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HungryBarView.swift; sourceTree = "<group>"; };
+		575EABB72B21D329000E3AEC /* HappynessBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappynessBarView.swift; sourceTree = "<group>"; };
+		575EABB92B21D626000E3AEC /* LifeCycleBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCycleBarView.swift; sourceTree = "<group>"; };
+		575EABBB2B21DB05000E3AEC /* MoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyView.swift; sourceTree = "<group>"; };
 		57ABEDC72B1E58700096F920 /* DeathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathView.swift; sourceTree = "<group>"; };
 		57ABEDCA2B1E589C0096F920 /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
 		F1619AD42AB8280D00D8FCEE /* HealthBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575EAB9D2B21A9CF000E3AEC /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,8 +251,8 @@
 		5725F9902B16292B00289B71 /* TopBar View */ = {
 			isa = PBXGroup;
 			children = (
-				5725F9912B16292B00289B71 /* ProfilView.swift */,
-				5725F9922B16292B00289B71 /* SettingsView.swift */,
+				575EABAB2B21C94B000E3AEC /* Profil */,
+				575EABB02B21CB26000E3AEC /* Settings */,
 			);
 			path = "TopBar View";
 			sourceTree = "<group>";
@@ -236,8 +271,8 @@
 			children = (
 				5725F9A02B16294E00289B71 /* ScoreView.swift */,
 				5725F99C2B16294E00289B71 /* ShopView.swift */,
-				5725F99E2B16294E00289B71 /* ItemFourView.swift */,
-				5725F99F2B16294E00289B71 /* ItemFiveView.swift */,
+				5725F99E2B16294E00289B71 /* TrophyView.swift */,
+				575EAB9A2B209446000E3AEC /* Map */,
 			);
 			path = "BottomBar View";
 			sourceTree = "<group>";
@@ -266,8 +301,8 @@
 				5725F9A92B16294E00289B71 /* HomeButtonView.swift */,
 				5725F9A82B16294E00289B71 /* ScoreButtonView.swift */,
 				5725F9A62B16294E00289B71 /* ShopButtonView.swift */,
-				5725F9A52B16294E00289B71 /* ItemFiveButtonView.swift */,
-				5725F9A72B16294E00289B71 /* ItemFourButtonView.swift */,
+				5725F9A72B16294E00289B71 /* TrophyButtonView.swift */,
+				5725F9A52B16294E00289B71 /* MapButtonView.swift */,
 			);
 			path = "BottomBar Buttons";
 			sourceTree = "<group>";
@@ -421,6 +456,38 @@
 			path = "Home Activity Model";
 			sourceTree = "<group>";
 		};
+		575EAB9A2B209446000E3AEC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				5725F99F2B16294E00289B71 /* MapView.swift */,
+				575EAB982B209401000E3AEC /* MapActionView.swift */,
+				575EAB962B2093CB000E3AEC /* MapContentView.swift */,
+				575EAB942B208F76000E3AEC /* MapSearchView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		575EABAB2B21C94B000E3AEC /* Profil */ = {
+			isa = PBXGroup;
+			children = (
+				5725F9912B16292B00289B71 /* ProfilView.swift */,
+				575EABA32B21C67B000E3AEC /* ProfilPictureView.swift */,
+				575EABA52B21C6EE000E3AEC /* ProfilInfoView.swift */,
+				575EABA72B21C759000E3AEC /* ProfilListView.swift */,
+			);
+			path = Profil;
+			sourceTree = "<group>";
+		};
+		575EABB02B21CB26000E3AEC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5725F9922B16292B00289B71 /* SettingsView.swift */,
+				575EABAC2B21C9B4000E3AEC /* SettingsInfoView.swift */,
+				575EABAE2B21C9C1000E3AEC /* SettingsListView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		57ABEDC62B1E58510096F920 /* Death */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,9 +529,11 @@
 				F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */,
 				5725F9F52B16299100289B71 /* WatchView.swift */,
 				F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */,
+				575EABA02B21ACA1000E3AEC /* mixing_animations.riv */,
 				F1619AE02AB8280E00D8FCEE /* Persistence.swift */,
 				F1619AE22AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld */,
 				F1619ADD2AB8280E00D8FCEE /* Preview Content */,
+				575EABA92B21C928000E3AEC /* ExtensionColor.swift */,
 			);
 			path = HealthBuddy;
 			sourceTree = "<group>";
@@ -562,6 +631,13 @@
 			isa = PBXGroup;
 			children = (
 				5725F9AB2B16294E00289B71 /* MainContentView.swift */,
+				575EABBB2B21DB05000E3AEC /* MoneyView.swift */,
+				575EABB72B21D329000E3AEC /* HappynessBarView.swift */,
+				575EABB52B21D282000E3AEC /* HungryBarView.swift */,
+				575EABB32B21D156000E3AEC /* CleanlinessBarView.swift */,
+				575EABB12B21D0A8000E3AEC /* HealthBarView.swift */,
+				575EABB92B21D626000E3AEC /* LifeCycleBarView.swift */,
+				575EAB9E2B21AA24000E3AEC /* CharacterView.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -599,6 +675,9 @@
 			dependencies = (
 			);
 			name = HealthBuddy;
+			packageProductDependencies = (
+				575EAB9C2B21A9CF000E3AEC /* RiveRuntime */,
+			);
 			productName = HealthBuddy;
 			productReference = F1619AD42AB8280D00D8FCEE /* HealthBuddy.app */;
 			productType = "com.apple.product-type.application";
@@ -627,6 +706,9 @@
 				Base,
 			);
 			mainGroup = F1619ACB2AB8280D00D8FCEE;
+			packageReferences = (
+				575EAB9B2B21A9CF000E3AEC /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = F1619AD52AB8280D00D8FCEE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -664,13 +746,17 @@
 				F1EA984A2B189499005309D2 /* ShopButtonView.swift in Sources */,
 				F1EA98582B18C238005309D2 /* ItemBox.swift in Sources */,
 				5725F9DB2B16294F00289B71 /* ScoreButtonView.swift in Sources */,
+				575EABAD2B21C9B4000E3AEC /* SettingsInfoView.swift in Sources */,
+				575EABB42B21D156000E3AEC /* CleanlinessBarView.swift in Sources */,
 				5725F9E62B16294F00289B71 /* SBItemFiveView.swift in Sources */,
 				5725F9DF2B16294F00289B71 /* NewAccountAnimation.swift in Sources */,
-				5725F9D42B16294F00289B71 /* ItemFourView.swift in Sources */,
+				5725F9D42B16294F00289B71 /* TrophyView.swift in Sources */,
+				575EABA62B21C6EE000E3AEC /* ProfilInfoView.swift in Sources */,
 				5725F9ED2B16294F00289B71 /* SideBarItemFourView.swift in Sources */,
 				5725F9F42B16294F00289B71 /* HomeActivity.swift in Sources */,
-				5725F9DA2B16294F00289B71 /* ItemFourButtonView.swift in Sources */,
+				5725F9DA2B16294F00289B71 /* TrophyButtonView.swift in Sources */,
 				F1EA984C2B1894F1005309D2 /* SBItemSixView.swift in Sources */,
+				575EAB952B208F76000E3AEC /* MapSearchView.swift in Sources */,
 				57ABEDC82B1E58700096F920 /* DeathView.swift in Sources */,
 				F1EA98402B189425005309D2 /* ProfilButtonView.swift in Sources */,
 				5725F9F22B16294F00289B71 /* LoginPopUp.swift in Sources */,
@@ -678,21 +764,26 @@
 				F1EA983F2B1893FC005309D2 /* TopBarView.swift in Sources */,
 				5725F9EC2B16294F00289B71 /* SideBarInvetoryFoodView.swift in Sources */,
 				5725F9E42B16294F00289B71 /* SBInvetoryClothView.swift in Sources */,
-				5725F9D52B16294F00289B71 /* ItemFiveView.swift in Sources */,
+				5725F9D52B16294F00289B71 /* MapView.swift in Sources */,
+				575EAB972B2093CB000E3AEC /* MapContentView.swift in Sources */,
 				F1EA98532B189532005309D2 /* NewAccountPopup.swift in Sources */,
 				5725F9E12B16294F00289B71 /* SideBarView.swift in Sources */,
 				5725F9982B16292B00289B71 /* ProfilView.swift in Sources */,
 				F1EA98672B18D5D3005309D2 /* SideBarInventoryCleanerView.swift in Sources */,
 				F1619AE12AB8280E00D8FCEE /* Persistence.swift in Sources */,
+				575EABB22B21D0A9000E3AEC /* HealthBarView.swift in Sources */,
 				F1EA98552B18C0B7005309D2 /* Data+Food.swift in Sources */,
 				F1B740962B0C99050084417F /* Buddy.swift in Sources */,
+				575EABAF2B21C9C1000E3AEC /* SettingsListView.swift in Sources */,
 				5725F9F02B16294F00289B71 /* LoginAnimation.swift in Sources */,
 				F1619AE42AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld in Sources */,
 				F1B740982B0C99050084417F /* Food.swift in Sources */,
 				F1B740A12B0C990B0084417F /* BuddyStat.swift in Sources */,
 				F1B740A02B0C990B0084417F /* CircledFood.swift in Sources */,
+				575EABBC2B21DB05000E3AEC /* MoneyView.swift in Sources */,
 				F1B7409F2B0C990B0084417F /* MainTestingView.swift in Sources */,
 				F1EA98432B18944C005309D2 /* SettingsView.swift in Sources */,
+				575EABA82B21C759000E3AEC /* ProfilListView.swift in Sources */,
 				F1619AD82AB8280D00D8FCEE /* HealthBuddyApp.swift in Sources */,
 				F1B740A22B0C990B0084417F /* ContentView.swift in Sources */,
 				F1EA98422B189430005309D2 /* charNameView.swift in Sources */,
@@ -702,10 +793,12 @@
 				F1B740952B0C99050084417F /* DataModel.swift in Sources */,
 				5749E3612B1F2BA800DA6482 /* PopupBackgroundBox.swift in Sources */,
 				5749E3652B1F321E00DA6482 /* PopupContentBackgroundBox.swift in Sources */,
+				575EABBA2B21D626000E3AEC /* LifeCycleBarView.swift in Sources */,
 				5725F9952B16292B00289B71 /* charLevelView.swift in Sources */,
 				F1EA98492B189493005309D2 /* BottomBarView.swift in Sources */,
 				F1EA98522B18952F005309D2 /* NewAccountPage.swift in Sources */,
-				5725F9D82B16294F00289B71 /* ItemFiveButtonView.swift in Sources */,
+				5725F9D82B16294F00289B71 /* MapButtonView.swift in Sources */,
+				575EAB992B209401000E3AEC /* MapActionView.swift in Sources */,
 				5725F9EE2B16294F00289B71 /* SideBarItemSixView.swift in Sources */,
 				F1EA98472B18948A005309D2 /* MainActivity.swift in Sources */,
 				F1EA98652B18D50F005309D2 /* SBInventoryCleanerView.swift in Sources */,
@@ -715,10 +808,15 @@
 				5725F9F62B16299100289B71 /* WatchView.swift in Sources */,
 				F1EA98512B189528005309D2 /* LoginPage.swift in Sources */,
 				F1EA98482B189490005309D2 /* ScoreView.swift in Sources */,
+				575EABB62B21D282000E3AEC /* HungryBarView.swift in Sources */,
 				F1AC8A792B1DCFB600236EA7 /* Droppable.swift in Sources */,
+				575EABB82B21D329000E3AEC /* HappynessBarView.swift in Sources */,
+				575EAB9F2B21AA24000E3AEC /* CharacterView.swift in Sources */,
 				5725F9E52B16294F00289B71 /* SBInvetoryAccessoriesView.swift in Sources */,
 				F1EA98412B189428005309D2 /* SettingsButtonView.swift in Sources */,
+				575EABA42B21C67B000E3AEC /* ProfilPictureView.swift in Sources */,
 				5725F9EB2B16294F00289B71 /* SideBarItemFiveView.swift in Sources */,
+				575EABAA2B21C928000E3AEC /* ExtensionColor.swift in Sources */,
 				5725F9E32B16294F00289B71 /* SBInvetoryFoodView.swift in Sources */,
 				F1EA984E2B189500005309D2 /* SideBarInvetoryClothView.swift in Sources */,
 				57ABEDCB2B1E589C0096F920 /* SleepView.swift in Sources */,
@@ -923,6 +1021,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		575EAB9B2B21A9CF000E3AEC /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		575EAB9C2B21A9CF000E3AEC /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 575EAB9B2B21A9CF000E3AEC /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F1619AE22AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld */ = {

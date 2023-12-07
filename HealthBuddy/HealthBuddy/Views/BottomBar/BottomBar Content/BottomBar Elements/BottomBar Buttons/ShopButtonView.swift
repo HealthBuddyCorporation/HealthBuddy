@@ -1,5 +1,5 @@
 //
-//  ItemTwoButtonView.swift
+//  ShopButtonView.swift
 //  HealthBudy
 //
 //  Created by Raphael Fassotte on 27/11/2023.

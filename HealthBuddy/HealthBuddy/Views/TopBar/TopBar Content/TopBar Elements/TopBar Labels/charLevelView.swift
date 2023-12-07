@@ -9,6 +9,7 @@ import SwiftUI
 
 struct charLevelView: View {
     var body: some View {
+        
         Text("Character Level")
             .foregroundColor(.black)
             .offset(y: -60)
