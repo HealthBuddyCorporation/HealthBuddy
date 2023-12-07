@@ -6,20 +6,24 @@
 //
 
 import SwiftUI
+import RiveRuntime
 
 struct MainContentView: View {
     @EnvironmentObject var data :DataModel
     @State var isTargeted = false
+    @State var isMainViewActive = true
     
     var body: some View {
+        
         ZStack{
-            Rectangle()
-                .foregroundColor(.gray.opacity(0.3))
-                .opacity(0.4)
-                .frame(width: 430, height: 706)
-                .background()
+            Image("gym")
+                .resizable()
+                .frame(width: 400, height: 706)
+                .aspectRatio(contentMode: .fill)
                 .id("MainContent")
             
+            MoneyView()
+                .offset(y: -338)
             VStack{
                 HStack{
                     VStack{
@@ -98,11 +102,30 @@ struct MainContentView: View {
             }
             .offset(y: -310)
             
-            Rectangle()
-                .foregroundColor(.black)
-                .frame(width: 100, height: 100)
-                .offset(y: 200)
-                .dropDestination(for: Droppable.self) { items, location in
+            LifeCycleBarView()
+                .offset(y: -300)
+            
+            Text("Health")
+                .padding(EdgeInsets(top: -285, leading: -164, bottom: 0, trailing: 0))
+                .font(.system(size: 10))
+            
+            Text("Hungry")
+                .padding(EdgeInsets(top: -285, leading: -65, bottom: 0, trailing: 0))
+                .font(.system(size: 10))
+            
+            Text("Cleanliness")
+                .padding(EdgeInsets(top: -285, leading: 103, bottom: 0, trailing: 0))
+                .font(.system(size: 10))
+            
+            Text("Happyness")
+                .padding(EdgeInsets(top: -285, leading: 300, bottom: 0, trailing: 0))
+                .font(.system(size: 10))
+            
+            CharacterView()
+                .frame(width: 200, height: 200)
+                .offset(y: 150)
+                .dropDestination(for: Droppable.self) {
+                    items, location in
                     print(items.self)
                     return data.handleDrop(items)
                 } isTargeted: { targeted in

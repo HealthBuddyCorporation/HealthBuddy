@@ -9,6 +9,7 @@ import SwiftUI
 
 struct charNameView: View {
     var body: some View {
+        
         Text("Tamagochi Name")
             .font(.title2)
             .foregroundColor(.black)

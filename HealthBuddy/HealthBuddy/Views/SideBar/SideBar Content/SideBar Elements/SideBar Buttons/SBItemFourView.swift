@@ -15,10 +15,10 @@ struct SBItemFourView: View {
         Button(action: {
             isPopoverPresented.toggle()
         }) {
-            Image(systemName: "wake.circle.fill")
+            Image(systemName: "hanger")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 30, height: 30)
+                .frame(width: 25, height: 25)
                 .foregroundColor(.gray)
                 .padding(2)
                 .background(Color.customColor)

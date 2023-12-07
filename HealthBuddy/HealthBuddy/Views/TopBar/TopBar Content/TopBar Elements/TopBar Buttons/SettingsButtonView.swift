@@ -9,11 +9,17 @@ import SwiftUI
 
 struct SettingsButtonView: View {
     
-    @State private var isPopoverPresented = false
+    @State private var isSettingsViewActive = false
 
        var body: some View {
+           
+           NavigationLink(destination: SettingsView(isActive: $isSettingsViewActive), isActive: $isSettingsViewActive) {
+               EmptyView()
+           }
+            .hidden()
+           
            Button(action: {
-               isPopoverPresented.toggle()
+               isSettingsViewActive.toggle()
            }) {
                Image(systemName: "gear.circle.fill")
                    .resizable()
@@ -24,17 +30,6 @@ struct SettingsButtonView: View {
                    .background(Color.gray)
                    .clipShape(Circle())
            }
-           .popover(isPresented: $isPopoverPresented, arrowEdge: .top, content: {
-               VStack {
-                   SettingsView()
-                       .padding()
-                   // Ajoutez d'autres éléments au besoin
-               }
-               .onTapGesture {
-                   // Fermer la popover lorsqu'on clique à l'extérieur
-                   isPopoverPresented = false
-               }
-           })
        }
    }
 

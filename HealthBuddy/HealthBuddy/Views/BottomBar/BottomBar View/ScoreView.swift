@@ -1,5 +1,5 @@
 //
-//  ItemThreeView.swift
+//  ScoreView.swift
 //  HealthBudy
 //
 //  Created by Raphael Fassotte on 27/11/2023.
@@ -10,12 +10,16 @@ import SwiftUI
 struct ScoreView: View {
     
     @State private var selectedSegment = 0
+    
     let nationalItems = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6","Item 7", "Item 8", "Item 9", "Item 10"]
+    
     let segment2Texts = ["Text 1", "Text 2", "Text 3"]
+    
     let segment3Image = Image(systemName: "photo")
 
     
     var body: some View {
+        
         VStack {
             
             Text("LeaderBoard")
@@ -31,6 +35,49 @@ struct ScoreView: View {
 
                    switch selectedSegment {
                    case 0:
+                       
+                       HStack{
+                           VStack{
+                               Text("User 3")
+                                   .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 10))
+                               
+                               ProfilPictureView()
+                                   .padding(EdgeInsets(top: 0, leading: 0, bottom: -90, trailing: 10))
+                           }
+                           
+                           VStack{
+                               Text("User 1")
+                                   .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 20))
+                           
+                               ProfilPictureView()
+                               .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 20))
+                           }
+                           
+                           VStack{
+                               Text("User 2")
+                                   .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: -10))
+                               ProfilPictureView()
+                                   .padding(EdgeInsets(top: 0, leading: 0, bottom: -40, trailing: -10))
+                           }
+                       }
+                           HStack{
+                               Rectangle()
+                                   .frame(width: 100, height: 40)
+                                   .cornerRadius(2)
+                                   .foregroundColor(.gray)
+                                   .padding(EdgeInsets(top: 40, leading: 0, bottom: 0, trailing: -9))
+                               Rectangle()
+                                   .frame(width: 100, height: 80)
+                                   .cornerRadius(2)
+                                   .foregroundColor(.gray)
+                                   .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                               Rectangle()
+                                   .frame(width: 100, height: 60)
+                                   .cornerRadius(2)
+                                   .foregroundColor(.gray)
+                                   .padding(EdgeInsets(top: 20, leading: -9, bottom: 0, trailing: 0))
+                           }
+                       
                        List(nationalItems, id: \.self) { item in
                            
                            DisclosureGroup(item) {
@@ -40,7 +87,7 @@ struct ScoreView: View {
                                }
                                HStack{
                                    Text("Record")
-                                   Text("2300 Budd")
+                                   Text("2300 Buddys")
                                }
                                HStack{
                                    Text("Like :")
