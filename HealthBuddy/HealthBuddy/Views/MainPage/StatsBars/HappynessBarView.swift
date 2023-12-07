@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HappynessBarView: View {
+    @EnvironmentObject var data :DataModel
     var body: some View {
         
         ZStack{
@@ -18,9 +19,9 @@ struct HappynessBarView: View {
             
             Rectangle()
                 .foregroundColor(.yellow)
-                .frame(width: 70, height: 20)
+                .frame(width: 70 * (data.buddy.happiness/100), height: 20)
             
-            Text("percent")
+            Text("\(String(format: "%.0f", data.buddy.happiness)) %")
                 .font(.system(size: 10))
                 .foregroundColor(.white)
         }

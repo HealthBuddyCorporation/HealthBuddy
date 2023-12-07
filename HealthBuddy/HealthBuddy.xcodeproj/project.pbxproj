@@ -385,15 +385,15 @@
 		5725F9B72B16294E00289B71 /* SideBar Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				5725F9B82B16294E00289B71 /* SBItemSixView.swift */,
 				5725F9B92B16294E00289B71 /* SBInvetoryFoodView.swift */,
+				F1EA98642B18D50F005309D2 /* SBInventoryCleanerView.swift */,
+				F1E8F8D12B21D3C200B08B85 /* SBInventoryToyView.swift */,
 				5725F9BA2B16294E00289B71 /* SBInvetoryClothView.swift */,
 				5725F9BB2B16294E00289B71 /* SBInvetoryAccessoriesView.swift */,
+				5725F9B82B16294E00289B71 /* SBItemSixView.swift */,
 				5725F9BD2B16294E00289B71 /* SBItemFourView.swift */,
 				5725F9BC2B16294E00289B71 /* SBItemFiveView.swift */,
 				5725F9BE2B16294E00289B71 /* SBItemSevenView.swift */,
-				F1EA98642B18D50F005309D2 /* SBInventoryCleanerView.swift */,
-				F1E8F8D12B21D3C200B08B85 /* SBInventoryToyView.swift */,
 			);
 			path = "SideBar Buttons";
 			sourceTree = "<group>";
@@ -401,16 +401,16 @@
 		5725F9BF2B16294E00289B71 /* SideBar View */ = {
 			isa = PBXGroup;
 			children = (
-				F1EA98562B18C1B7005309D2 /* PopupItems */,
+				5725F9C32B16294E00289B71 /* SideBarInvetoryFoodView.swift */,
+				F1EA98662B18D5D3005309D2 /* SideBarInventoryCleanerView.swift */,
+				F1E8F8CF2B21D2A300B08B85 /* SideBarInventoryToyView.swift */,
 				5725F9C02B16294E00289B71 /* SideBarInvetoryClothView.swift */,
 				5725F9C12B16294E00289B71 /* SideBarInvetoryAccessoriesView.swift */,
+				F1EA98562B18C1B7005309D2 /* PopupItems */,
 				5725F9C22B16294E00289B71 /* SideBarItemFiveView.swift */,
-				5725F9C32B16294E00289B71 /* SideBarInvetoryFoodView.swift */,
 				5725F9C42B16294E00289B71 /* SideBarItemFourView.swift */,
 				5725F9C52B16294E00289B71 /* SideBarItemSixView.swift */,
 				5725F9C62B16294E00289B71 /* SideBarItemSevenView.swift */,
-				F1EA98662B18D5D3005309D2 /* SideBarInventoryCleanerView.swift */,
-				F1E8F8CF2B21D2A300B08B85 /* SideBarInventoryToyView.swift */,
 			);
 			path = "SideBar View";
 			sourceTree = "<group>";
@@ -647,17 +647,25 @@
 			path = TestViews;
 			sourceTree = "<group>";
 		};
+		F1E8F8D42B21F77F00B08B85 /* StatsBars */ = {
+			isa = PBXGroup;
+			children = (
+				575EABB72B21D329000E3AEC /* HappynessBarView.swift */,
+				575EABB52B21D282000E3AEC /* HungryBarView.swift */,
+				575EABB32B21D156000E3AEC /* CleanlinessBarView.swift */,
+				575EABB12B21D0A8000E3AEC /* HealthBarView.swift */,
+			);
+			path = StatsBars;
+			sourceTree = "<group>";
+		};
 		F1EA983E2B1890EE005309D2 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
 				5725F9AB2B16294E00289B71 /* MainContentView.swift */,
 				575EABBB2B21DB05000E3AEC /* MoneyView.swift */,
-				575EABB72B21D329000E3AEC /* HappynessBarView.swift */,
-				575EABB52B21D282000E3AEC /* HungryBarView.swift */,
-				575EABB32B21D156000E3AEC /* CleanlinessBarView.swift */,
-				575EABB12B21D0A8000E3AEC /* HealthBarView.swift */,
-				575EABB92B21D626000E3AEC /* LifeCycleBarView.swift */,
 				575EAB9E2B21AA24000E3AEC /* CharacterView.swift */,
+				575EABB92B21D626000E3AEC /* LifeCycleBarView.swift */,
+				F1E8F8D42B21F77F00B08B85 /* StatsBars */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
