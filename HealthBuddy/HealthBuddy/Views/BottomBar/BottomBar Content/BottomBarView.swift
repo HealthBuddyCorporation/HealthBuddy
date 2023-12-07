@@ -32,10 +32,10 @@ struct BottomBarView: View {
             ShopButtonView()
                 .offset(x: 0)
                 .offset(y: -10)
-            ItemFourButtonView()
+            TrophyButtonView()
                 .offset(x: 77)
                 .offset(y: -10)
-            ItemFiveButtonView()
+            MapButtonView()
                 .offset(x: 155)
                 .offset(y: -10)
         }
