@@ -31,11 +31,11 @@ struct MainContentView: View {
                             
                             Rectangle()
                                 .foregroundColor(.red)
-                                .frame(width: 50, height: 10)
+                                .frame(width: 50 * (data.buddy.hp/data.buddy.maxHP), height: 10)
                                 .cornerRadius(3.0)
                         }
                         
-                        Text("Health")
+                        Text("\(String(format: "%.0f", data.buddy.hp))/ \(String(format: "%.0f", data.buddy.maxHP))")
                             .font(.system(size: 12))
                             .foregroundColor(.black)
                     }.padding(.trailing)
@@ -49,18 +49,18 @@ struct MainContentView: View {
                             
                             Rectangle()
                                 .foregroundColor(.blue)
-                                .frame(width: 50, height: 10)
+                                .frame(width: 50 * (data.buddy.hygiene/100), height: 10)
                                 .cornerRadius(3.0)
                         }
                         
-                        Text("Cleanliness")
+                        Text("\(String(format: "%.0f", data.buddy.hygiene)) %")
                             .font(.system(size: 12))
                             .foregroundColor(.black)
                         
                     }.padding(.trailing)
                     
                     VStack{
-                        ZStack{
+                        ZStack(alignment: .leading){
                             Rectangle()
                                 .foregroundColor(.gray)
                                 .frame(width: 53, height: 13)
@@ -68,11 +68,11 @@ struct MainContentView: View {
                             
                             Rectangle()
                                 .foregroundColor(.green)
-                                .frame(width: 50, height: 10)
+                                .frame(width: 50 * (data.buddy.nutrition/100), height: 10)
                             
                         }
                         
-                        Text("Hungry")
+                        Text("\(String(format: "%.0f", data.buddy.nutrition)) %")
                             .font(.system(size: 12))
                             .foregroundColor(.black)
                         
@@ -87,10 +87,10 @@ struct MainContentView: View {
                             
                             Rectangle()
                                 .foregroundColor(.yellow)
-                                .frame(width: 50, height: 10)
+                                .frame(width: 50 * (data.buddy.happiness/100), height: 10)
                             
                         }
-                        Text("Hapiness")
+                        Text("\(String(format: "%.0f", data.buddy.happiness)) %")
                             .font(.system(size: 12))
                             .foregroundColor(.black)
                     }

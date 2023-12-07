@@ -8,16 +8,12 @@
 import SwiftUI
 
 struct DeathView: View {
+    @EnvironmentObject var data :DataModel
     var body: some View {
         ZStack{
             PopupBackgroundBox()
             
-            ZStack{
-                Rectangle()
-            }
             VStack{
-                
-                
                 VStack{
                     Text ("Qu'avez vous fait?")
                         .foregroundColor(.white)
@@ -83,10 +79,9 @@ struct DeathView: View {
                 }
                 
                 Button("Ouvrir un oeuf") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                    data.buddy.hp = 100
+                    data.buddy.isAlive = true
                 }
-                
-                
             }
         }
     }

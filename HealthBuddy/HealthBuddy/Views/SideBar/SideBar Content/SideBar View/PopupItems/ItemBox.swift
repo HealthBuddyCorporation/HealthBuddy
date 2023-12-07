@@ -10,6 +10,7 @@ import SwiftUI
 struct ItemBox: View {
     var food :Food?
     var cleaner :Cleaner?
+    var toy :Toy?
     var available :Bool
     
     var body: some View {
@@ -27,6 +28,19 @@ struct ItemBox: View {
             .cornerRadius(8)
         }
         if let item = cleaner{
+            VStack{
+                Text(item.name)
+                Text("quantity: \(item.quantity)")
+                    .font(.caption2)
+            }
+            .frame(width: 50, height: 50)
+            .padding()
+            .background(available ? Color.white : Color.red)
+            .foregroundColor(Color.white)
+            .opacity(0.5)
+            .cornerRadius(8)
+        }
+        if let item = toy{
             VStack{
                 Text(item.name)
                 Text("quantity: \(item.quantity)")

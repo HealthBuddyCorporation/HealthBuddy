@@ -12,7 +12,7 @@ struct SideBarView: View {
     @State private var isSideBarVisible = false
     @State private var isFoodPresented = false
     @State private var isCleanerPresented = false
-    @State private var isAccessoriesPresented = false
+    @State private var isToyPresented = false
     
     var body: some View {
         ZStack{
@@ -36,13 +36,6 @@ struct SideBarView: View {
                     .offset(y: 0)
                     .id("")
                     .animation(.easeInOut(duration: 0.2))
-                    .onTapGesture {
-                        isSideBarVisible.toggle()
-                        if isSideBarVisible{
-                            isFoodPresented = false
-                            
-                        }
-                    }
                 
                 Image(systemName: isSideBarVisible ? "arrowtriangle.forward.fill" : "arrowtriangle.backward.fill")
                     .resizable()
@@ -51,6 +44,12 @@ struct SideBarView: View {
                     .offset(x: isSideBarVisible ? 120 : 187)
                     .animation(.easeInOut(duration: 0.2))
                     
+            }.onTapGesture {
+                isSideBarVisible.toggle()
+                if isSideBarVisible{
+                    isFoodPresented = false
+                    isCleanerPresented = false
+                }
             }
             
             if(isFoodPresented){
@@ -61,8 +60,8 @@ struct SideBarView: View {
                 SideBarInventoryCleanerView(isShown: $isCleanerPresented, isBarVisible: $isSideBarVisible)
             }
             
-            if(isAccessoriesPresented){
-                SideBarInvetoryAccessoriesView()
+            if(isToyPresented){
+                SideBarInventoryToyView(isShown: $isFoodPresented, isBarVisible: $isSideBarVisible)
             }
             
             VStack{
@@ -76,7 +75,7 @@ struct SideBarView: View {
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.2))
                 
-                SBInvetoryAccessoriesView(isPopoverPresented: $isAccessoriesPresented)
+                SBInventoryToyView(isPopoverPresented: $isToyPresented, isVisible: $isSideBarVisible)
                     .offset(y: -15)
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.2))

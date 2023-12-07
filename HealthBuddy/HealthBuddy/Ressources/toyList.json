@@ -1,66 +1,68 @@
 [
     {
         "id": 1,
-        "name": "Carrot",
+        "name": "GameBoy",
         "quantity": 3,
-        "foodValue": 10.0,
-        "weightValue": 2.0,
-        "happinessValue": -4
+        "cleanValue": -5.0,
+        "weightValue": 10.0,
+        "healthValue": -10.0,
+        "happinessValue": 20
     },
     {
         "id": 2,
-        "name": "Meat",
+        "name": "Cordes",
         "quantity": 1,
-        "foodValue": 30.0,
-        "weightValue": 10.0,
+        "cleanValue": -10.0,
+        "weightValue": -5.0,
+        "healthValue": 0.0,
         "happinessValue": 10
     },
     {
         "id": 3,
-        "name": "Candy",
+        "name": "Casque VR",
         "quantity": 10,
-        "foodValue": -2.0,
-        "weightValue": 5.0,
-        "happinessValue": 50
-    },
-    {
-        "id": 100,
-        "name": "Super Mushroom",
-        "quantity": 100,
-        "foodValue": 0,
-        "weightValue": 0,
-        "happinessValue": 0
+        "cleanValue": -10.0,
+        "healthValue": 2.0,
+        "happinessValue": -4
     },
     {
         "id": 4,
-        "name": "TestFood 4",
-        "quantity": 0,
-        "foodValue": 0,
-        "weightValue": 0,
+        "name": "TV",
+        "quantity": 5,
+        "cleanValue": -10.0,
+        "healthValue": 2.0,
+        "happinessValue": -4
+    },
+    {
+        "id": 100,
+        "name": "SEGA MEGADRIVE",
+        "quantity": 1,
+        "cleanValue": 0.0,
+        "healthValue": 0.0,
         "happinessValue": 0
     },
     {
         "id": 5,
-        "name": "TestFood 5",
-        "quantity": 1,
-        "foodValue": 0,
-        "weightValue": 0,
+        "name": "testToy 1",
+        "quantity": 0,
+        "cleanValue": 0.0,
+        "healthValue": 0.0,
         "happinessValue": 0
     },
     {
         "id": 6,
-        "name": "TestFood 6",
-        "quantity": 0,
-        "foodValue": 0,
-        "weightValue": 0,
+        "name": "testToy 2",
+        "quantity": 4,
+        "cleanValue": 0.0,
+        "healthValue": 0.0,
         "happinessValue": 0
     },
     {
         "id": 7,
-        "name": "TestFood 7",
+        "name": "TestToy 3",
         "quantity": 0,
-        "foodValue": 0,
-        "weightValue": 0,
+        "cleanValue": 0.0,
+        "healthValue": 0.0,
         "happinessValue": 0
     }
 ]

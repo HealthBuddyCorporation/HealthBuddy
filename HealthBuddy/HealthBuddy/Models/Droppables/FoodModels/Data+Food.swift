@@ -21,6 +21,10 @@ extension DataModel{
             if(buddy.nutrition >= 100){
                 buddy.weight += food.weightValue * 2
                 buddy.hp -= buddy.nutrition - 100
+                buddy.nutrition = 100
+                if (buddy.hp <= 0){
+                    buddy.hp = 0
+                }
             }else{
                 buddy.weight += food.weightValue
             }
@@ -28,6 +32,9 @@ extension DataModel{
             if(buddy.happiness > 100){
                 buddy.happiness = 100
             }
+        }
+        if let index = foodList.firstIndex(of: food){
+            foodList[index].quantity -= 1
         }
     }
 }
