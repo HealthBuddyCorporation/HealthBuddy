@@ -9,6 +9,7 @@ import Foundation
 
 struct Buddy :Hashable, Codable, Identifiable{
     var id :Int
+    var name : String
     var hp :Double
     var maxHP :Double
     var nutrition :Double
@@ -18,4 +19,5 @@ struct Buddy :Hashable, Codable, Identifiable{
     var currentXP :Int
     var neededXP :Int
     var isAlive :Bool
+    
 }

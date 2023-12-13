@@ -9,10 +9,14 @@ import SwiftUI
 
 struct MainActivity: View {
     @EnvironmentObject var data :DataModel
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
         if (data.buddy.isAlive){
             HomeActivity()
+                .onReceive(timer) { _ in
+                    data.StatOverTime()
+                }
                 .onChange(of: data.buddy.hp){ hp in
                     print("hp change")
                     if(hp <= 0){
