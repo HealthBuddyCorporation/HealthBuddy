@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainActivity: View {
     @EnvironmentObject var data :DataModel
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    let timer = Timer.publish(every: 1000, on: .main, in: .common).autoconnect()
     
     var body: some View {
         if (data.buddy.isAlive){

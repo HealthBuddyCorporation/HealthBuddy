@@ -51,6 +51,7 @@
 		575EABBC2B21DB05000E3AEC /* MoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EABBB2B21DB05000E3AEC /* MoneyView.swift */; };
 		57ABEDC82B1E58700096F920 /* DeathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABEDC72B1E58700096F920 /* DeathView.swift */; };
 		57ABEDCB2B1E589C0096F920 /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABEDCA2B1E589C0096F920 /* SleepView.swift */; };
+		F135B77E2B29F9F900048143 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F135B77C2B29F9F900048143 /* Model.xcdatamodeld */; };
 		F1619AD82AB8280D00D8FCEE /* HealthBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */; };
 		F1619ADC2AB8280E00D8FCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */; };
 		F1619ADF2AB8280E00D8FCEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */; };
@@ -101,6 +102,19 @@
 		F1EA98652B18D50F005309D2 /* SBInventoryCleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA98642B18D50F005309D2 /* SBInventoryCleanerView.swift */; };
 		F1EA98672B18D5D3005309D2 /* SideBarInventoryCleanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EA98662B18D5D3005309D2 /* SideBarInventoryCleanerView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F135B75B2B29D08000048143 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5725F9842B16290700289B71 /* BuildSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildSheet.swift; sourceTree = "<group>"; };
@@ -168,6 +182,7 @@
 		575EABBB2B21DB05000E3AEC /* MoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyView.swift; sourceTree = "<group>"; };
 		57ABEDC72B1E58700096F920 /* DeathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathView.swift; sourceTree = "<group>"; };
 		57ABEDCA2B1E589C0096F920 /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
+		F135B77D2B29F9F900048143 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F1619AD42AB8280D00D8FCEE /* HealthBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBuddyApp.swift; sourceTree = "<group>"; };
 		F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -514,11 +529,20 @@
 			path = Sleep;
 			sourceTree = "<group>";
 		};
+		F135B7602B29D26E00048143 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F1619ACB2AB8280D00D8FCEE = {
 			isa = PBXGroup;
 			children = (
+				F135B77C2B29F9F900048143 /* Model.xcdatamodeld */,
 				F1619AD62AB8280D00D8FCEE /* HealthBuddy */,
 				F1619AD52AB8280D00D8FCEE /* Products */,
+				F135B7602B29D26E00048143 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -543,7 +567,6 @@
 				F1619AE02AB8280E00D8FCEE /* Persistence.swift */,
 				F1619AE22AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld */,
 				F1619ADD2AB8280E00D8FCEE /* Preview Content */,
-				575EABA92B21C928000E3AEC /* ExtensionColor.swift */,
 			);
 			path = HealthBuddy;
 			sourceTree = "<group>";
@@ -579,6 +602,7 @@
 		F1B740872B0C98F90084417F /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				575EABA92B21C928000E3AEC /* ExtensionColor.swift */,
 				F1B740882B0C98F90084417F /* JsonFunctions.swift */,
 				F1B740892B0C98F90084417F /* buddyData.json */,
 				F1B7408A2B0C98F90084417F /* foodList.json */,
@@ -697,6 +721,7 @@
 				F1619AD02AB8280D00D8FCEE /* Sources */,
 				F1619AD12AB8280D00D8FCEE /* Frameworks */,
 				F1619AD22AB8280D00D8FCEE /* Resources */,
+				F135B75B2B29D08000048143 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -717,7 +742,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					F1619AD32AB8280D00D8FCEE = {
@@ -853,6 +878,7 @@
 				F1EA984E2B189500005309D2 /* SideBarInvetoryClothView.swift in Sources */,
 				57ABEDCB2B1E589C0096F920 /* SleepView.swift in Sources */,
 				F1EA98452B189475005309D2 /* MainContentView.swift in Sources */,
+				F135B77E2B29F9F900048143 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -976,6 +1002,7 @@
 		F1619AE82AB8280E00D8FCEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -987,8 +1014,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1005,6 +1032,7 @@
 		F1619AE92AB8280E00D8FCEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1016,8 +1044,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1074,6 +1102,16 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
+		F135B77C2B29F9F900048143 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F135B77D2B29F9F900048143 /* Model.xcdatamodel */,
+			);
+			currentVersion = F135B77D2B29F9F900048143 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		F1619AE22AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

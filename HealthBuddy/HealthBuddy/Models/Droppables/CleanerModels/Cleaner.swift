@@ -16,6 +16,8 @@ struct Cleaner: Hashable, Codable, Identifiable, Transferable{
     var cleanValue :Double
     var healthValue :Double
     var happinessValue :Double
+    var isPremium :Bool
+    var price :Int
 }
 
 extension Cleaner{

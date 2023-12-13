@@ -22,20 +22,24 @@ struct SideBarInvetoryFoodView: View {
                 .cornerRadius(10)
             
             VStack {
-                Image(systemName: "xmark.circle.fill")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 20, height: 20)
-                    .foregroundColor(.white)
-                    .padding(3)
-                    .background(Color.gray)
-                    .clipShape(Circle())
-                    .offset(x: 172)
-                    .offset(y: -4)
-                    .onTapGesture {
-                        isShown = false
-                        isBarVisible = true
-                    }
+                
+                Button{
+                    isShown = false
+                    isBarVisible = true
+                } label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        
+                }
+                .contentShape(Circle())
+                .frame(width: 20, height: 20)
+                .foregroundColor(.white)
+                .padding(3)
+                .background(Color.gray)
+                .clipShape(Circle())
+                .offset(x: 172)
+                .offset(y: -4)
                 
                 Text("Inventory : food")
                     .foregroundColor(.white)

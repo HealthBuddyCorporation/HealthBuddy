@@ -20,5 +20,6 @@ struct Buddy :Hashable, Codable, Identifiable{
     var currentXP :Int
     var neededXP :Int
     var isAlive :Bool
-    
+    var birthDate :Date? = Date()
+    var lastInteraction :Date? = Date()
 }

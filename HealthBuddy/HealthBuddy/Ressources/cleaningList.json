@@ -5,7 +5,9 @@
         "quantity": 3,
         "cleanValue": 10.0,
         "healthValue": 0.0,
-        "happinessValue": -2
+        "happinessValue": -2,
+        "isPremium": false,
+        "price": 10
     },
     {
         "id": 2,
@@ -13,7 +15,9 @@
         "quantity": 2,
         "cleanValue": 0.0,
         "healthValue": 10.0,
-        "happinessValue": -10
+        "happinessValue": -10,
+        "isPremium": false,
+        "price": 10
     },
     {
         "id": 3,
@@ -21,7 +25,9 @@
         "quantity": 3,
         "cleanValue": 5.0,
         "healthValue": 5.0,
-        "happinessValue": 10
+        "happinessValue": 10,
+        "isPremium": false,
+        "price": 10
     },
     {
         "id": 100,
@@ -29,7 +35,9 @@
         "quantity": 1,
         "cleanValue": 0.0,
         "healthValue": 0.0,
-        "happinessValue": 0
+        "happinessValue": 0,
+        "isPremium": true,
+        "price": 10
     },
     {
         "id": 4,
@@ -37,7 +45,9 @@
         "quantity": 3,
         "cleanValue": 0.0,
         "healthValue": 0.0,
-        "happinessValue": 0
+        "happinessValue": 0,
+        "isPremium": false,
+        "price": 10
     },
     {
         "id": 5,
@@ -45,6 +55,8 @@
         "quantity": 3,
         "cleanValue": 0.0,
         "healthValue": 0.0,
-        "happinessValue": 0
+        "happinessValue": 0,
+        "isPremium": false,
+        "price": 10
     }
 ]

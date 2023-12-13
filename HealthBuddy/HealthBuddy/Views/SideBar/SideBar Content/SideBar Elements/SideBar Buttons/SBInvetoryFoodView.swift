@@ -20,7 +20,7 @@ struct SBInvetoryFoodView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 30, height: 30)
-                .foregroundColor(Color("MainYellow", bundle: nil))
+                .foregroundColor(.gray)
                 .padding(2)
                 .background(Color.customColor)
                 .clipShape(Circle())
