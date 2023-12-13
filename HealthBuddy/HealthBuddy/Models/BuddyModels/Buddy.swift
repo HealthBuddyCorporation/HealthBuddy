@@ -16,6 +16,7 @@ struct Buddy :Hashable, Codable, Identifiable{
     var hygiene :Double
     var weight :Double
     var happiness :Double
+    var level :Int
     var currentXP :Int
     var neededXP :Int
     var isAlive :Bool

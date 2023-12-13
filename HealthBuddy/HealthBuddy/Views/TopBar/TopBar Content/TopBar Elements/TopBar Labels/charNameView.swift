@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct charNameView: View {
+    var name :String
     var body: some View {
         
-        Text("Tamagochi Name")
+        Text(name)
             .font(.title2)
             .foregroundColor(.black)
             .offset(y: -60)
@@ -19,5 +20,5 @@ struct charNameView: View {
 }
 
 #Preview {
-    charNameView()
+    charNameView(name: "Plopty")
 }

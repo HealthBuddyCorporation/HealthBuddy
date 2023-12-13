@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TopBarView: View {
+    @EnvironmentObject var data :DataModel
     var body: some View {
         
         ZStack{
@@ -27,9 +28,9 @@ struct TopBarView: View {
                 .offset(y: 20)
             
             VStack{
-                charNameView()
+                charNameView(name: data.buddy.name)
                     .offset(y:80)
-                charLevelView()
+                charLevelView(level: data.buddy.level)
                     .offset(y:80)
             }
             

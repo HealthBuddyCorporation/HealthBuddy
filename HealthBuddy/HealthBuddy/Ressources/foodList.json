@@ -36,7 +36,7 @@
         "name": "Poison",
         "quantity": 100,
         "foodValue": 100,
-        "weightValue": 100,
+        "weightValue": 0,
         "happinessValue": 0
     },
     {

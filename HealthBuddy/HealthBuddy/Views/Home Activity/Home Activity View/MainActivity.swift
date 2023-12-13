@@ -18,7 +18,6 @@ struct MainActivity: View {
                     data.StatOverTime()
                 }
                 .onChange(of: data.buddy.hp){ hp in
-                    print("hp change")
                     if(hp <= 0){
                         data.buddy.isAlive = false
                     }
