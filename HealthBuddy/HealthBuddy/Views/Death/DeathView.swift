@@ -18,13 +18,19 @@ struct DeathView: View {
                     Text ("Qu'avez vous fait?")
                         .foregroundColor(.white)
                         .font(.system(size: 40))
-                    Text ("(name)repose en paix")
+                        .padding(EdgeInsets(top: -150, leading: 0, bottom: 0, trailing: 0))
+                    Text ("$name")
                         .foregroundColor(.white)
                         .font(.system(size: 25))
-                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
+                        .padding(EdgeInsets(top: -100, leading: 0, bottom: 100, trailing: 0))
+                    Text ("repose en paix")
+                        .foregroundColor(.white)
+                        .font(.system(size: 25))
+                        .padding(EdgeInsets(top: -90, leading: 0, bottom: 100, trailing: 0))
                 }.padding(EdgeInsets(top: 100, leading: 0, bottom: -100, trailing: 0))
                 ZStack{
                     PopupContentBackgroundBox()
+                        .padding(EdgeInsets(top: 30, leading: 0, bottom: 0, trailing: 0))
                 
                     VStack{
                         
@@ -81,7 +87,8 @@ struct DeathView: View {
                 Button("Ouvrir un oeuf") {
                     data.buddy.hp = 100
                     data.buddy.isAlive = true
-                }
+
+                }.padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
             }
         }
     }

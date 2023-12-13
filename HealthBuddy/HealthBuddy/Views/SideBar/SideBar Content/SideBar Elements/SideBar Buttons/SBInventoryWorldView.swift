@@ -1,13 +1,14 @@
 //
-//  SBInvetoryAccessoriesView.swift
+//  SBInventoryWorldView.swift
 //  HealthBudy
 //
-//  Created by Raphael Fassotte on 28/11/2023.
+//  Created by Raphael Fassotte on 27/11/2023.
 //
+
 
 import SwiftUI
 
-struct SBInvetoryAccessoriesView: View {
+struct SBInventoryWorldView: View {
     @Binding var isPopoverPresented : Bool
     @Binding var isVisible : Bool
 
@@ -16,7 +17,7 @@ struct SBInvetoryAccessoriesView: View {
             isPopoverPresented.toggle()
             isVisible = false
         }) {
-            Image(systemName: "sunglasses.fill")
+            Image(systemName: "mountain.2.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 25, height: 25)
@@ -28,6 +29,9 @@ struct SBInvetoryAccessoriesView: View {
     }
 }
 
+
+
+
 //#Preview {
-//    SBInvetoryAccessoriesView()
+//    SBInventoryWorldView()
 //}

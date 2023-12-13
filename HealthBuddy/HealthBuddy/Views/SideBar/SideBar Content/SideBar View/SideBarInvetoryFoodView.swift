@@ -16,8 +16,7 @@ struct SideBarInvetoryFoodView: View {
     
     var body: some View {
         ZStack {
-            Rectangle()
-                .foregroundColor(.black)
+            BlurEffect(style: .systemUltraThinMaterialDark)
                 .frame(width: 350, height: 300)
                 .cornerRadius(10)
             
@@ -37,7 +36,7 @@ struct SideBarInvetoryFoodView: View {
                         isBarVisible = true
                     }
                 
-                Text("Inventory : food")
+                Text("Inventory : Food")
                     .foregroundColor(.white)
                 
                 ScrollView(.horizontal) {

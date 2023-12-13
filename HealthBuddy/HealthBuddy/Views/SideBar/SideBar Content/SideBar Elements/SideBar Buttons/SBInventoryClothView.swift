@@ -1,21 +1,22 @@
 //
-//  SBItemSevenView.swift
+//  SBInvetoryClothView.swift
 //  HealthBudy
 //
-//  Created by Raphael Fassotte on 27/11/2023.
+//  Created by Raphael Fassotte on 28/11/2023.
 //
-
 
 import SwiftUI
 
-struct SBItemSevenView: View {
-    @State private var isPopoverPresented = false
-
+struct SBInventoryClothView: View {
+    @Binding var isPopoverPresented : Bool
+    @Binding var isVisible : Bool
+    
     var body: some View {
         Button(action: {
             isPopoverPresented.toggle()
+            isVisible = false
         }) {
-            Image(systemName: "mountain.2.fill")
+            Image(systemName: "hanger")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 25, height: 25)
@@ -27,9 +28,6 @@ struct SBItemSevenView: View {
     }
 }
 
-
-
-
-#Preview {
-    SBItemSevenView()
-}
+//#Preview {
+//    SBInvetoryClothView()
+//}

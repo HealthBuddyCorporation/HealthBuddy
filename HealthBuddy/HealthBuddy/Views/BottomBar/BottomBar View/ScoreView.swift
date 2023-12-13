@@ -8,20 +8,14 @@
 import SwiftUI
 
 struct ScoreView: View {
-    
     @State private var selectedSegment = 0
-    
     let nationalItems = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6","Item 7", "Item 8", "Item 9", "Item 10"]
-    
     let segment2Texts = ["Text 1", "Text 2", "Text 3"]
-    
     let segment3Image = Image(systemName: "photo")
-
     
     var body: some View {
         
         VStack {
-            
             Text("LeaderBoard")
                 .font(.title)
             
@@ -105,7 +99,6 @@ struct ScoreView: View {
                        }
                        .padding()
 
-                       // Additional content for Segment 2, if needed
                        List {
                            Text("Item 1")
                            Text("Item 2")
@@ -127,7 +120,6 @@ struct ScoreView: View {
                            .frame(height: 100)
                            .padding()
 
-                       // Additional content for Segment 3, if needed
                        List {
                            Text("Item 1")
                            Text("Item 2")

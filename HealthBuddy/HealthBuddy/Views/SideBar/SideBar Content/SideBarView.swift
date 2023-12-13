@@ -12,12 +12,16 @@ struct SideBarView: View {
     @State private var isSideBarVisible = false
     @State private var isFoodPresented = false
     @State private var isCleanerPresented = false
+    @State private var isAccessoriesPresented = false
+    @State private var isClothPresented = false
     @State private var isToyPresented = false
+    @State private var isLookPresented = false
+    @State private var isWorldPresented = false
     
     var body: some View {
         ZStack{
             ZStack{
-                Rectangle()
+                BlurEffect(style: .systemChromeMaterialDark)
                     .cornerRadius(10)
                     .foregroundColor(.gray.opacity(0.5))
                     .frame(width: 70, height: 400)
@@ -60,13 +64,29 @@ struct SideBarView: View {
                 SideBarInventoryCleanerView(isShown: $isCleanerPresented, isBarVisible: $isSideBarVisible)
             }
             
-            if(isToyPresented){
-                SideBarInventoryToyView(isShown: $isFoodPresented, isBarVisible: $isSideBarVisible)
+            if(isClothPresented){
+                SideBarInventoryClothView(isShown: $isClothPresented, isBarVisible: $isSideBarVisible)
             }
             
+            if(isAccessoriesPresented){
+                SideBarInvetoryAccessoriesView(isShown: $isAccessoriesPresented, isBarVisible: $isSideBarVisible)
+            }
+            
+            if(isLookPresented){
+                SideBarInventoryLookView(isShown: $isLookPresented, isBarVisible: $isSideBarVisible)
+            }
+            
+            if(isToyPresented){
+                SideBarInventoryToyView(isShown: $isToyPresented, isBarVisible: $isSideBarVisible)
+            }
+            
+            if(isWorldPresented){
+                SideBarInventoryWorldView(isShown: $isWorldPresented, isBarVisible: $isSideBarVisible)
+            }
+        
             VStack{
                 SBInvetoryFoodView(isPopoverPresented: $isFoodPresented, isVisible: $isSideBarVisible)
-                    .offset(y: -40)
+                    .offset(y: -45)
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.2))
                 
@@ -75,28 +95,28 @@ struct SideBarView: View {
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.2))
                 
-                SBInventoryToyView(isPopoverPresented: $isToyPresented, isVisible: $isSideBarVisible)
+                SBInventoryClothView(isPopoverPresented: $isClothPresented, isVisible: $isSideBarVisible)
                     .offset(y: -15)
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.2))
                 
-                SBItemFourView()
+                SBInvetoryAccessoriesView(isPopoverPresented: $isAccessoriesPresented, isVisible: $isSideBarVisible)
                     .offset(y: 0)
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.2))
                 
-                SBItemFiveView()
+                SBInventoryLookView(isPopoverPresented: $isLookPresented, isVisible: $isSideBarVisible)
                     .offset(y: 15)
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.2))
                 
-                SBItemSixView()
+                SBInventoryToyView(isPopoverPresented: $isToyPresented, isVisible: $isSideBarVisible)
                     .offset(y: 30)
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.2))
                 
-                SBItemSevenView()
-                    .offset(y: 40)
+                SBInventoryWorldView(isPopoverPresented: $isWorldPresented, isVisible: $isSideBarVisible)
+                    .offset(y: 45)
                     .offset(x: isSideBarVisible ? 165 : 250)
                     .animation(.easeInOut(duration: 0.2))
             }

@@ -10,13 +10,8 @@ import SwiftUI
 struct PopupContentBackgroundBox: View {
     var body: some View {
         ZStack{
-            Rectangle()
-                .edgesIgnoringSafeArea(.all)
-                .foregroundColor(.white.opacity(0.3))
-                .blur(radius: 10)
-            Rectangle()
+            BlurEffect(style: .systemUltraThinMaterial)
                 .frame(width: 350, height: 350)
-                .foregroundStyle(.linearGradient(colors:[.clear.opacity(0.5), .white.opacity(0.2), .clear.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomTrailing))
                 .cornerRadius(8)
                 .background(
                 RoundedRectangle(cornerRadius: 8)

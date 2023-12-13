@@ -16,8 +16,7 @@ struct SideBarInventoryToyView: View {
     
     var body: some View {
         ZStack {
-            Rectangle()
-                .foregroundColor(.black)
+            BlurEffect(style: .systemUltraThinMaterialDark)
                 .frame(width: 350, height: 300)
                 .cornerRadius(10)
             
@@ -36,6 +35,7 @@ struct SideBarInventoryToyView: View {
                         isShown = false
                         isBarVisible = true
                     }
+                
                 Text("Inventory : Entertainment")
                     .foregroundColor(.white)
                 
@@ -58,7 +58,7 @@ struct SideBarInventoryToyView: View {
                 .frame(maxHeight: 250)
                 .frame(maxWidth: 350)
             }
-        }
+        }.offset(y: -100)
     }
 }
 
