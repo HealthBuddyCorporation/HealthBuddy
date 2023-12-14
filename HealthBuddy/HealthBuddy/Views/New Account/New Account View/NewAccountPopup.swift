@@ -13,11 +13,29 @@ struct NewAccountPopup: View {
     @State private var createLastName: String = ""
     @State private var createNickName: String = ""
     @State private var createEmail: String = ""
+    @State private var createPassword: String = ""
     @State private var createPhoneNumber: String = ""
     @State private var createAdress: String = ""
     @State private var createZipCode: String = ""
     @State private var createCountry: String = ""
     @State private var isBouncing = false
+    
+    func signIn(){
+        guard !createEmail.isEmpty, !createPassword.isEmpty else {
+            print("No email or password found")
+            return
+        }
+        
+        Task{
+            do {
+                let returnedUserData = try await AuthenticationManager.shared.createUser(email: createEmail, password: createPassword)
+                print("success")
+                print(returnedUserData)
+            } catch {
+                print("error: \(error)")
+            }
+        }
+    }
     
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
@@ -58,6 +76,8 @@ struct NewAccountPopup: View {
             
             // MARK: - Email TextField
             TextField("Enter your Email", text: $createEmail)
+                .depthStyle()
+            TextField("Enter your Password", text: $createPassword)
                 .depthStyle()
             
             // MARK: - Email TextField
@@ -101,6 +121,7 @@ struct NewAccountPopup: View {
             // MARK: - Play button
             Button {
                 // TO DO : Action
+                signIn()
                 withAnimation(Animation.interpolatingSpring(mass: 1.0, stiffness: 100, damping: 10, initialVelocity: 0)) {
                     isBouncing.toggle() }
                 
