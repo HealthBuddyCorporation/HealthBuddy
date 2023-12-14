@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct HomeActivity: View {
+    @EnvironmentObject var data :DataModel
     @State var pageIndex = 0
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     var body: some View {
         ZStack{
             VStack{
@@ -18,8 +20,24 @@ struct HomeActivity: View {
                 VStack{
                     switch pageIndex{
                     case 0:
-                        MainContentView()
+                        if(data.buddy.isAlive){
+                            MainContentView()
+                                .offset(y: 21)
+                                .onReceive(timer) { _ in
+                                    data.StatOverTime()
+                                }
+                                .onChange(of: data.buddy.hp){ hp in
+                                    if(hp <= 0){
+                                        data.buddy.isAlive = false
+                                    }
+                                }
+                        }else{
+                            ZStack{
+                                MainContentView()
+                                DeathView()
+                            }
                             .offset(y: 21)
+                        }
                     case 1:
                         ScoreView()
                             .offset(y: 21)
