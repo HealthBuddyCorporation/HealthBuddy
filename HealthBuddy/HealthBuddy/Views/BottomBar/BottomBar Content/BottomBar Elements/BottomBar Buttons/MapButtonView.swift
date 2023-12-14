@@ -12,7 +12,7 @@ struct MapButtonView: View {
     @State private var isMapViewActive = false
     
     var body: some View {
-        NavigationLink(destination: MapView(), isActive: $isMapViewActive) {
+        NavigationLink(destination: MyMapView(), isActive: $isMapViewActive) {
             EmptyView()
         }
         .hidden()
