@@ -50,6 +50,7 @@
 		57ABEDCB2B1E589C0096F920 /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ABEDCA2B1E589C0096F920 /* SleepView.swift */; };
 		57C1FF6A2B29E2C700D7CAB7 /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1FF692B29E2C700D7CAB7 /* BlurEffect.swift */; };
 		57C1FF6C2B29FABD00D7CAB7 /* BackgroundBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1FF6B2B29FABD00D7CAB7 /* BackgroundBarView.swift */; };
+		57C1FF7B2B2A24B100D7CAB7 /* ShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1FF7A2B2A24B000D7CAB7 /* ShoppingView.swift */; };
 		F1619AD82AB8280D00D8FCEE /* HealthBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */; };
 		F1619ADC2AB8280E00D8FCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */; };
 		F1619ADF2AB8280E00D8FCEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */; };
@@ -164,6 +165,7 @@
 		57ABEDCA2B1E589C0096F920 /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
 		57C1FF692B29E2C700D7CAB7 /* BlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffect.swift; sourceTree = "<group>"; };
 		57C1FF6B2B29FABD00D7CAB7 /* BackgroundBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundBarView.swift; sourceTree = "<group>"; };
+		57C1FF7A2B2A24B000D7CAB7 /* ShoppingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingView.swift; sourceTree = "<group>"; };
 		F1619AD42AB8280D00D8FCEE /* HealthBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBuddyApp.swift; sourceTree = "<group>"; };
 		F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				5725F99C2B16294E00289B71 /* ShopView.swift */,
 				5725F99E2B16294E00289B71 /* TrophyView.swift */,
 				575EAB9A2B209446000E3AEC /* Map */,
+				57C1FF7A2B2A24B000D7CAB7 /* ShoppingView.swift */,
 			);
 			path = "BottomBar View";
 			sourceTree = "<group>";
@@ -836,6 +839,7 @@
 				F1AC8A792B1DCFB600236EA7 /* Droppable.swift in Sources */,
 				575EABB82B21D329000E3AEC /* HappynessBarView.swift in Sources */,
 				575EAB9F2B21AA24000E3AEC /* CharacterView.swift in Sources */,
+				57C1FF7B2B2A24B100D7CAB7 /* ShoppingView.swift in Sources */,
 				5725F9E52B16294F00289B71 /* SBInvetoryAccessoriesView.swift in Sources */,
 				F1EA98412B189428005309D2 /* SettingsButtonView.swift in Sources */,
 				F1E8F8CE2B21CFBF00B08B85 /* Data+Toy.swift in Sources */,
