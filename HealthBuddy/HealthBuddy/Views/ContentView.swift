@@ -9,10 +9,14 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    @EnvironmentObject var data :DataModel
     var body: some View {
-        LoginPage()
-        //MainActivity()
-        //un slash slash qqch
+        if data.isLogged {
+            MainActivity()
+        }
+        else {
+            LoginPage()
+        }
     }
 }
 

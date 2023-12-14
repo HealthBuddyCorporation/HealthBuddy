@@ -13,7 +13,7 @@ enum DisplayedPage {
 }
 
 struct LoginPopUp: View {
-    
+    @EnvironmentObject var data :DataModel
     @Binding var displayedPage: DisplayedPage
     @State private var emailText: String = ""
     @State private var pwdText: String = ""
@@ -97,8 +97,7 @@ struct LoginPopUp: View {
                     isBouncing.toggle()
                     // Vérification du mail
                     if isValidEmail(emailText) && isPasswordValid(pwdText){
-                        // L'email est valide, vous pouvez effectuer l'action souhaitée ici
-                        print("Email et Password valides!")
+                        data.isLogged = true
                     } else {
                         // Afficher une alerte en cas d'email non valide
                         //signIn()
