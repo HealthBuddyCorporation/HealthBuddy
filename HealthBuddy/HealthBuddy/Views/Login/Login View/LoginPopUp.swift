@@ -95,14 +95,7 @@ struct LoginPopUp: View {
             Button {
                 withAnimation(Animation.interpolatingSpring(mass: 1.0, stiffness: 100, damping: 10, initialVelocity: 0)) {
                     isBouncing.toggle()
-                    // Vérification du mail
-                    if isValidEmail(emailText) && isPasswordValid(pwdText){
-                        data.isLogged = true
-                    } else {
-                        // Afficher une alerte en cas d'email non valide
-                        //signIn()
-                        showAlert = true
-                    }
+                    data.isLogged = FBLoginService.instance.signIn(emailText, pwdText)
                 }
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NewAccountPopup: View {
-    
+    @Binding var displayedPage: DisplayedPage
     @State private var createFirstName: String = ""
     @State private var createLastName: String = ""
     @State private var createNickName: String = ""
@@ -19,23 +19,6 @@ struct NewAccountPopup: View {
     @State private var createZipCode: String = ""
     @State private var createCountry: String = ""
     @State private var isBouncing = false
-    
-    func signIn(){
-        guard !createEmail.isEmpty, !createPassword.isEmpty else {
-            print("No email or password found")
-            return
-        }
-        
-        Task{
-            do {
-                let returnedUserData = try await AuthenticationManager.shared.createUser(email: createEmail, password: createPassword)
-                print("success")
-                print(returnedUserData)
-            } catch {
-                print("error: \(error)")
-            }
-        }
-    }
     
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
@@ -107,7 +90,7 @@ struct NewAccountPopup: View {
             }
             
             Button {
-                
+                displayedPage = .login
             } label: {
                 Text("Cancel")
                     .font(.system(size: 12))
@@ -120,8 +103,9 @@ struct NewAccountPopup: View {
             
             // MARK: - Play button
             Button {
-                // TO DO : Action
-                signIn()
+                print("clickity")
+                FBLoginService.instance.signUp(createEmail, createPassword)
+                displayedPage = .login
                 withAnimation(Animation.interpolatingSpring(mass: 1.0, stiffness: 100, damping: 10, initialVelocity: 0)) {
                     isBouncing.toggle() }
                 
@@ -165,10 +149,10 @@ struct NewAccountPopup: View {
     }
 }
 
-#Preview {
-    NewAccountPopup()
-        .background(Image("Wallpaper 2"))
-}
+//#Preview {
+//    NewAccountPopup()
+//        .background(Image("Wallpaper 2"))
+//}
 
 struct DepthStyle: ViewModifier {
     func body(content: Content) -> some View {
@@ -196,6 +180,6 @@ extension View {
     }
 }
 
-#Preview {
-    NewAccountPopup()
-}
+//#Preview {
+//    NewAccountPopup()
+//}

@@ -23,7 +23,7 @@ struct LoginPage: View {
         case .newAccount:
             ZStack{
                 NewAccountAnimation()
-                NewAccountPopup()
+                NewAccountPopup(displayedPage: $displayedPage)
             }
         }
     }
