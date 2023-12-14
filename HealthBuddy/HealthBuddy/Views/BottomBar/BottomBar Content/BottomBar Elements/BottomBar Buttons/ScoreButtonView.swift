@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct ScoreButtonView: View {
-    
+    @Binding var pageIndex :Int
     @State private var isScoreButtonViewActive = false
     
     var body: some View {
-        NavigationLink(destination: ScoreView(), isActive: $isScoreButtonViewActive){
-            EmptyView()
-        }
-        .hidden()
+        
         ZStack{
             Rectangle()
                 .foregroundColor(.gray)
@@ -23,6 +20,7 @@ struct ScoreButtonView: View {
                 .frame(width: 35, height: 35)
                 .onTapGesture {
                     isScoreButtonViewActive = true
+                    pageIndex = 1
                     print("Score Button tapped!")
                 }
                 .id("ScoreButton")
@@ -33,9 +31,10 @@ struct ScoreButtonView: View {
                 .foregroundColor(.white)
                 .frame(width: 25, height: 25)
         }
+        
     }
 }
 
-#Preview {
-    ScoreButtonView()
-}
+//#Preview {
+//    ScoreButtonView()
+//}

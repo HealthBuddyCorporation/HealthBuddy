@@ -88,6 +88,7 @@
 		F1A6E3682B2B072A0000AAB6 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F1A6E3672B2B072A0000AAB6 /* FirebaseRemoteConfigSwift */; };
 		F1A6E36A2B2B072A0000AAB6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F1A6E3692B2B072A0000AAB6 /* FirebaseStorage */; };
 		F1A6E36C2B2B072A0000AAB6 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F1A6E36B2B2B072A0000AAB6 /* FirebaseStorageCombine-Community */; };
+		F1A6E36F2B2B1AF30000AAB6 /* BottomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A6E36E2B2B1AF30000AAB6 /* BottomMenu.swift */; };
 		F1AC8A792B1DCFB600236EA7 /* Droppable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AC8A782B1DCFB600236EA7 /* Droppable.swift */; };
 		F1B0F13A2B20899E004F9BFA /* Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B0F1392B20899E004F9BFA /* Toy.swift */; };
 		F1B7408B2B0C98F90084417F /* JsonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B740882B0C98F90084417F /* JsonFunctions.swift */; };
@@ -208,6 +209,7 @@
 		F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1619AE02AB8280E00D8FCEE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F1619AE32AB8280E00D8FCEE /* HealthBuddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthBuddy.xcdatamodel; sourceTree = "<group>"; };
+		F1A6E36E2B2B1AF30000AAB6 /* BottomMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenu.swift; sourceTree = "<group>"; };
 		F1AC8A782B1DCFB600236EA7 /* Droppable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Droppable.swift; sourceTree = "<group>"; };
 		F1B0F1392B20899E004F9BFA /* Toy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toy.swift; sourceTree = "<group>"; };
 		F1B740882B0C98F90084417F /* JsonFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonFunctions.swift; sourceTree = "<group>"; };
@@ -638,6 +640,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F1A6E36D2B2B1ADC0000AAB6 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				F1A6E36E2B2B1AF30000AAB6 /* BottomMenu.swift */,
+			);
+			path = Menus;
+			sourceTree = "<group>";
+		};
 		F1AC8A772B1DCF7900236EA7 /* Droppables */ = {
 			isa = PBXGroup;
 			children = (
@@ -674,6 +684,7 @@
 			isa = PBXGroup;
 			children = (
 				F1B7408F2B0C99050084417F /* DataModel.swift */,
+				F1A6E36D2B2B1ADC0000AAB6 /* Menus */,
 				F1AC8A772B1DCF7900236EA7 /* Droppables */,
 				5725F9CC2B16294E00289B71 /* Login Model */,
 				F1B740902B0C99050084417F /* BuddyModels */,
@@ -907,6 +918,7 @@
 				5725F9D52B16294F00289B71 /* MapView.swift in Sources */,
 				575EAB972B2093CB000E3AEC /* MapContentView.swift in Sources */,
 				F1EA98532B189532005309D2 /* NewAccountPopup.swift in Sources */,
+				F1A6E36F2B2B1AF30000AAB6 /* BottomMenu.swift in Sources */,
 				5725F9E12B16294F00289B71 /* SideBarView.swift in Sources */,
 				5725F9982B16292B00289B71 /* ProfilView.swift in Sources */,
 				F1EA98672B18D5D3005309D2 /* SideBarInventoryCleanerView.swift in Sources */,

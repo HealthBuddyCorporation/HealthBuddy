@@ -8,14 +8,10 @@
 import SwiftUI
 
 struct TrophyButtonView: View {
-    
+    @Binding var pageIndex :Int
     @State private var isTrophyViewActive = false
     
     var body: some View {
-        NavigationLink(destination: TrophyView(), isActive: $isTrophyViewActive){
-            EmptyView()
-        }
-        .hidden()
         ZStack{
             Rectangle()
                 .foregroundColor(.gray)
@@ -23,6 +19,7 @@ struct TrophyButtonView: View {
                 .frame(width: 35, height: 35)
                 .onTapGesture {
                     isTrophyViewActive = true
+                    pageIndex = 3
                     print("Item four Button tapped!")
                 }
                 .id("ItemFour")

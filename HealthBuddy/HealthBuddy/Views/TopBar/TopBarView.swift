@@ -18,9 +18,8 @@ struct TopBarView: View {
                     .frame(width: 400, height: 126)
                     .id("TopBarContent")
                 
-                Color("mainYellow")
+                Color("MainYellow")
                     .frame(width: 400, height: 3)
-                    
             }
             
             ProfilButtonView()

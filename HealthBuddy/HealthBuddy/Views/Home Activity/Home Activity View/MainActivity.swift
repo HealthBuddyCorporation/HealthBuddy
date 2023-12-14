@@ -12,24 +12,26 @@ struct MainActivity: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
-        if (data.buddy.isAlive){
-            HomeActivity()
-                .onReceive(timer) { _ in
-                    data.StatOverTime()
-                }
-                .onChange(of: data.buddy.hp){ hp in
-                    if(hp <= 0){
-                        data.buddy.isAlive = false
-                    }
-                }
-        }
-        else{
-            ZStack{
+        VStack{
+            if (data.buddy.isAlive){
                 HomeActivity()
-                DeathView()
+                    .onReceive(timer) { _ in
+                        data.StatOverTime()
+                    }
+                    .onChange(of: data.buddy.hp){ hp in
+                        if(hp <= 0){
+                            data.buddy.isAlive = false
+                        }
+                    }
             }
-            
+            else{
+                ZStack{
+                    HomeActivity()
+                    DeathView()
+                }
+            }
         }
+        
     }
         
 }
