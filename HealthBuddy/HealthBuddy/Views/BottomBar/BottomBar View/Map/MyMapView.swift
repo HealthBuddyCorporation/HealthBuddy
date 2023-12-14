@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MapView: View {
+struct MyMapView: View {
     var body: some View {
         ZStack{
             VStack{
@@ -33,5 +33,5 @@ struct MapView: View {
 }
 
 #Preview {
-    MapView()
+    MyMapView()
 }
