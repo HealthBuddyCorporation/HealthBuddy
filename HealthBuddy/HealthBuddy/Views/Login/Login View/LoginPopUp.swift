@@ -14,6 +14,7 @@ enum DisplayedPage {
 
 struct LoginPopUp: View {
     @EnvironmentObject var data :DataModel
+    @EnvironmentObject var login :LoginViewModel
     @Binding var displayedPage: DisplayedPage
     @State private var emailText: String = ""
     @State private var pwdText: String = ""
@@ -95,7 +96,7 @@ struct LoginPopUp: View {
             Button {
                 withAnimation(Animation.interpolatingSpring(mass: 1.0, stiffness: 100, damping: 10, initialVelocity: 0)) {
                     isBouncing.toggle()
-                    data.isLogged = FBLoginService.instance.signIn(emailText, pwdText)
+                    login.signIn(emailText, pwdText)
                 }
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {

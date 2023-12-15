@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42802B592B2777CA00D40B77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42802B582B2777CA00D40B77 /* GoogleService-Info.plist */; };
 		42802B5C2B27798900D40B77 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 42802B5B2B27798900D40B77 /* FirebaseAnalytics */; };
 		42802B5E2B27798900D40B77 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42802B5D2B27798900D40B77 /* FirebaseAnalyticsSwift */; };
 		42802B612B2795DA00D40B77 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 42802B602B2795DA00D40B77 /* FirebaseAuth */; };
@@ -88,7 +87,9 @@
 		F1A6E3682B2B072A0000AAB6 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F1A6E3672B2B072A0000AAB6 /* FirebaseRemoteConfigSwift */; };
 		F1A6E36A2B2B072A0000AAB6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F1A6E3692B2B072A0000AAB6 /* FirebaseStorage */; };
 		F1A6E36C2B2B072A0000AAB6 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F1A6E36B2B2B072A0000AAB6 /* FirebaseStorageCombine-Community */; };
-		F1A6E3772B2B45660000AAB6 /* FBLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A6E3762B2B45660000AAB6 /* FBLoginService.swift */; };
+		F1AA75742B2C864100199EE0 /* FBDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA75732B2C864100199EE0 /* FBDatabase.swift */; };
+		F1AA75762B2C961500199EE0 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA75752B2C961500199EE0 /* UserModel.swift */; };
+		F1AA75782B2C9F3C00199EE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1AA75772B2C9F3C00199EE0 /* GoogleService-Info.plist */; };
 		F1AC8A792B1DCFB600236EA7 /* Droppable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AC8A782B1DCFB600236EA7 /* Droppable.swift */; };
 		F1B0F13A2B20899E004F9BFA /* Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B0F1392B20899E004F9BFA /* Toy.swift */; };
 		F1B7408B2B0C98F90084417F /* JsonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B740882B0C98F90084417F /* JsonFunctions.swift */; };
@@ -136,7 +137,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		42802B582B2777CA00D40B77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		42802B632B29CDDF00D40B77 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		5725F9842B16290700289B71 /* BuildSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildSheet.swift; sourceTree = "<group>"; };
 		5725F9872B16292B00289B71 /* TopBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
@@ -209,7 +209,9 @@
 		F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1619AE02AB8280E00D8FCEE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F1619AE32AB8280E00D8FCEE /* HealthBuddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthBuddy.xcdatamodel; sourceTree = "<group>"; };
-		F1A6E3762B2B45660000AAB6 /* FBLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBLoginService.swift; sourceTree = "<group>"; };
+		F1AA75732B2C864100199EE0 /* FBDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBDatabase.swift; sourceTree = "<group>"; };
+		F1AA75752B2C961500199EE0 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = HealthBuddy/FireBase/UserModel.swift; sourceTree = SOURCE_ROOT; };
+		F1AA75772B2C9F3C00199EE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1AC8A782B1DCFB600236EA7 /* Droppable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Droppable.swift; sourceTree = "<group>"; };
 		F1B0F1392B20899E004F9BFA /* Toy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toy.swift; sourceTree = "<group>"; };
 		F1B740882B0C98F90084417F /* JsonFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonFunctions.swift; sourceTree = "<group>"; };
@@ -623,7 +625,7 @@
 				F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */,
 				5725F9F52B16299100289B71 /* WatchView.swift */,
 				F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */,
-				42802B582B2777CA00D40B77 /* GoogleService-Info.plist */,
+				F1AA75772B2C9F3C00199EE0 /* GoogleService-Info.plist */,
 				575EABA02B21ACA1000E3AEC /* mixing_animations.riv */,
 				F1619AE02AB8280E00D8FCEE /* Persistence.swift */,
 				F1619AE22AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld */,
@@ -644,7 +646,7 @@
 		F1A6E3702B2B3B0B0000AAB6 /* FireBase */ = {
 			isa = PBXGroup;
 			children = (
-				F1A6E3762B2B45660000AAB6 /* FBLoginService.swift */,
+				F1AA75732B2C864100199EE0 /* FBDatabase.swift */,
 			);
 			path = FireBase;
 			sourceTree = "<group>";
@@ -652,6 +654,7 @@
 		F1A6E3712B2B3B8F0000AAB6 /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				F1AA75752B2C961500199EE0 /* UserModel.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -881,12 +884,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1EA985C2B18CA33005309D2 /* toyList.json in Resources */,
+				F1AA75782B2C9F3C00199EE0 /* GoogleService-Info.plist in Resources */,
 				F1B7408C2B0C98F90084417F /* buddyData.json in Resources */,
 				F1EA985E2B18CA48005309D2 /* cleaningList.json in Resources */,
 				F1B7408D2B0C98F90084417F /* foodList.json in Resources */,
 				F1619ADF2AB8280E00D8FCEE /* Preview Assets.xcassets in Resources */,
 				F1619ADC2AB8280E00D8FCEE /* Assets.xcassets in Resources */,
-				42802B592B2777CA00D40B77 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -904,6 +907,7 @@
 				5725F9F32B16294F00289B71 /* LoginViewModel.swift in Sources */,
 				F1EA984A2B189499005309D2 /* ShopButtonView.swift in Sources */,
 				F1EA98582B18C238005309D2 /* ItemBox.swift in Sources */,
+				F1AA75742B2C864100199EE0 /* FBDatabase.swift in Sources */,
 				5725F9DB2B16294F00289B71 /* ScoreButtonView.swift in Sources */,
 				575EABAD2B21C9B4000E3AEC /* SettingsInfoView.swift in Sources */,
 				575EABB42B21D156000E3AEC /* CleanlinessBarView.swift in Sources */,
@@ -914,7 +918,6 @@
 				5725F9ED2B16294F00289B71 /* SideBarItemFourView.swift in Sources */,
 				5725F9F42B16294F00289B71 /* HomeActivity.swift in Sources */,
 				5725F9DA2B16294F00289B71 /* TrophyButtonView.swift in Sources */,
-				F1A6E3772B2B45660000AAB6 /* FBLoginService.swift in Sources */,
 				F1EA984C2B1894F1005309D2 /* SBItemSixView.swift in Sources */,
 				575EAB952B208F76000E3AEC /* MapSearchView.swift in Sources */,
 				57ABEDC82B1E58700096F920 /* DeathView.swift in Sources */,
@@ -976,6 +979,7 @@
 				575EABB82B21D329000E3AEC /* HappynessBarView.swift in Sources */,
 				575EAB9F2B21AA24000E3AEC /* CharacterView.swift in Sources */,
 				5725F9E52B16294F00289B71 /* SBInvetoryAccessoriesView.swift in Sources */,
+				F1AA75762B2C961500199EE0 /* UserModel.swift in Sources */,
 				F1EA98412B189428005309D2 /* SettingsButtonView.swift in Sources */,
 				F1E8F8CE2B21CFBF00B08B85 /* Data+Toy.swift in Sources */,
 				575EABA42B21C67B000E3AEC /* ProfilPictureView.swift in Sources */,
