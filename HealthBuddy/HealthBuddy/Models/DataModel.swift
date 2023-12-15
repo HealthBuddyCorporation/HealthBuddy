@@ -12,7 +12,7 @@ class DataModel :ObservableObject {
     @Published var foodList :[Food] = load("foodList.json")
     @Published var cleanerList :[Cleaner] = load("cleaningList.json")
     @Published var toyList :[Toy] = load("toyList.json")
-    @Published var isLogged :Bool = true
+    @Published var isLogged :Bool = false
     
     func handleDrop(_ items: [Droppable]) -> Bool{
         guard let item = items.first else {

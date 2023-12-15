@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct NewAccountPage: View {
-    var body: some View {
-        
-        ZStack {
-            NewAccountAnimation()
-            NewAccountPopup()
-        }
-    }
-}
-
-#Preview {
-    NewAccountPage()
-}
+//struct NewAccountPage: View {
+//    var body: some View {
+//        
+//        ZStack {
+//            NewAccountAnimation()
+//            NewAccountPopup()
+//        }
+//    }
+//}
+//
+//#Preview {
+//    NewAccountPage()
+//}
