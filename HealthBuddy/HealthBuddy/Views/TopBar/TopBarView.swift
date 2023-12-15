@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TopBarView: View {
+    @EnvironmentObject var data :DataModel
+    @EnvironmentObject var login :LoginViewModel
     var body: some View {
         
         ZStack{
@@ -17,9 +19,8 @@ struct TopBarView: View {
                     .frame(width: 400, height: 126)
                     .id("TopBarContent")
                 
-                Color("mainYellow")
+                Color("MainYellow")
                     .frame(width: 400, height: 3)
-                    
             }
             
             ProfilButtonView()
@@ -27,10 +28,16 @@ struct TopBarView: View {
                 .offset(y: 20)
             
             VStack{
-                charNameView()
+                charNameView(name: data.buddy.name)
                     .offset(y:80)
-                charLevelView()
+                charLevelView(level: data.buddy.level)
                     .offset(y:80)
+                Button{
+                    login.signOut()
+                }label:{
+                    Text("Disconnect")
+                        .offset(y:80)
+                }
             }
             
             SettingsButtonView()

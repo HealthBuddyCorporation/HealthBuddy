@@ -8,14 +8,10 @@
 import SwiftUI
 
 struct ShopButtonView: View {
-    
+    @Binding var pageIndex :Int
     @State private var isShopButtonViewActive = false
     
     var body: some View {
-        NavigationLink(destination: ShopView(), isActive: $isShopButtonViewActive){
-            EmptyView()
-        }
-        .hidden()
         
         ZStack{
             Rectangle()
@@ -24,6 +20,7 @@ struct ShopButtonView: View {
                 .frame(width: 35, height: 35)
                 .onTapGesture {
                     isShopButtonViewActive = true
+                    pageIndex = 2
                     print ("Shop Button tapped!")
                 }
                 .id("ShopButton")
@@ -37,6 +34,6 @@ struct ShopButtonView: View {
     }
 }
 
-#Preview {
-    ShopButtonView()
-}
+//#Preview {
+//    ShopButtonView()
+//}

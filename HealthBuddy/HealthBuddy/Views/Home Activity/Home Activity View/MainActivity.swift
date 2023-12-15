@@ -8,27 +8,11 @@
 import SwiftUI
 
 struct MainActivity: View {
-    @EnvironmentObject var data :DataModel
-    
     var body: some View {
-        if (data.buddy.isAlive){
+        VStack{
             HomeActivity()
-                .onChange(of: data.buddy.hp){ hp in
-                    print("hp change")
-                    if(hp <= 0){
-                        data.buddy.isAlive = false
-                    }
-                }
-        }
-        else{
-            ZStack{
-                HomeActivity()
-                DeathView()
-            }
-            
         }
     }
-        
 }
 
 #Preview {

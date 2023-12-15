@@ -31,7 +31,7 @@ struct SideBarView: View {
                     .id("SideBarContent")
                     .animation(.easeInOut(duration: 0.2))
                 
-                Color("mainYellow")
+                Color("MainYellow")
                     .cornerRadius(3)
                     .foregroundColor(.gray)
                     .frame(width: 25, height: 80)

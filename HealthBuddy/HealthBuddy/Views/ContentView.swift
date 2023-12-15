@@ -9,8 +9,15 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    @EnvironmentObject var data :DataModel
+    @EnvironmentObject var login :LoginViewModel
     var body: some View {
-        MainActivity()
+        if login.session != nil {
+            MainActivity()
+        }
+        else {
+            LoginPage()
+        }
     }
 }
 

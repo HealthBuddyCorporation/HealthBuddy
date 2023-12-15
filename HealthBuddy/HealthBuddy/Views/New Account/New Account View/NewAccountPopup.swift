@@ -8,15 +8,12 @@
 import SwiftUI
 
 struct NewAccountPopup: View {
-    
-    @State private var createFirstName: String = ""
-    @State private var createLastName: String = ""
-    @State private var createNickName: String = ""
+    @Binding var displayedPage: DisplayedPage
+    @State private var createUsername: String = ""
     @State private var createEmail: String = ""
-    @State private var createPhoneNumber: String = ""
-    @State private var createAdress: String = ""
-    @State private var createZipCode: String = ""
-    @State private var createCountry: String = ""
+    @State private var createPassword: String = ""
+    @State private var createSamePassword: String = ""
+    @State private var passMatch = true
     @State private var isBouncing = false
     
     var body: some View {
@@ -44,50 +41,25 @@ struct NewAccountPopup: View {
                 .fontWeight(.medium)
                 .padding(-10)
             
-            // MARK: - FirstName TextField
-            TextField("Enter your firstname", text: $createFirstName)
-                .depthStyle()
-            
-            // MARK: - LastName TextField
-            TextField("Enter your lastname", text: $createLastName)
-                .depthStyle()
-            
             // MARK: - NickName TextField
-            TextField("Enter your nickname", text: $createNickName)
+            TextField("Enter your username", text: $createUsername)
                 .depthStyle()
             
             // MARK: - Email TextField
             TextField("Enter your Email", text: $createEmail)
                 .depthStyle()
+            TextField("Enter your Password", text: $createPassword)
+                .depthStyle()
             
             // MARK: - Email TextField
-            TextField("Enter your PhoneNumber", text: $createPhoneNumber)
+            TextField("Enter your Password again", text: $createSamePassword)
                 .depthStyle()
-            
-            // MARK: - Adress TextField
-            TextField("Enter your adress", text: $createAdress)
-                .depthStyle()
-            
-            // MARK: - Zip Code TextField
-            TextField("Enter your Zip code", text: $createZipCode)
-                .depthStyle()
-            
-            // MARK: - Country Code TextField
-            TextField("Enter your country", text: $createCountry)
-                .depthStyle()
-            
-            // MARK: - Read RGPD Button
-            Button {
-                
-            } label: {
-                Text("Read RGPD")
-                    .underline(true, color: .white)
-                    .font(.system(size: 12))
-                    .foregroundColor(.white)
+            if(!passMatch){
+                Text("Password don't match!")
+                    .foregroundStyle(Color.red)
             }
-            
             Button {
-                
+                displayedPage = .login
             } label: {
                 Text("Cancel")
                     .font(.system(size: 12))
@@ -95,12 +67,15 @@ struct NewAccountPopup: View {
             }
             // MARK: - I accept Switch
             
-            
-            
-            
             // MARK: - Play button
             Button {
-                // TO DO : Action
+                if(createPassword == createSamePassword){
+                    passMatch = true
+                    LoginViewModel.instance.signUp(createUsername, createEmail, createPassword, "")
+                    displayedPage = .login
+                }else{
+                    passMatch = false
+                }
                 withAnimation(Animation.interpolatingSpring(mass: 1.0, stiffness: 100, damping: 10, initialVelocity: 0)) {
                     isBouncing.toggle() }
                 
@@ -144,10 +119,10 @@ struct NewAccountPopup: View {
     }
 }
 
-#Preview {
-    NewAccountPopup()
-        .background(Image("Wallpaper 2"))
-}
+//#Preview {
+//    NewAccountPopup()
+//        .background(Image("Wallpaper 2"))
+//}
 
 struct DepthStyle: ViewModifier {
     func body(content: Content) -> some View {
@@ -175,6 +150,6 @@ extension View {
     }
 }
 
-#Preview {
-    NewAccountPopup()
-}
+//#Preview {
+//    NewAccountPopup()
+//}

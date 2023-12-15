@@ -13,11 +13,16 @@ enum DisplayedPage {
 }
 
 struct LoginPopUp: View {
-    
+    @EnvironmentObject var data :DataModel
+    @EnvironmentObject var login :LoginViewModel
     @Binding var displayedPage: DisplayedPage
-    @State private var text: String = ""
-    @State private var password: String = ""
+    @State private var emailText: String = ""
+    @State private var pwdText: String = ""
     @State private var isBouncing = false
+    @State private var showAlert = false // Ajout de la variable showAlert
+    @State private var showPasswordAlert = false
+    
+    
     
     var body: some View {
         VStack(alignment: .center, spacing: 20.0) {
@@ -43,12 +48,10 @@ struct LoginPopUp: View {
                 .fontWeight(.medium)
             
             // MARK: - Email TextField
-            TextField("Email/Login", text: $text)
-                .deepStyle()
+            MailFieldView(email: $emailText, showAlert: $showAlert)
             
             // MARK: - Password TextField
-            SecureField("Password", text: $password)
-                .deepStyle()
+            PasswordfieldView(password: $pwdText)
             
             // MARK: - Create account button
             
@@ -91,9 +94,10 @@ struct LoginPopUp: View {
             
             // MARK: - Play button
             Button {
-                // TO DO : Action
                 withAnimation(Animation.interpolatingSpring(mass: 1.0, stiffness: 100, damping: 10, initialVelocity: 0)) {
-                    isBouncing.toggle() }
+                    isBouncing.toggle()
+                    login.signIn(emailText, pwdText)
+                }
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                     withAnimation(.easeOut) {
@@ -123,7 +127,6 @@ struct LoginPopUp: View {
             }
             .accentColor(.primary)
             .shadow(radius: 10)
-            
         }
         .padding(30)
         .background(.ultraThinMaterial)
@@ -132,11 +135,27 @@ struct LoginPopUp: View {
         .shadow(color: .black.opacity(0.5), radius: 20, y: 20)
         .padding(10)
         .dynamicTypeSize(.xSmall ... .xxxLarge)
+        .alert(isPresented: $showAlert) {
+            Alert(
+                title: Text("Erreur"),
+                message: Text(isValidEmail(emailText) ? "Le mot de passe doit contenir au moins 7 caractères." : "Le mot de passe doit contenir au moins 7 caractères et l'email doit être valide."),
+                dismissButton: .default(Text("OK"))
+            )
+        }
+    }
+    
+    func isValidEmail(_ email: String) -> Bool {
+        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", MailFieldView.emailRegex)
+        return emailPredicate.evaluate(with: email)
+    }
+    
+    func isPasswordValid(_ password: String) -> Bool {
+        return password.count >= 7
     }
 }
 
 //#Preview {
-//    LoginPopUp()
+//    LoginPopUp(displayedPage: $DisplayedPage.login)
 //        .background(Image("Wallpaper 2"))
 //}
 
@@ -191,3 +210,56 @@ extension View {
     }
     
 }
+
+struct MailFieldView: View {
+    @Binding var email: String
+    @Binding var showAlert: Bool // Ajout de la variable showAlert
+    static let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+    
+    var body: some View {
+        TextField("Email/Login", text: $email)
+            .padding(.horizontal)
+            .font(.system(size: 14))
+            .fontWeight(.light)
+            .frame(maxWidth: .infinity)
+            .frame(maxHeight: 35)
+            .background(.white.opacity(0.2).gradient)
+            .cornerRadius(4)
+            .background(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke()
+                    .foregroundStyle(.linearGradient(colors:[.white.opacity(10), .clear], startPoint: .top, endPoint: .bottom))
+            )
+            .accentColor(.primary)
+            .shadow(radius: 10)
+            .disableAutocorrection(true)
+    }
+}
+
+struct PasswordfieldView: View {
+    
+    @Binding var password: String
+    
+    var body: some View {
+        SecureField("Password", text: $password)
+            .padding(.horizontal)
+            .font(.system(size: 14))
+            .fontWeight(.light)
+            .frame(maxWidth: .infinity)
+            .frame(maxHeight: 35)
+            .background(.white.opacity(0.2).gradient)
+            .cornerRadius(4)
+            .background(
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke()
+                    .foregroundStyle(.linearGradient(colors:[.white.opacity(10), .clear], startPoint: .top, endPoint: .bottom))
+            )
+            .accentColor(.primary)
+            .shadow(radius: 10)
+    }
+}
+
+
+
+
+

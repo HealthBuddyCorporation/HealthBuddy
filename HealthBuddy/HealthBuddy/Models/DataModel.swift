@@ -12,6 +12,7 @@ class DataModel :ObservableObject {
     @Published var foodList :[Food] = load("foodList.json")
     @Published var cleanerList :[Cleaner] = load("cleaningList.json")
     @Published var toyList :[Toy] = load("toyList.json")
+    @Published var isLogged :Bool = false
     
     func handleDrop(_ items: [Droppable]) -> Bool{
         guard let item = items.first else {
@@ -35,6 +36,31 @@ class DataModel :ObservableObject {
                 play(toyList[index])
             }
             return true
+        }
+    }
+    
+    func StatOverTime(){
+        if(buddy.nutrition <= 2){
+            buddy.nutrition = 0
+            buddy.hp -= 2.0
+        }else{
+            buddy.nutrition -= 2
+        }
+        if(buddy.hygiene <= 2){
+            buddy.hygiene = 0
+            buddy.hp -= 2.0
+        }else{
+            buddy.hygiene -= 2
+        }
+        if(buddy.happiness <= 2){
+            buddy.happiness = 0
+            buddy.hp -= 2.0
+        }else{
+            buddy.happiness -= 2
+        }
+        
+        if(buddy.hp < 0){
+            buddy.hp = 0
         }
     }
 }

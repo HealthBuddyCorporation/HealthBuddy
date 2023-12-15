@@ -15,7 +15,7 @@ struct LoginPage: View {
         
         switch displayedPage {
         case .login:
-            Button("Cancel", role: .cancel){}
+           // Button("Cancel", role: .cancel){}
             ZStack{
                 LoginAnimation()
                 LoginPopUp(displayedPage: $displayedPage)
@@ -23,7 +23,7 @@ struct LoginPage: View {
         case .newAccount:
             ZStack{
                 NewAccountAnimation()
-                NewAccountPopup()
+                NewAccountPopup(displayedPage: $displayedPage)
             }
         }
     }

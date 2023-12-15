@@ -1,11 +1,13 @@
 {
     "id": 1,
+    "name": "Roman Le Marin",
     "hp": 100.0,
     "maxHP": 100.0,
     "nutrition": 50.0,
     "hygiene": 100.0,
     "weight": 40.0,
     "happiness": 100,
+    "level": 1,
     "currentXP": 10,
     "neededXP": 100,
     "isAlive": true

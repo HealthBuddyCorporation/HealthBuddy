@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct charLevelView: View {
+    var level :Int
     var body: some View {
         
-        Text("Character Level")
+        Text("LvL: \(level)")
             .foregroundColor(.black)
             .offset(y: -60)
             .id("charLvl")
@@ -18,5 +19,5 @@ struct charLevelView: View {
 }
 
 #Preview {
-    charLevelView()
+    charLevelView(level: 3)
 }

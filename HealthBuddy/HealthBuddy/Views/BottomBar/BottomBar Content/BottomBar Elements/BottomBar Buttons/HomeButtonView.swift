@@ -8,15 +8,10 @@
 import SwiftUI
 
 struct HomeButtonView: View {
-    
+    @Binding var pageIndex :Int
     @State private var isHomeButtonViewActive = false
     
     var body: some View {
-        
-        NavigationLink(destination: MainActivity(), isActive: $isHomeButtonViewActive){
-            EmptyView()
-        }
-        .hidden()
         
         ZStack{
             Rectangle()
@@ -24,10 +19,11 @@ struct HomeButtonView: View {
                 .foregroundColor(.gray)
                 .frame(width: 35, height: 35)
                 .onTapGesture {
-                isHomeButtonViewActive = true
-                print("Home Button Tapped!")
-            }
-            .id("bottomBarItem1")
+                    isHomeButtonViewActive = true
+                    pageIndex = 0
+                    print("Home Button Tapped!")
+                }
+                .id("bottomBarItem1")
             
             Image(systemName: "house.fill")
                 .resizable()
@@ -35,9 +31,10 @@ struct HomeButtonView: View {
                 .foregroundColor(.white)
                 .frame(width: 25, height: 25)
         }
+        
     }
 }
 
-#Preview {
-    HomeButtonView()
-}
+//#Preview {
+//    HomeButtonView()
+//}

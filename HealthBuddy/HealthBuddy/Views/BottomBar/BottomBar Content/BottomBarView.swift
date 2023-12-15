@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct BottomBarView: View {
+    @Binding var pageIndex :Int
     var body: some View {
-        
         ZStack{
             VStack{
                 
@@ -18,30 +18,30 @@ struct BottomBarView: View {
                     .frame(width: 430, height: 100)
                     .id("BottomBarContent")
                 
-                Color("mainYellow")
+                Color("MainYellow")
                     .frame(width: 400, height: 3)
                     .padding(EdgeInsets(top: -110, leading: 0, bottom: 0, trailing: 0))
             }
             
-            HomeButtonView()
+            HomeButtonView(pageIndex: $pageIndex)
                 .offset(x: -155)
                 .offset(y: -10)
-            ScoreButtonView()
+            ScoreButtonView(pageIndex: $pageIndex)
                 .offset(x: -77)
                 .offset(y: -10)
-            ShopButtonView()
+            ShopButtonView(pageIndex: $pageIndex)
                 .offset(x: 0)
                 .offset(y: -10)
-            TrophyButtonView()
+            TrophyButtonView(pageIndex: $pageIndex)
                 .offset(x: 77)
                 .offset(y: -10)
-            MapButtonView()
+            MapButtonView(pageIndex: $pageIndex)
                 .offset(x: 155)
                 .offset(y: -10)
         }
     }
 }
 
-#Preview {
-    BottomBarView()
-}
+//#Preview {
+//    BottomBarView()
+//}

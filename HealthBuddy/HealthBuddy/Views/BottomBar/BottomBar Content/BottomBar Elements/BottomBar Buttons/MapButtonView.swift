@@ -8,14 +8,10 @@
 import SwiftUI
 
 struct MapButtonView: View {
-    
+    @Binding var pageIndex :Int
     @State private var isMapViewActive = false
     
     var body: some View {
-        NavigationLink(destination: MapView(), isActive: $isMapViewActive) {
-            EmptyView()
-        }
-        .hidden()
         ZStack{
             Rectangle()
                 .foregroundColor(.gray)
@@ -23,6 +19,7 @@ struct MapButtonView: View {
                 .frame(width: 35, height: 35)
                 .onTapGesture {
                     isMapViewActive = true
+                    pageIndex = 4
                     print("Map button tapped!")
                 }
                 .id("MapButton")
@@ -36,6 +33,6 @@ struct MapButtonView: View {
     }
 }
 
-#Preview {
-    MapButtonView()
-}
+//#Preview {
+//    MapButtonView()
+//}

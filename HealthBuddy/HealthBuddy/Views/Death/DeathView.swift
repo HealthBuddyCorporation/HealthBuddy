@@ -15,11 +15,11 @@ struct DeathView: View {
             
             VStack{
                 VStack{
-                    Text ("Qu'avez vous fait?")
+                    Text ("Qu'avez vous fait?!?")
                         .foregroundColor(.white)
                         .font(.system(size: 40))
                         .padding(EdgeInsets(top: -150, leading: 0, bottom: 0, trailing: 0))
-                    Text ("$name")
+                    Text ("\(data.buddy.name), repose en paix")
                         .foregroundColor(.white)
                         .font(.system(size: 25))
                         .padding(EdgeInsets(top: -100, leading: 0, bottom: 100, trailing: 0))
@@ -41,10 +41,10 @@ struct DeathView: View {
                             .padding(EdgeInsets(top: -40, leading: 0, bottom: 50, trailing: 0))
                         
                         HStack{
-                            Text ("Age : ")
+                            Text ("Level : ")
                                 .foregroundColor(.white)
                                 .font(.system(size: 17))
-                            Text ("Results example death")
+                            Text ("\(data.buddy.level)")
                                 .foregroundColor(.white)
                                 .font(.system(size: 17))
                         }
@@ -52,7 +52,7 @@ struct DeathView: View {
                             Text ("Poids :")
                                 .foregroundColor(.white)
                                 .font(.system(size: 17))
-                            Text ("Results example death")
+                            Text (data.buddy.nutrition <= 0 ? "A la peau sur les os" : data.buddy.weight >= 120 ? "Est un beau petit porcelet" : "Une forme Olympique")
                                 .foregroundColor(.white)
                                 .font(.system(size: 17))
                         }
@@ -60,7 +60,7 @@ struct DeathView: View {
                             Text ("Propreté :")
                                 .foregroundColor(.white)
                                 .font(.system(size: 17))
-                            Text ("Results example death")
+                            Text (data.buddy.hygiene <= 0 ? "Est tombé gravement malade" : "Lisse comme un bébé")
                                 .foregroundColor(.white)
                                 .font(.system(size: 17))
                         }
@@ -68,7 +68,7 @@ struct DeathView: View {
                             Text ("Bonheur :")
                                 .foregroundColor(.white)
                                 .font(.system(size: 17))
-                            Text ("Results example death")
+                            Text (data.buddy.happiness <= 0 ? "A subit une dépression fatale" : "Souriant dans le trépas")
                                 .foregroundStyle(.white)
                                 .font(.system(size: 17))
                         }
@@ -76,7 +76,11 @@ struct DeathView: View {
                             Text ("Cause de la mort : ")
                                 .foregroundColor(.white)
                                 .font(.system(size: 17))
-                            Text ("Results example death")
+                            Text (data.buddy.nutrition <= 0 ? "S'est laissé mourrir de faim sans son ami" :
+                                    data.buddy.weight >= 120 ? "A traversé 3 étages en s'asseillant" :
+                                    data.buddy.hygiene <= 0 ? "A contracté plus de 100 maladies" :
+                                    data.buddy.happiness <= 0 ? "S'est laissé dépérir devant Arte" :
+                            "A disparu de façon obscure...Une idée?")
                                 .foregroundColor(.white)
                                 .font(.system(size: 17))
                         }
