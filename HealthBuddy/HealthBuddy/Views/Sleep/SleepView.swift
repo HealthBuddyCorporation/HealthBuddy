@@ -11,21 +11,25 @@ struct SleepView: View {
     var body: some View {
         ZStack{
             PopupBackgroundBox()
-            ZStack{
-                Rectangle()
-            }
+
             VStack{
                 VStack{
                     Text ("Chuuuuuttt!")
                         .foregroundColor(.white)
                         .font(.system(size: 40))
-                    Text ("$name se repose")
+                        .padding(EdgeInsets(top: -150, leading: 0, bottom: 0, trailing: 0))
+                    Text ("$name")
                         .foregroundColor(.white)
                         .font(.system(size: 25))
+                        .padding(EdgeInsets(top: -100, leading: 0, bottom: 100, trailing: 0))
+                    Text ("se repose")
+                        .foregroundColor(.white)
+                        .font(.system(size: 25))
+                        .padding(EdgeInsets(top: -90, leading: 0, bottom: 100, trailing: 0))
                 }.padding(EdgeInsets(top: 100, leading: 0, bottom: -100, trailing: 0))
                 ZStack{
                     PopupContentBackgroundBox()
-                    
+                        .padding(EdgeInsets(top: 30, leading: 0, bottom: 0, trailing: 0))
                     VStack{
                         
                         Image(systemName: "bed.double.fill")

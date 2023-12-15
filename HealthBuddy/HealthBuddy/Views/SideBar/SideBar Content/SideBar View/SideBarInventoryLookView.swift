@@ -1,23 +1,22 @@
 //
-//  SideBarInvetoryClothView.swift
+//  SideBarInventoryLookView.swift
 //  HealthBudy
 //
-//  Created by Raphael Fassotte on 28/11/2023.
+//  Created by Raphael Fassotte on 27/11/2023.
 //
 
 import SwiftUI
 
-struct SideBarInvetoryClothView: View {
-    @EnvironmentObject var data :DataModel
+struct SideBarInventoryLookView: View {
+    @EnvironmentObject var data : DataModel
     @Binding var isShown : Bool
-    @Binding var isBarVisible: Bool
+    @Binding var isBarVisible : Bool
     
     var rows = 2
     
     var body: some View {
         ZStack {
-            Rectangle()
-                .foregroundColor(.black)
+            BlurEffect(style: .systemUltraThinMaterialDark)
                 .frame(width: 350, height: 300)
                 .cornerRadius(10)
             
@@ -36,21 +35,21 @@ struct SideBarInvetoryClothView: View {
                         isShown = false
                         isBarVisible = true
                     }
-                
-                Text("Inventory : Hygiene")
-                    .foregroundColor(.white)
-                
+            
+            Text("Inventory : Look")
+                .foregroundColor(.white)
+            
                 ScrollView(.horizontal) {
                     LazyHGrid(rows: Array(repeating: GridItem(), count: rows), spacing: 10) {
-                        ForEach(data.cleanerList){ cleaner in
-                            if(cleaner.quantity > 0){
-                                ItemBox(cleaner: cleaner, available: true)
-                                    .draggable(cleaner)
+                        ForEach(data.foodList){ food in
+                            if(food.quantity > 0){
+                                ItemBox(food: food, available: true)
+                                    .draggable(food)
                                     .onTapGesture {
-                                        data.cleansed(cleaner)
+                                        data.feed(food)
                                     }
                             }else{
-                                ItemBox(cleaner: cleaner, available: false)
+                                ItemBox(food: food, available: false)
                             }
                         }
                     }
@@ -64,5 +63,5 @@ struct SideBarInvetoryClothView: View {
 }
 
 //#Preview {
-//    SideBarInvetoryClothView()
+//    SideBarItemSixView()
 //}

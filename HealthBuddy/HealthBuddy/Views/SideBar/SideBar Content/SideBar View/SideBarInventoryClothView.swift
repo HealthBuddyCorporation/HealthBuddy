@@ -1,5 +1,5 @@
 //
-//  SideBarInvetoryAccessoriesView.swift
+//  SideBarInvetoryClothView.swift
 //  HealthBudy
 //
 //  Created by Raphael Fassotte on 28/11/2023.
@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct SideBarInvetoryAccessoriesView: View {
-    @EnvironmentObject var data : DataModel
+struct SideBarInventoryClothView: View {
+    @EnvironmentObject var data :DataModel
     @Binding var isShown : Bool
-    @Binding var isBarVisible : Bool
+    @Binding var isBarVisible: Bool
     
     var rows = 2
     
@@ -36,20 +36,20 @@ struct SideBarInvetoryAccessoriesView: View {
                         isBarVisible = true
                     }
                 
-                Text("Inventory : Accessories")
+                Text("Inventory : Cloth")
                     .foregroundColor(.white)
                 
                 ScrollView(.horizontal) {
                     LazyHGrid(rows: Array(repeating: GridItem(), count: rows), spacing: 10) {
-                        ForEach(data.cleanerList) { cleaner in
-                            if(cleaner.quantity > 0){
-                                ItemBox(cleaner: cleaner, available: true)
-                                    .draggable(cleaner)
+                        ForEach(data.foodList){ food in
+                            if(food.quantity > 0){
+                                ItemBox(food: food, available: true)
+                                    .draggable(food)
                                     .onTapGesture {
-                                        data.cleansed(cleaner)
+                                        data.feed(food)
                                     }
                             }else{
-                                ItemBox(cleaner: cleaner, available: false)
+                                ItemBox(food: food, available: false)
                             }
                         }
                     }
@@ -63,5 +63,5 @@ struct SideBarInvetoryAccessoriesView: View {
 }
 
 //#Preview {
-//    SideBarInvetoryAccessoriesView()
+//    SideBarInvetoryClothView()
 //}

@@ -16,11 +16,11 @@ struct SBInvetoryFoodView: View {
             isPopoverPresented.toggle()
             isVisible = false
         }) {
-            Image(systemName: "fork.knife.circle.fill")
+            Image(systemName: "fork.knife")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 30, height: 30)
-                .foregroundColor(Color("MainYellow", bundle: nil))
+                .frame(width: 25, height: 25)
+                .foregroundColor(.gray)
                 .padding(2)
                 .background(Color.customColor)
                 .clipShape(Circle())

@@ -31,18 +31,22 @@ struct MainContentView: View {
             Text("Health")
                 .padding(EdgeInsets(top: -285, leading: -164, bottom: 0, trailing: 0))
                 .font(.system(size: 10))
+                .foregroundColor(.white)
             
             Text("Hungry")
                 .padding(EdgeInsets(top: -285, leading: -65, bottom: 0, trailing: 0))
                 .font(.system(size: 10))
+                .foregroundColor(.white)
             
             Text("Cleanliness")
                 .padding(EdgeInsets(top: -285, leading: 103, bottom: 0, trailing: 0))
                 .font(.system(size: 10))
+                .foregroundColor(.white)
             
             Text("Happyness")
                 .padding(EdgeInsets(top: -285, leading: 300, bottom: 0, trailing: 0))
                 .font(.system(size: 10))
+                .foregroundColor(.white)
             
             CharacterView()
                 .frame(width: 200, height: 200)

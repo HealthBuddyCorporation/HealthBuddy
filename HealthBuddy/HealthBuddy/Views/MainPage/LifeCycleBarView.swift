@@ -12,6 +12,9 @@ struct LifeCycleBarView: View {
         
         ZStack{
             
+            BackgroundBarView()
+                .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
+            
             HealthBarView()
                 .padding(EdgeInsets(top: 0, leading: -185, bottom: 0, trailing: 0))
             
