@@ -4,20 +4,19 @@
 //
 //  Created by Raphael Fassotte on 25/11/2023.
 //
+//  *************************************************************************************
+//  *                       ⚠️⚠️⚠️⚠️⚠️ UPDATED! ⚠️⚠️⚠️⚠️⚠️                             *
+//  *   Corection des positions des éléments et de leurs organisations dans le code     *
+//  *                                                   Raphaël 15/12/2023 - 00:21      *
+//  *************************************************************************************
+//
 
 import SwiftUI
 
 struct SettingsButtonView: View {
-    
     @State private var isSettingsViewActive = false
 
        var body: some View {
-           
-           NavigationLink(destination: SettingsView(isActive: $isSettingsViewActive), isActive: $isSettingsViewActive) {
-               EmptyView()
-           }
-            .hidden()
-           
            Button(action: {
                isSettingsViewActive.toggle()
            }) {
@@ -29,6 +28,9 @@ struct SettingsButtonView: View {
                    .padding(2)
                    .background(Color.gray)
                    .clipShape(Circle())
+           }
+           .fullScreenCover(isPresented: $isSettingsViewActive) {
+               SettingsView(isActive: $isSettingsViewActive)
            }
        }
    }

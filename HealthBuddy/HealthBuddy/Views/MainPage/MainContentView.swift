@@ -4,6 +4,12 @@
 //
 //  Created by Raphael Fassotte on 21/11/2023.
 //
+//  *************************************************************************************
+//  *                       ⚠️⚠️⚠️⚠️⚠️ UPDATED! ⚠️⚠️⚠️⚠️⚠️                             *
+//  *   Corection des positions des éléments et de leurs organisations dans le code     *
+//  *                                                   Raphaël 15/12/2023 - 00:19      *
+//  *************************************************************************************
+//
 
 import SwiftUI
 import RiveRuntime
@@ -22,29 +28,29 @@ struct MainContentView: View {
                 .aspectRatio(contentMode: .fill)
                 .id("MainContent")
             
-            MoneyView()
-                .offset(y: -338)
-            
-            LifeCycleBarView()
-                .offset(y: -300)
+            VStack{
+                MoneyView()
+                LifeCycleBarView()
+                    .padding(.top, -20)
+            }.padding(.top, -355)
             
             Text("Health")
-                .padding(EdgeInsets(top: -285, leading: -164, bottom: 0, trailing: 0))
+                .padding(EdgeInsets(top: -295, leading: -164, bottom: 0, trailing: 0))
                 .font(.system(size: 10))
                 .foregroundColor(.white)
             
             Text("Hungry")
-                .padding(EdgeInsets(top: -285, leading: -65, bottom: 0, trailing: 0))
+                .padding(EdgeInsets(top: -295, leading: -65, bottom: 0, trailing: 0))
                 .font(.system(size: 10))
                 .foregroundColor(.white)
             
             Text("Cleanliness")
-                .padding(EdgeInsets(top: -285, leading: 103, bottom: 0, trailing: 0))
+                .padding(EdgeInsets(top: -295, leading: 103, bottom: 0, trailing: 0))
                 .font(.system(size: 10))
                 .foregroundColor(.white)
             
             Text("Happyness")
-                .padding(EdgeInsets(top: -285, leading: 300, bottom: 0, trailing: 0))
+                .padding(EdgeInsets(top: -295, leading: 300, bottom: 0, trailing: 0))
                 .font(.system(size: 10))
                 .foregroundColor(.white)
             
@@ -60,8 +66,4 @@ struct MainContentView: View {
                 }
         }
     }
-}
-
-#Preview {
-    MainContentView()
 }

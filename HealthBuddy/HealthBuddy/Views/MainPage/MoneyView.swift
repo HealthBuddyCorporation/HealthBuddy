@@ -4,6 +4,12 @@
 //
 //  Created by Raphael Fassotte on 07/12/2023.
 //
+//  *************************************************************************************
+//  *                       ⚠️⚠️⚠️⚠️⚠️ UPDATED! ⚠️⚠️⚠️⚠️⚠️                             *
+//  *   Corection des positions des éléments et de leurs organisations dans le code     *
+//  *                                                   Raphaël 15/12/2023 - 00:17      *
+//  *************************************************************************************
+//
 
 import SwiftUI
 
@@ -18,7 +24,7 @@ struct MoneyView: View {
                 Text("Credit:")
                     .font(.system(size: 12))
                     .foregroundColor(.white)
-                Text("AMMOUNT")
+                Text("$AMMOUNT")
                     .font(.system(size: 12))
                     .foregroundColor(.white)
             }
@@ -28,7 +34,7 @@ struct MoneyView: View {
                 Text("Buddys:")
                     .font(.system(size: 12))
                     .foregroundColor(.white)
-                Text("AMMOUNT")
+                Text("$AMMOUNT")
                     .font(.system(size: 12))
                     .foregroundColor(.white)
             }

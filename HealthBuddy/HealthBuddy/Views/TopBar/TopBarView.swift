@@ -4,6 +4,12 @@
 //
 //  Created by Raphael Fassotte on 21/11/2023.
 //
+//  *************************************************************************************
+//  *                       ⚠️⚠️⚠️⚠️⚠️ UPDATED! ⚠️⚠️⚠️⚠️⚠️                             *
+//  *   Corection des positions des éléments et de leurs organisations dans le code     *
+//  *                                                   Raphaël 15/12/2023 - 23:59      *
+//  *************************************************************************************
+//
 
 import SwiftUI
 
@@ -13,36 +19,25 @@ struct TopBarView: View {
     var body: some View {
         
         ZStack{
-            VStack{
-                Rectangle()
-                    .foregroundColor(.white)
-                    .frame(width: 400, height: 126)
-                    .id("TopBarContent")
+            HStack{
+                ProfilButtonView()
                 
-                Color("MainYellow")
-                    .frame(width: 400, height: 3)
-            }
+                VStack{
+                    charNameView(name: data.buddy.name)
+                    charLevelView(level: data.buddy.level)
+                    ZStack{
+                        Button{
+                            login.signOut()
+                        }label: {
+                            Text("Disconnect")
+                        }
+                    }.padding(EdgeInsets(top: -70, leading: 0, bottom: 0, trailing: 0))
+                }.padding(EdgeInsets(top: 110, leading: 60, bottom: -40, trailing: 70))
+                
+                SettingsButtonView()
+                    .padding(.trailing, 0)
+            }.padding(.top, 40)
             
-            ProfilButtonView()
-                .offset(x: -155)
-                .offset(y: 20)
-            
-            VStack{
-                charNameView(name: data.buddy.name)
-                    .offset(y:80)
-                charLevelView(level: data.buddy.level)
-                    .offset(y:80)
-                Button{
-                    login.signOut()
-                }label:{
-                    Text("Disconnect")
-                        .offset(y:80)
-                }
-            }
-            
-            SettingsButtonView()
-                .offset(x: 155)
-                .offset(y: 20)
         }
     }
 }

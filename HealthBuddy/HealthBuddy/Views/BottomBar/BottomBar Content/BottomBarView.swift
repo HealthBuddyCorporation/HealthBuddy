@@ -17,6 +17,7 @@ struct BottomBarView: View {
                     .foregroundColor(.white)
                     .frame(width: 430, height: 100)
                     .id("BottomBarContent")
+                    .ignoresSafeArea(.all)
                 
                 Color("MainYellow")
                     .frame(width: 400, height: 3)

@@ -4,6 +4,12 @@
 //
 //  Created by Raphael Fassotte on 07/12/2023.
 //
+//  *************************************************************************************
+//  *                       ⚠️⚠️⚠️⚠️⚠️ UPDATED! ⚠️⚠️⚠️⚠️⚠️                             *
+//  *   Corection des positions des éléments et de leurs organisations dans le code     *
+//  *                                                   Raphaël 15/12/2023 - 00:19      *
+//  *************************************************************************************
+//
 
 import SwiftUI
 

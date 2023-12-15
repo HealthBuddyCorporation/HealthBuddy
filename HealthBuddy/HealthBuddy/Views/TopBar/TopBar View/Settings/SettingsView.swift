@@ -4,32 +4,32 @@
 //
 //  Created by Raphael Fassotte on 27/11/2023.
 //
+//  *************************************************************************************
+//  *                       ⚠️⚠️⚠️⚠️⚠️ UPDATED! ⚠️⚠️⚠️⚠️⚠️                             *
+//  *   Corection des positions des éléments et de leurs organisations dans le code     *
+//  *                                                   Raphaël 15/12/2023 - 00:35      *
+//  *************************************************************************************
+//
 
 import SwiftUI
 
 struct SettingsView: View {
-    
     @Binding var isActive: Bool
-    
     var body: some View {
-        
-        NavigationView {
-            
-            VStack{
-                SettingsInfoView()
-                    .padding(EdgeInsets(top: 50, leading: 0, bottom: 0, trailing: 0))
-                SettingsListView()
+        ZStack{
+            HStack{
+                ZStack{
+                    Button("Close") {
+                        isActive = false
+                    }.padding(EdgeInsets(top: -380, leading: -180, bottom: 0, trailing: 0))
+                    
+                    VStack{
+                        SettingsInfoView()
+                        SettingsListView()
+                    }.padding()
+                }
             }
-            
-            Button("Back")
-            
-            {
-                isActive = false
-            }
-            .padding()
-            .foregroundColor(.white)
         }
-        .navigationBarTitle("Settings", displayMode: .inline)
     }
 }
 
