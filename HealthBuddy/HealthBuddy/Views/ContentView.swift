@@ -10,8 +10,9 @@ import CoreData
 
 struct ContentView: View {
     @EnvironmentObject var data :DataModel
+    @EnvironmentObject var login :LoginViewModel
     var body: some View {
-        if data.isLogged {
+        if login.session != nil {
             MainActivity()
         }
         else {

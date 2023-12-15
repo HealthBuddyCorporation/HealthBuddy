@@ -18,7 +18,7 @@ struct BottomBarView: View {
                     .frame(width: 430, height: 100)
                     .id("BottomBarContent")
                 
-                Color("mainYellow")
+                Color("MainYellow")
                     .frame(width: 400, height: 3)
                     .padding(EdgeInsets(top: -110, leading: 0, bottom: 0, trailing: 0))
             }

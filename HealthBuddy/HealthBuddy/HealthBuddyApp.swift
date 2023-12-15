@@ -22,11 +22,13 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct HealthBuddyApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject var data = DataModel()
+    @StateObject var login = LoginViewModel()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(data)
+                .environmentObject(login)
         }
     }
 }
