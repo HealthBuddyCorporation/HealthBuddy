@@ -51,6 +51,8 @@
 		57C1FF6A2B29E2C700D7CAB7 /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1FF692B29E2C700D7CAB7 /* BlurEffect.swift */; };
 		57C1FF6C2B29FABD00D7CAB7 /* BackgroundBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1FF6B2B29FABD00D7CAB7 /* BackgroundBarView.swift */; };
 		57C1FF7B2B2A24B100D7CAB7 /* ShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1FF7A2B2A24B000D7CAB7 /* ShoppingView.swift */; };
+		57C1FF7D2B2B824400D7CAB7 /* MainFrameBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1FF7C2B2B824400D7CAB7 /* MainFrameBackgroundView.swift */; };
+		57C1FF7F2B2C83D800D7CAB7 /* NewCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1FF7E2B2C83D800D7CAB7 /* NewCharacterView.swift */; };
 		F1619AD82AB8280D00D8FCEE /* HealthBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */; };
 		F1619ADC2AB8280E00D8FCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */; };
 		F1619ADF2AB8280E00D8FCEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */; };
@@ -166,6 +168,8 @@
 		57C1FF692B29E2C700D7CAB7 /* BlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffect.swift; sourceTree = "<group>"; };
 		57C1FF6B2B29FABD00D7CAB7 /* BackgroundBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundBarView.swift; sourceTree = "<group>"; };
 		57C1FF7A2B2A24B000D7CAB7 /* ShoppingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingView.swift; sourceTree = "<group>"; };
+		57C1FF7C2B2B824400D7CAB7 /* MainFrameBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFrameBackgroundView.swift; sourceTree = "<group>"; };
+		57C1FF7E2B2C83D800D7CAB7 /* NewCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterView.swift; sourceTree = "<group>"; };
 		F1619AD42AB8280D00D8FCEE /* HealthBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBuddyApp.swift; sourceTree = "<group>"; };
 		F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -278,8 +282,9 @@
 				5725F9A02B16294E00289B71 /* ScoreView.swift */,
 				5725F99C2B16294E00289B71 /* ShopView.swift */,
 				5725F99E2B16294E00289B71 /* TrophyView.swift */,
-				575EAB9A2B209446000E3AEC /* Map */,
 				57C1FF7A2B2A24B000D7CAB7 /* ShoppingView.swift */,
+				57C1FF7C2B2B824400D7CAB7 /* MainFrameBackgroundView.swift */,
+				575EAB9A2B209446000E3AEC /* Map */,
 			);
 			path = "BottomBar View";
 			sourceTree = "<group>";
@@ -628,6 +633,7 @@
 				F1B7409A2B0C990B0084417F /* TestViews */,
 				5749E3602B1F2BA800DA6482 /* PopupBackgroundBox.swift */,
 				5749E3642B1F321E00DA6482 /* PopupContentBackgroundBox.swift */,
+				57C1FF7E2B2C83D800D7CAB7 /* NewCharacterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -773,6 +779,7 @@
 				F1EA98582B18C238005309D2 /* ItemBox.swift in Sources */,
 				5725F9DB2B16294F00289B71 /* ScoreButtonView.swift in Sources */,
 				575EABAD2B21C9B4000E3AEC /* SettingsInfoView.swift in Sources */,
+				57C1FF7D2B2B824400D7CAB7 /* MainFrameBackgroundView.swift in Sources */,
 				575EABB42B21D156000E3AEC /* CleanlinessBarView.swift in Sources */,
 				5725F9DF2B16294F00289B71 /* NewAccountAnimation.swift in Sources */,
 				5725F9D42B16294F00289B71 /* TrophyView.swift in Sources */,
@@ -811,6 +818,7 @@
 				F1E8F8D02B21D2A300B08B85 /* SideBarInventoryToyView.swift in Sources */,
 				F1EA98432B18944C005309D2 /* SettingsView.swift in Sources */,
 				575EABA82B21C759000E3AEC /* ProfilListView.swift in Sources */,
+				57C1FF7F2B2C83D800D7CAB7 /* NewCharacterView.swift in Sources */,
 				F1619AD82AB8280D00D8FCEE /* HealthBuddyApp.swift in Sources */,
 				F1B740A22B0C990B0084417F /* ContentView.swift in Sources */,
 				F1EA98422B189430005309D2 /* charNameView.swift in Sources */,

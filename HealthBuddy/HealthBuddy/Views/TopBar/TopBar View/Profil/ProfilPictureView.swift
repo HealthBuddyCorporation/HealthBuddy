@@ -14,22 +14,16 @@ struct ProfilPictureView: View {
             
             ZStack{
                 
-                Rectangle()
-                    .foregroundColor(.gray)
+                BlurEffect(style: .systemUltraThinMaterial)
+                    .foregroundColor(.white)
                     .frame(width: 80, height: 80)
                     .cornerRadius(80)
-                
-                Rectangle()
-                    .foregroundColor(.white)
-                    .opacity(0.4)
-                    .frame(width: 70, height: 70)
-                    .cornerRadius(60)
                 
                 Image(systemName: "person.circle")
                     .resizable()
                     .background(Color.gray)
                     .cornerRadius(40)
-                    .frame(width: 50, height: 50)
+                    .frame(width: 70, height: 70)
                     .foregroundColor(.white)
             }
         }
