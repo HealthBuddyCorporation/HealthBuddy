@@ -15,7 +15,10 @@ struct ScoreView: View {
     
     var body: some View {
         ZStack {
-            MainFrameBackgroundView()
+            MainFrameBackgroundView() 
+                .frame(height: 706)
+                .foregroundStyle(.clear)
+                .padding(.top, 150)
             VStack {
                 Text("LeaderBoard")
                     .font(.title)

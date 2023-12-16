@@ -14,13 +14,12 @@ struct HomeActivity: View {
     var body: some View {
         ZStack{
             VStack{
-                TopBarView()
-                    .offset(y: 32)
-                Spacer()
                 VStack{
                     switch pageIndex{
                     case 0:
                         if(data.buddy.isAlive){
+                            TopBarView()
+                                .offset(y: 32)
                             MainContentView()
                                 .offset(y: 21)
                                 .onReceive(timer) { _ in

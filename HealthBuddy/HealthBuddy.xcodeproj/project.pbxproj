@@ -212,8 +212,8 @@
 		F1619AE02AB8280E00D8FCEE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F1619AE32AB8280E00D8FCEE /* HealthBuddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthBuddy.xcdatamodel; sourceTree = "<group>"; };
 		F1AA75732B2C864100199EE0 /* FBDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBDatabase.swift; sourceTree = "<group>"; };
-		F1AA75752B2C961500199EE0 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = HealthBuddy/FireBase/UserModel.swift; sourceTree = SOURCE_ROOT; };
-		F1AA75772B2C9F3C00199EE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1AA75752B2C961500199EE0 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = HealthBuddy/Models/Users/UserModel.swift; sourceTree = SOURCE_ROOT; };
+		F1AA75772B2C9F3C00199EE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1AC8A782B1DCFB600236EA7 /* Droppable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Droppable.swift; sourceTree = "<group>"; };
 		F1B0F1392B20899E004F9BFA /* Toy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toy.swift; sourceTree = "<group>"; };
 		F1B740882B0C98F90084417F /* JsonFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonFunctions.swift; sourceTree = "<group>"; };
@@ -972,8 +972,7 @@
 				F1EA98472B18948A005309D2 /* MainActivity.swift in Sources */,
 				F1EA98652B18D50F005309D2 /* SBInventoryCleanerView.swift in Sources */,
 				5725F9E82B16294F00289B71 /* SBInventoryWorldView.swift in Sources */,
-				F1EA984D2B1894F9005309D2 /* SBItemFourView.swift in Sources */,
-				5725F9E82B16294F00289B71 /* SBItemSevenView.swift in Sources */,
+				5725F9E82B16294F00289B71 /* SBInventoryWorldView.swift in Sources */,
 				42802B642B29CDDF00D40B77 /* AuthenticationManager.swift in Sources */,
 				F1B0F13A2B20899E004F9BFA /* Toy.swift in Sources */,
 				F1EA98442B189473005309D2 /* BuildSheet.swift in Sources */,
