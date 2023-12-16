@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42802B662B2D9AEB00D40B77 /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42802B652B2D9AEB00D40B77 /* MapPin.swift */; };
 		5725F9952B16292B00289B71 /* charLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F98C2B16292B00289B71 /* charLevelView.swift */; };
 		5725F9982B16292B00289B71 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9912B16292B00289B71 /* ProfilView.swift */; };
 		5725F9D42B16294F00289B71 /* TrophyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99E2B16294E00289B71 /* TrophyView.swift */; };
@@ -103,6 +104,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42802B652B2D9AEB00D40B77 /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
 		5725F9842B16290700289B71 /* BuildSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildSheet.swift; sourceTree = "<group>"; };
 		5725F9872B16292B00289B71 /* TopBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 		5725F98B2B16292B00289B71 /* charNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = charNameView.swift; sourceTree = "<group>"; };
@@ -473,6 +475,7 @@
 				575EAB982B209401000E3AEC /* MapActionView.swift */,
 				575EAB962B2093CB000E3AEC /* MapContentView.swift */,
 				575EAB942B208F76000E3AEC /* MapSearchView.swift */,
+				42802B652B2D9AEB00D40B77 /* MapPin.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -845,6 +848,7 @@
 				575EAB9F2B21AA24000E3AEC /* CharacterView.swift in Sources */,
 				5725F9E52B16294F00289B71 /* SBInvetoryAccessoriesView.swift in Sources */,
 				F1EA98412B189428005309D2 /* SettingsButtonView.swift in Sources */,
+				42802B662B2D9AEB00D40B77 /* MapPin.swift in Sources */,
 				F1E8F8CE2B21CFBF00B08B85 /* Data+Toy.swift in Sources */,
 				575EABA42B21C67B000E3AEC /* ProfilPictureView.swift in Sources */,
 				5725F9EB2B16294F00289B71 /* SideBarItemFiveView.swift in Sources */,

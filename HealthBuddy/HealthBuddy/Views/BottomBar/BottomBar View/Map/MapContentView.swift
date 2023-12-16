@@ -9,9 +9,7 @@ import SwiftUI
 import MapKit
 
 struct MapContentView: View {
-
     @StateObject private var viewModel = ContentViewModel()
-    @State private var showAlert = false
 
     var body: some View {
         VStack {
@@ -21,40 +19,37 @@ struct MapContentView: View {
                     .onAppear {
                         viewModel.checkIfUserLocationIsEnabled()
                     }
-                    .mapStyle(.standard(elevation:.realistic))
-                    .overlay(
-                        VStack {
-                            Spacer()
-                            Button("Ajouter Localisation") {
-                                showAlert = true
-                            }
-                            .padding()
-                            .background(Color.blue)
-                            .foregroundColor(.white)
-                            .cornerRadius(8)
-                            .padding()
-                        }
-                    )
-                    .alert(isPresented: $showAlert) {
-                        Alert(
-                            title: Text("Ajouter Localisation"),
-                            message: Text("Ajouter une localisation à la carte ?"),
-                            primaryButton: .default(Text("Annuler")),
-                            secondaryButton: .default(Text("Ajouter"), action: {
-                                viewModel.addLocation()
-                            })
-                        )
-                    }
+                    .mapStyle(.standard(elevation: .realistic))
             } else {
                 // Fallback on earlier versions
             }
+
+//            Button("Add Pin") {
+//                viewModel.addPin(pins: &viewModel.pins)
+//            }
+//            .padding()
+//            .background(Color.blue)
+//            .foregroundColor(.white)
+//            .cornerRadius(8)
+//            .padding()
+//
+//            // Bouton pour supprimer tous les pins
+//            Button("Remove All Pins") {
+//                viewModel.removeAllPins()
+//            }
+//            .padding()
+//            .background(Color.red)
+//            .foregroundColor(.white)
+//            .cornerRadius(8)
+//            .padding()
         }
     }
 }
+           
 
 class ContentViewModel: NSObject, ObservableObject, CLLocationManagerDelegate, MKMapViewDelegate {
-
     @Published var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 37.331516, longitude: -121.891054), span: MKCoordinateSpan(latitudeDelta: 0.9, longitudeDelta: 0.9))
+    @Published var pins: [MapPin] = []
     @Published var annotations: [MKPointAnnotation] = []
 
     var locationManager: CLLocationManager?
@@ -69,7 +64,7 @@ class ContentViewModel: NSObject, ObservableObject, CLLocationManagerDelegate, M
         }
     }
 
-    func checkLocationAuthorization(){
+    func checkLocationAuthorization() {
         guard let locationManager = locationManager else { return }
 
         switch locationManager.authorizationStatus {
@@ -90,28 +85,83 @@ class ContentViewModel: NSObject, ObservableObject, CLLocationManagerDelegate, M
         checkLocationAuthorization()
     }
 
-    func addLocation() {
-        // Ajouter une nouvelle annotation à la liste
-        let newAnnotation = MKPointAnnotation()
-        newAnnotation.coordinate = region.center
-        annotations.append(newAnnotation)
+    // Fonction pour ajouter un pin
+    func addPin(pins: inout [MapPin]) {
+        let newPin = MapPin(coordinate: region.center)
+        pins.append(newPin)
+        updateAnnotations()
     }
 
-    // MKMapViewDelegate function to customize annotation views
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        guard annotation is MKPointAnnotation else { return nil }
+    // Fonction pour supprimer tous les pins
+    func removeAllPins() {
+        pins.removeAll()
+        updateAnnotations()
+    }
 
-        let identifier = "pinAnnotation"
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+    // Fonction pour mettre à jour les annotations sur la carte
+    func updateAnnotations() {
+        // Convertir les MapPins en MKPointAnnotations
+        let mkAnnotations = pins.map { mapPin -> MKPointAnnotation in
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = mapPin.coordinate
+            return annotation
+        }
+        annotations = mkAnnotations
+    }
+}
 
-        if annotationView == nil {
-            annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            annotationView?.canShowCallout = true
-        } else {
-            annotationView?.annotation = annotation
+struct MapView: UIViewRepresentable {
+    @Binding var pins: [MapPin]
+    @Binding var region: MKCoordinateRegion
+
+    func makeUIView(context: Context) -> MKMapView {
+        let mapView = MKMapView()
+        mapView.delegate = context.coordinator
+        return mapView
+    }
+
+    func updateUIView(_ uiView: MKMapView, context: Context) {
+        updateAnnotations(on: uiView)
+    }
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+
+    private func updateAnnotations(on mapView: MKMapView) {
+        mapView.removeAnnotations(mapView.annotations)
+
+        // Convertissez les MapPins en MKPointAnnotations
+        let mkAnnotations = pins.map { mapPin -> MKPointAnnotation in
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = mapPin.coordinate
+            return annotation
         }
 
-        return annotationView
+        mapView.addAnnotations(mkAnnotations)
+        mapView.setRegion(region, animated: true)
+    }
+
+    class Coordinator: NSObject, MKMapViewDelegate {
+        var parent: MapView
+
+        init(_ parent: MapView) {
+            self.parent = parent
+        }
+
+        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+            let identifier = "pin"
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+
+            if annotationView == nil {
+                annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                annotationView?.canShowCallout = true
+            } else {
+                annotationView?.annotation = annotation
+            }
+
+            return annotationView
+        }
     }
 }
 
@@ -120,5 +170,7 @@ struct MapContentView_Previews: PreviewProvider {
         MapContentView()
     }
 }
+
+
 
 
