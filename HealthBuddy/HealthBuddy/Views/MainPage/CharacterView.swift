@@ -17,9 +17,11 @@ import RiveRuntime
 struct CharacterView: View {
     var body: some View {
         
-        RiveViewModel(
-            webURL: "https://cdn.rive.app/animations/off_road_car_v7.riv"
-        ).view()
+        RiveViewModel(fileName: "BigManIdle").view()
+            .frame(width: 600, height: 600)
+            .padding(EdgeInsets(top: 0, leading: 0, bottom: 350, trailing: 0))
+            .ignoresSafeArea()
+        
     }
 }
 
