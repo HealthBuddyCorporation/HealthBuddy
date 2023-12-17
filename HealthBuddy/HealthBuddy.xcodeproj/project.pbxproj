@@ -34,6 +34,9 @@
 		5749E3612B1F2BA800DA6482 /* PopupBackgroundBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749E3602B1F2BA800DA6482 /* PopupBackgroundBox.swift */; };
 		5749E3652B1F321E00DA6482 /* PopupContentBackgroundBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5749E3642B1F321E00DA6482 /* PopupContentBackgroundBox.swift */; };
 		575498362B2F5B3000549B1D /* BigManIdle.riv in Resources */ = {isa = PBXBuildFile; fileRef = 575498352B2F5B3000549B1D /* BigManIdle.riv */; };
+		575498402B2F9CAE00549B1D /* BigManGrossi.riv in Resources */ = {isa = PBXBuildFile; fileRef = 5754983D2B2F9CAE00549B1D /* BigManGrossi.riv */; };
+		575498412B2F9CAE00549B1D /* BigManMange.riv in Resources */ = {isa = PBXBuildFile; fileRef = 5754983E2B2F9CAE00549B1D /* BigManMange.riv */; };
+		575498442B2FA0C900549B1D /* BigManFaim.riv in Resources */ = {isa = PBXBuildFile; fileRef = 575498432B2FA0C900549B1D /* BigManFaim.riv */; };
 		575EAB952B208F76000E3AEC /* MapSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EAB942B208F76000E3AEC /* MapSearchView.swift */; };
 		575EAB972B2093CB000E3AEC /* MapContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EAB962B2093CB000E3AEC /* MapContentView.swift */; };
 		575EAB992B209401000E3AEC /* MapActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EAB982B209401000E3AEC /* MapActionView.swift */; };
@@ -183,6 +186,9 @@
 		5749E3602B1F2BA800DA6482 /* PopupBackgroundBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupBackgroundBox.swift; sourceTree = "<group>"; };
 		5749E3642B1F321E00DA6482 /* PopupContentBackgroundBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupContentBackgroundBox.swift; sourceTree = "<group>"; };
 		575498352B2F5B3000549B1D /* BigManIdle.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = BigManIdle.riv; sourceTree = "<group>"; };
+		5754983D2B2F9CAE00549B1D /* BigManGrossi.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = BigManGrossi.riv; sourceTree = "<group>"; };
+		5754983E2B2F9CAE00549B1D /* BigManMange.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = BigManMange.riv; sourceTree = "<group>"; };
+		575498432B2FA0C900549B1D /* BigManFaim.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = BigManFaim.riv; path = ../../../../../../Desktop/BigManFaim.riv; sourceTree = "<group>"; };
 		575EAB942B208F76000E3AEC /* MapSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchView.swift; sourceTree = "<group>"; };
 		575EAB962B2093CB000E3AEC /* MapContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContentView.swift; sourceTree = "<group>"; };
 		575EAB982B209401000E3AEC /* MapActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapActionView.swift; sourceTree = "<group>"; };
@@ -628,6 +634,9 @@
 				5725F9F52B16299100289B71 /* WatchView.swift */,
 				F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */,
 				575498352B2F5B3000549B1D /* BigManIdle.riv */,
+				575498432B2FA0C900549B1D /* BigManFaim.riv */,
+				5754983D2B2F9CAE00549B1D /* BigManGrossi.riv */,
+				5754983E2B2F9CAE00549B1D /* BigManMange.riv */,
 				F1AA75772B2C9F3C00199EE0 /* GoogleService-Info.plist */,
 				575EABA02B21ACA1000E3AEC /* mixing_animations.riv */,
 				F1619AE02AB8280E00D8FCEE /* Persistence.swift */,
@@ -890,10 +899,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1EA985C2B18CA33005309D2 /* toyList.json in Resources */,
+				575498402B2F9CAE00549B1D /* BigManGrossi.riv in Resources */,
 				575498362B2F5B3000549B1D /* BigManIdle.riv in Resources */,
 				F1AA75782B2C9F3C00199EE0 /* GoogleService-Info.plist in Resources */,
+				575498412B2F9CAE00549B1D /* BigManMange.riv in Resources */,
 				F1B7408C2B0C98F90084417F /* buddyData.json in Resources */,
 				F1EA985E2B18CA48005309D2 /* cleaningList.json in Resources */,
+				575498442B2FA0C900549B1D /* BigManFaim.riv in Resources */,
 				F1B7408D2B0C98F90084417F /* foodList.json in Resources */,
 				F1619ADF2AB8280E00D8FCEE /* Preview Assets.xcassets in Resources */,
 				F1619ADC2AB8280E00D8FCEE /* Assets.xcassets in Resources */,
