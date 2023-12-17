@@ -14,6 +14,9 @@ struct ContentView: View {
     var body: some View {
 //        if login.session != nil {
             MainActivity()
+            .onAppear{
+                FBDatabase.instance.initialDB()
+            }
 //        }
 //        else {
 //            LoginPage()

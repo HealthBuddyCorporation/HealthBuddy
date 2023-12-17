@@ -16,6 +16,8 @@ struct Food: Hashable, Codable, Identifiable, Transferable{
     var foodValue :Double
     var weightValue :Double
     var happinessValue :Double
+    var price :Int = 10
+    var isPremium :Bool = false
 }
 
 extension Food{

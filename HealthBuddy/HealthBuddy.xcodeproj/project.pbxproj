@@ -57,11 +57,10 @@
 		57C1FF7B2B2A24B100D7CAB7 /* ShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1FF7A2B2A24B000D7CAB7 /* ShoppingView.swift */; };
 		57C1FF7D2B2B824400D7CAB7 /* MainFrameBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1FF7C2B2B824400D7CAB7 /* MainFrameBackgroundView.swift */; };
 		57C1FF7F2B2C83D800D7CAB7 /* NewCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1FF7E2B2C83D800D7CAB7 /* NewCharacterView.swift */; };
+		65AD5DD22B2F4C4B007F5DBD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65AD5DD12B2F4C4B007F5DBD /* GoogleService-Info.plist */; };
 		F1619AD82AB8280D00D8FCEE /* HealthBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */; };
 		F1619ADC2AB8280E00D8FCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */; };
 		F1619ADF2AB8280E00D8FCEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */; };
-		F1619AE12AB8280E00D8FCEE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1619AE02AB8280E00D8FCEE /* Persistence.swift */; };
-		F1619AE42AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1619AE22AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld */; };
 		F1A6E3382B2B072A0000AAB6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F1A6E3372B2B072A0000AAB6 /* FirebaseAnalytics */; };
 		F1A6E33A2B2B072A0000AAB6 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = F1A6E3392B2B072A0000AAB6 /* FirebaseAnalyticsOnDeviceConversion */; };
 		F1A6E33C2B2B072A0000AAB6 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F1A6E33B2B2B072A0000AAB6 /* FirebaseAnalyticsSwift */; };
@@ -91,7 +90,6 @@
 		F1A6E36C2B2B072A0000AAB6 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F1A6E36B2B2B072A0000AAB6 /* FirebaseStorageCombine-Community */; };
 		F1AA75742B2C864100199EE0 /* FBDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA75732B2C864100199EE0 /* FBDatabase.swift */; };
 		F1AA75762B2C961500199EE0 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AA75752B2C961500199EE0 /* UserModel.swift */; };
-		F1AA75782B2C9F3C00199EE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1AA75772B2C9F3C00199EE0 /* GoogleService-Info.plist */; };
 		F1AC8A792B1DCFB600236EA7 /* Droppable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AC8A782B1DCFB600236EA7 /* Droppable.swift */; };
 		F1B0F13A2B20899E004F9BFA /* Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B0F1392B20899E004F9BFA /* Toy.swift */; };
 		F1B7408B2B0C98F90084417F /* JsonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B740882B0C98F90084417F /* JsonFunctions.swift */; };
@@ -205,15 +203,13 @@
 		57C1FF7A2B2A24B000D7CAB7 /* ShoppingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingView.swift; sourceTree = "<group>"; };
 		57C1FF7C2B2B824400D7CAB7 /* MainFrameBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFrameBackgroundView.swift; sourceTree = "<group>"; };
 		57C1FF7E2B2C83D800D7CAB7 /* NewCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterView.swift; sourceTree = "<group>"; };
+		65AD5DD12B2F4C4B007F5DBD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1619AD42AB8280D00D8FCEE /* HealthBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBuddyApp.swift; sourceTree = "<group>"; };
 		F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F1619AE02AB8280E00D8FCEE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		F1619AE32AB8280E00D8FCEE /* HealthBuddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthBuddy.xcdatamodel; sourceTree = "<group>"; };
 		F1AA75732B2C864100199EE0 /* FBDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBDatabase.swift; sourceTree = "<group>"; };
 		F1AA75752B2C961500199EE0 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = HealthBuddy/Models/Users/UserModel.swift; sourceTree = SOURCE_ROOT; };
-		F1AA75772B2C9F3C00199EE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F1AC8A782B1DCFB600236EA7 /* Droppable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Droppable.swift; sourceTree = "<group>"; };
 		F1B0F1392B20899E004F9BFA /* Toy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toy.swift; sourceTree = "<group>"; };
 		F1B740882B0C98F90084417F /* JsonFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonFunctions.swift; sourceTree = "<group>"; };
@@ -600,6 +596,7 @@
 		F1619ACB2AB8280D00D8FCEE = {
 			isa = PBXGroup;
 			children = (
+				65AD5DD12B2F4C4B007F5DBD /* GoogleService-Info.plist */,
 				F1619AD62AB8280D00D8FCEE /* HealthBuddy */,
 				F1619AD52AB8280D00D8FCEE /* Products */,
 				42802B5F2B2795D900D40B77 /* Frameworks */,
@@ -625,10 +622,7 @@
 				F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */,
 				5725F9F52B16299100289B71 /* WatchView.swift */,
 				F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */,
-				F1AA75772B2C9F3C00199EE0 /* GoogleService-Info.plist */,
 				575EABA02B21ACA1000E3AEC /* mixing_animations.riv */,
-				F1619AE02AB8280E00D8FCEE /* Persistence.swift */,
-				F1619AE22AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld */,
 				F1619ADD2AB8280E00D8FCEE /* Preview Content */,
 				575EABA92B21C928000E3AEC /* ExtensionColor.swift */,
 			);
@@ -887,12 +881,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1EA985C2B18CA33005309D2 /* toyList.json in Resources */,
-				F1AA75782B2C9F3C00199EE0 /* GoogleService-Info.plist in Resources */,
 				F1B7408C2B0C98F90084417F /* buddyData.json in Resources */,
 				F1EA985E2B18CA48005309D2 /* cleaningList.json in Resources */,
 				F1B7408D2B0C98F90084417F /* foodList.json in Resources */,
 				F1619ADF2AB8280E00D8FCEE /* Preview Assets.xcassets in Resources */,
 				F1619ADC2AB8280E00D8FCEE /* Assets.xcassets in Resources */,
+				65AD5DD22B2F4C4B007F5DBD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -936,14 +930,12 @@
 				5725F9E12B16294F00289B71 /* SideBarView.swift in Sources */,
 				5725F9982B16292B00289B71 /* ProfilView.swift in Sources */,
 				F1EA98672B18D5D3005309D2 /* SideBarInventoryCleanerView.swift in Sources */,
-				F1619AE12AB8280E00D8FCEE /* Persistence.swift in Sources */,
 				575EABB22B21D0A9000E3AEC /* HealthBarView.swift in Sources */,
 				F1EA98552B18C0B7005309D2 /* Data+Food.swift in Sources */,
 				57C1FF6C2B29FABD00D7CAB7 /* BackgroundBarView.swift in Sources */,
 				F1B740962B0C99050084417F /* Buddy.swift in Sources */,
 				575EABAF2B21C9C1000E3AEC /* SettingsListView.swift in Sources */,
 				5725F9F02B16294F00289B71 /* LoginAnimation.swift in Sources */,
-				F1619AE42AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld in Sources */,
 				F1B740982B0C99050084417F /* Food.swift in Sources */,
 				F1B740A12B0C990B0084417F /* BuddyStat.swift in Sources */,
 				F1B740A02B0C990B0084417F /* CircledFood.swift in Sources */,
@@ -1128,8 +1120,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1157,8 +1149,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1379,19 +1371,6 @@
 			productName = "FirebaseStorageCombine-Community";
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		F1619AE22AB8280E00D8FCEE /* HealthBuddy.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F1619AE32AB8280E00D8FCEE /* HealthBuddy.xcdatamodel */,
-			);
-			currentVersion = F1619AE32AB8280E00D8FCEE /* HealthBuddy.xcdatamodel */;
-			path = HealthBuddy.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F1619ACC2AB8280D00D8FCEE /* Project object */;
 }
