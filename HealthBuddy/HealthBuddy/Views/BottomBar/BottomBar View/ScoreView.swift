@@ -15,6 +15,9 @@ struct ScoreView: View {
     
     var body: some View {
         ZStack {
+            Rectangle()
+                .frame(height: 880)
+                .foregroundStyle(.clear)
             MainFrameBackgroundView()
             VStack {
                 Text("LeaderBoard")
@@ -190,6 +193,7 @@ struct ScoreView: View {
                 }
                 
             }.padding(EdgeInsets(top: 0, leading: 300, bottom: 0, trailing: 300))
+                .frame(height: 700)
         }
     }
 }
