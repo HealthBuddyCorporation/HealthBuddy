@@ -17,8 +17,8 @@ struct ProfilView: View {
             
             VStack{
                 ProfilPictureView()
-                ProfilInfoView()
-                ProfilListView()
+                ProfilInfoView(userData: UserData.init())
+                ProfilListView(userData: UserData.init())
             }
             
             Button("Back")

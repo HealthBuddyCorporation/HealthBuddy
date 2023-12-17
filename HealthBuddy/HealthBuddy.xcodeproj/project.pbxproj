@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42802B662B2D9AEB00D40B77 /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42802B652B2D9AEB00D40B77 /* MapPin.swift */; };
+		428E6F4A2B2F1EAD00871945 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E6F492B2F1EAD00871945 /* UserData.swift */; };
 		5725F9952B16292B00289B71 /* charLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F98C2B16292B00289B71 /* charLevelView.swift */; };
 		5725F9982B16292B00289B71 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9912B16292B00289B71 /* ProfilView.swift */; };
 		5725F9D42B16294F00289B71 /* TrophyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99E2B16294E00289B71 /* TrophyView.swift */; };
@@ -105,6 +106,7 @@
 
 /* Begin PBXFileReference section */
 		42802B652B2D9AEB00D40B77 /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		428E6F492B2F1EAD00871945 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		5725F9842B16290700289B71 /* BuildSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildSheet.swift; sourceTree = "<group>"; };
 		5725F9872B16292B00289B71 /* TopBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 		5725F98B2B16292B00289B71 /* charNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = charNameView.swift; sourceTree = "<group>"; };
@@ -487,6 +489,7 @@
 				575EABA32B21C67B000E3AEC /* ProfilPictureView.swift */,
 				575EABA52B21C6EE000E3AEC /* ProfilInfoView.swift */,
 				575EABA72B21C759000E3AEC /* ProfilListView.swift */,
+				428E6F492B2F1EAD00871945 /* UserData.swift */,
 			);
 			path = Profil;
 			sourceTree = "<group>";
@@ -852,6 +855,7 @@
 				F1E8F8CE2B21CFBF00B08B85 /* Data+Toy.swift in Sources */,
 				575EABA42B21C67B000E3AEC /* ProfilPictureView.swift in Sources */,
 				5725F9EB2B16294F00289B71 /* SideBarItemFiveView.swift in Sources */,
+				428E6F4A2B2F1EAD00871945 /* UserData.swift in Sources */,
 				575EABAA2B21C928000E3AEC /* ExtensionColor.swift in Sources */,
 				5725F9E32B16294F00289B71 /* SBInvetoryFoodView.swift in Sources */,
 				F1EA984E2B189500005309D2 /* SideBarInvetoryClothView.swift in Sources */,
