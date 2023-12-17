@@ -8,34 +8,82 @@
 import SwiftUI
 
 struct SettingsListView: View {
-    var body: some View {
+    @State private var isNotificationSwitchOn = false
+    @State private var isMusicSwitchOn = false
+    @State private var sleepStartHour = 22
+    @State private var sleepEndHour = 8
+    @State private var isExternalNotifSwitchOn = false
+    @State private var isScoreHiddenSwitchOn = false
+    @State private var isWatchAppSwitchOn = false
         
-        VStack{
-            
-            List {
-                Text("Élément 1")
-                
-                Text("Élément 2")
-                
-                Text("Élément 3")
-                
-                Text("Élément 4")
-                
-                Text("Élément 5")
-                
-                Text("Élément 6")
-                
-                Text("Élément 7")
-                
-                Text("Élément 8")
-                
-                Text("Élément 9")
-                
-                Text("Élément 10")
+        var body: some View {
+            VStack {
+                List {
+                    CustomRowView(text: "Notifications", isSwitchOn: $isNotificationSwitchOn)
+                    
+                    CustomRowView(text: "Music", isSwitchOn: $isMusicSwitchOn)
+                    
+                    
+                    SleepOptionRowView(startHour: $sleepStartHour, endHour: $sleepEndHour)
+                    
+                    CustomRowView(text: "External notifications", isSwitchOn: $isExternalNotifSwitchOn)
+                    CustomRowView(text: "Hide score", isSwitchOn: $isScoreHiddenSwitchOn)
+                    CustomRowView(text: "Watch app activated", isSwitchOn: $isWatchAppSwitchOn)
+                }
             }
         }
     }
-}
+
+    struct CustomRowView: View {
+        var text: String
+        @Binding var isSwitchOn: Bool
+
+        var body: some View {
+            HStack {
+                Text(text)
+                Spacer()
+                Toggle("", isOn: $isSwitchOn)
+                    .labelsHidden()
+            }
+        }
+    }
+
+    struct SleepOptionRowView: View {
+        @Binding var startHour: Int
+        @Binding var endHour: Int
+        
+        var body: some View {
+            HStack {
+                Text("Sleep")
+                Spacer()
+                Picker("Début", selection: $startHour) {
+                    ForEach(0..<24) { hour in
+                        Text("\(hour)h\(hour == 1 ? "" : "")")
+                    }
+                }
+                .labelsHidden()
+                .pickerStyle(MenuPickerStyle())
+                .onChange(of: startHour) { newValue in
+                    if newValue > endHour {
+                        endHour = newValue
+                    }
+                }
+                
+                Picker("Fin", selection: $endHour) {
+                    ForEach(0..<24) { hour in
+                        Text("\(hour)h\(hour == 1 ? "" : "")")
+                    }
+                }
+                .labelsHidden()
+                .pickerStyle(MenuPickerStyle())
+                .onChange(of: endHour) { newValue in
+                    if newValue < startHour {
+                        startHour = newValue
+                    }
+                }
+            }
+        }
+    }
 
 #Preview {
     SettingsListView()
