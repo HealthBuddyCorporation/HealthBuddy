@@ -197,7 +197,7 @@ class FBDatabase{
             ["id": 7, "name": "Barbecue", "quantity": 2, "foodValue": 100.0, "weightValue": 40.0, "happinessValue": 100, "price": 10, "isPremium": true],
             ["id": 101, "name": "Poison", "quantity": 10, "foodValue": 0.0, "weightValue": 0.0, "happinessValue": 0, "price": 10, "isPremium": true],
             ["id": 100, "name": "SuperShroom", "quantity": 10, "foodValue": 0.0, "weightValue": 0.0, "happinessValue": 0, "price": 10, "isPremium": true]])
-        self.ref.child("MainDB/Inventories/iWbO6rVE3fdLSyid15hAKkeMqek1").child("cleanerlist").setValue([
+        self.ref.child("MainDB/Inventories/Fs7BAXccaCRWlLUQ5OEIEi7n6qk1").child("cleanerlist").setValue([
             ["id": 0, "name": "Sponge", "quantity": 10, "cleanValue": 10.0, "healthValue": 0.0, "happinessValue": -2, "price": 10, "isPremium": false],
             ["id": 1, "name": "Potion", "quantity": 5, "cleanValue": 0.0, "healthValue": 10.0, "happinessValue": -10, "price": 10, "isPremium": false],
             ["id": 2, "name": "Perfume", "quantity": 2, "cleanValue": 5.0, "healthValue": 5.0, "happinessValue": 10, "price": 10, "isPremium": false],
@@ -208,7 +208,7 @@ class FBDatabase{
             ["id": 7, "name": "Soap", "quantity": 1, "cleanValue": 20.0, "healthValue": 10.0, "happinessValue": 5, "price": 10, "isPremium": true],
             ["id": 100, "name": "Magic Cream", "quantity": 1, "cleanValue": 0.0, "healthValue": 0.0, "happinessValue": 0, "price": 10, "isPremium": true],
             ["id": 8, "name": "Sauna", "quantity": 0, "cleanValue": 100.0, "healthValue": 50.0, "happinessValue": 100, "price": 10, "isPremium": true]])
-        self.ref.child("MainDB/Inventories/iWbO6rVE3fdLSyid15hAKkeMqek1").child("toylist").setValue([
+        self.ref.child("MainDB/Inventories/Fs7BAXccaCRWlLUQ5OEIEi7n6qk1").child("toylist").setValue([
             ["id": 0, "name": "GameBoy", "quantity": 10, "cleanValue": -5.0, "weightValue": 10.0, "healthValue": -10.0, "happinessValue": 20, "price": 10, "isPremium": false],
             ["id": 1, "name": "Cordes", "quantity": 5, "cleanValue": -10.0, "weightValue": -5.0, "healthValue": 0.0, "happinessValue": 10, "price": 10, "isPremium": false],
             ["id": 2, "name": "Casque VR", "quantity": 2, "cleanValue": -10.0, "weightValue": 10.0, "healthValue": -10.0, "happinessValue": 30, "price": 10, "isPremium": false],
