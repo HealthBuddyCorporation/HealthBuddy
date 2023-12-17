@@ -20,15 +20,11 @@ struct SettingsListView: View {
             VStack {
                 List {
                     CustomRowView(text: "Notifications", isSwitchOn: $isNotificationSwitchOn)
-                    
-                    CustomRowView(text: "Music", isSwitchOn: $isMusicSwitchOn)
-                    
-                    
-                    SleepOptionRowView(startHour: $sleepStartHour, endHour: $sleepEndHour)
-                    
                     CustomRowView(text: "External notifications", isSwitchOn: $isExternalNotifSwitchOn)
-                    CustomRowView(text: "Hide score", isSwitchOn: $isScoreHiddenSwitchOn)
                     CustomRowView(text: "Watch app activated", isSwitchOn: $isWatchAppSwitchOn)
+                    SleepOptionRowView(startHour: $sleepStartHour, endHour: $sleepEndHour)
+                    CustomRowView(text: "Hide score", isSwitchOn: $isScoreHiddenSwitchOn)
+                    CustomRowView(text: "Music", isSwitchOn: $isMusicSwitchOn)
                 }
             }
         }
