@@ -9,20 +9,20 @@ import SwiftUI
 
 struct TrophyButtonView: View {
     @Binding var pageIndex :Int
-    @State private var isTrophyViewActive = false
+    @State private var isTrophyButtonViewActive = false
     
     var body: some View {
         ZStack{
             Rectangle()
-                .foregroundColor(.gray)
                 .cornerRadius(40)
+                .foregroundColor(.gray)
                 .frame(width: 35, height: 35)
                 .onTapGesture {
-                    isTrophyViewActive = true
+                    isTrophyButtonViewActive = true
                     pageIndex = 3
-                    print("Item four Button tapped!")
+                    print("Trophy Button tapped!")
                 }
-                .id("ItemFour")
+                .id("TrophyButton")
             
             Image(systemName: "trophy.fill")
                 .resizable()
@@ -33,6 +33,6 @@ struct TrophyButtonView: View {
     }
 }
 
-#Preview {
-    TrophyView()
-}
+//#Preview {
+//    TrophyView()
+//}

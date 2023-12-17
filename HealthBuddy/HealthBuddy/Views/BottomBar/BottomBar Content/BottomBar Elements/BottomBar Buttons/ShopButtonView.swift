@@ -12,7 +12,6 @@ struct ShopButtonView: View {
     @State private var isShopButtonViewActive = false
     
     var body: some View {
-        
         ZStack{
             Rectangle()
                 .cornerRadius(40)

@@ -22,7 +22,6 @@ struct SettingsView: View {
                     Button("Close") {
                         isActive = false
                     }.padding(EdgeInsets(top: -380, leading: -180, bottom: 0, trailing: 0))
-                    
                     VStack{
                         SettingsInfoView()
                         SettingsListView()

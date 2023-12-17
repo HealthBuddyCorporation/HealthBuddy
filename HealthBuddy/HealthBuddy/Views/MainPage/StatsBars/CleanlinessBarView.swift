@@ -16,9 +16,7 @@ import SwiftUI
 struct CleanlinessBarView: View {
     @EnvironmentObject var data :DataModel
     var body: some View {
-        
         ZStack{
-            
                 Rectangle()
                     .foregroundColor(.gray)
                     .frame(width: 73, height: 23)

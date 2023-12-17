@@ -36,6 +36,6 @@ struct ProfilButtonView: View {
 }
 
 
-#Preview {
-    ProfilButtonView()
-}
+//#Preview {
+//    ProfilButtonView()
+//}

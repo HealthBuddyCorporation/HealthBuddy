@@ -15,11 +15,9 @@ import SwiftUI
 
 struct MoneyView: View {
     var body: some View {
-        
         ZStack{
             BlurEffect(style: .systemChromeMaterialDark)
                 .frame(width: 400, height: 30)
-            
             HStack{
                 Text("Credit:")
                     .font(.system(size: 12))
@@ -29,7 +27,6 @@ struct MoneyView: View {
                     .foregroundColor(.white)
             }
             .padding(EdgeInsets(top: 0, leading: -185, bottom: 0, trailing: 0))
-            
             HStack{
                 Text("Buddys:")
                     .font(.system(size: 12))

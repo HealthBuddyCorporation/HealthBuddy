@@ -16,7 +16,6 @@ import SwiftUI
 struct HappynessBarView: View {
     @EnvironmentObject var data :DataModel
     var body: some View {
-        
         ZStack{
             Rectangle()
                 .foregroundColor(.gray)

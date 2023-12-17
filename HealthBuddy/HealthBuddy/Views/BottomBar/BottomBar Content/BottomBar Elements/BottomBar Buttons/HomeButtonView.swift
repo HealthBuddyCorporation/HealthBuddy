@@ -12,7 +12,6 @@ struct HomeButtonView: View {
     @State private var isHomeButtonViewActive = false
     
     var body: some View {
-        
         ZStack{
             Rectangle()
                 .cornerRadius(40)
@@ -23,7 +22,7 @@ struct HomeButtonView: View {
                     pageIndex = 0
                     print("Home Button Tapped!")
                 }
-                .id("bottomBarItem1")
+                .id("HomeButton")
             
             Image(systemName: "house.fill")
                 .resizable()

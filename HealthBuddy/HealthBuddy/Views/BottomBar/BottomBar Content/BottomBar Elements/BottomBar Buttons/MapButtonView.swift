@@ -9,16 +9,16 @@ import SwiftUI
 
 struct MapButtonView: View {
     @Binding var pageIndex :Int
-    @State private var isMapViewActive = false
+    @State private var isMapButtonViewActive = false
     
     var body: some View {
         ZStack{
             Rectangle()
+                .cornerRadius(40)
                 .foregroundColor(.gray)
-                .cornerRadius(37)
                 .frame(width: 35, height: 35)
                 .onTapGesture {
-                    isMapViewActive = true
+                    isMapButtonViewActive = true
                     pageIndex = 4
                     print("Map button tapped!")
                 }

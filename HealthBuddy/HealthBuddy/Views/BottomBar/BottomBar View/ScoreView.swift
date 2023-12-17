@@ -193,10 +193,10 @@ struct ScoreView: View {
                 }
                 
             }.padding(EdgeInsets(top: 0, leading: 300, bottom: 0, trailing: 300))
-        }
+        }.padding(EdgeInsets(top: 0, leading: 0, bottom: -20, trailing: 0))
     }
 }
 
-#Preview {
-    ScoreView()
-}
+//#Preview {
+//    ScoreView()
+//}

@@ -21,7 +21,6 @@ struct ProfilPictureView: View {
                     .foregroundColor(.white)
                     .frame(width: 80, height: 80)
                     .cornerRadius(80)
-                
                 Image(systemName: "person.circle")
                     .resizable()
                     .background(Color.gray)

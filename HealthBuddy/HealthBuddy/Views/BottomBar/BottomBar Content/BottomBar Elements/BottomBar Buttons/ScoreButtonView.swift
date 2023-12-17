@@ -12,11 +12,10 @@ struct ScoreButtonView: View {
     @State private var isScoreButtonViewActive = false
     
     var body: some View {
-        
         ZStack{
             Rectangle()
-                .foregroundColor(.gray)
                 .cornerRadius(40)
+                .foregroundColor(.gray)
                 .frame(width: 35, height: 35)
                 .onTapGesture {
                     isScoreButtonViewActive = true

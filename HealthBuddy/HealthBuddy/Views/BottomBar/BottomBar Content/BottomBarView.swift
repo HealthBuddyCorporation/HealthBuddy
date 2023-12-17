@@ -10,39 +10,29 @@ import SwiftUI
 struct BottomBarView: View {
     @Binding var pageIndex :Int
     var body: some View {
-        ZStack{
+        VStack{
             VStack{
-                
                 Rectangle()
-                    .foregroundColor(.white)
-                    .frame(width: 430, height: 100)
+                    .foregroundColor(.red)
+                    .frame(width: 430, height: 20)
                     .id("BottomBarContent")
                     .ignoresSafeArea(.all)
-                
-                Color("MainYellow")
-                    .frame(width: 400, height: 3)
-                    .padding(EdgeInsets(top: -110, leading: 0, bottom: 0, trailing: 0))
             }
-            
-            HomeButtonView(pageIndex: $pageIndex)
-                .offset(x: -155)
-                .offset(y: -10)
-            ScoreButtonView(pageIndex: $pageIndex)
-                .offset(x: -77)
-                .offset(y: -10)
-            ShopButtonView(pageIndex: $pageIndex)
-                .offset(x: 0)
-                .offset(y: -10)
-            TrophyButtonView(pageIndex: $pageIndex)
-                .offset(x: 77)
-                .offset(y: -10)
-            MapButtonView(pageIndex: $pageIndex)
-                .offset(x: 155)
-                .offset(y: -10)
+            HStack{
+                HomeButtonView(pageIndex: $pageIndex)
+                    .padding(EdgeInsets(top: -10, leading: 15, bottom: 10, trailing: 15))
+                ScoreButtonView(pageIndex: $pageIndex)
+                    .padding(EdgeInsets(top: -10, leading: 15, bottom: 10, trailing: 15))
+                ShopButtonView(pageIndex: $pageIndex)
+                    .padding(EdgeInsets(top: -10, leading: 15, bottom: 10, trailing: 15))
+                TrophyButtonView(pageIndex: $pageIndex)
+                    .padding(EdgeInsets(top: -10, leading: 15, bottom: 10, trailing: 15))
+                MapButtonView(pageIndex: $pageIndex)
+                    .padding(EdgeInsets(top: -10, leading: 15, bottom: 10, trailing: 15))
+            }//.padding(EdgeInsets(top: 100, leading: 0, bottom: 0, trailing: 0))
         }
     }
 }
-
 //#Preview {
 //    BottomBarView()
 //}

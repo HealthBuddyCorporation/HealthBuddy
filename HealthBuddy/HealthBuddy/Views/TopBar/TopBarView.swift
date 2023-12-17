@@ -17,11 +17,9 @@ struct TopBarView: View {
     @EnvironmentObject var data :DataModel
     @EnvironmentObject var login :LoginViewModel
     var body: some View {
-        
-        ZStack{
+        VStack{
             HStack{
                 ProfilButtonView()
-                
                 VStack{
                     charNameView(name: data.buddy.name)
                     charLevelView(level: data.buddy.level)
@@ -31,17 +29,12 @@ struct TopBarView: View {
                         }label: {
                             Text("Disconnect")
                         }
-                    }.padding(EdgeInsets(top: -70, leading: 0, bottom: 0, trailing: 0))
-                }.padding(EdgeInsets(top: 110, leading: 60, bottom: -40, trailing: 70))
-                
+                    }//.padding(EdgeInsets(top: -70, leading: 0, bottom: 0, trailing: 0))
+                }//.padding(EdgeInsets(top: 110, leading: 60, bottom: -40, trailing: 70))
                 SettingsButtonView()
                     .padding(.trailing, 0)
-            }.padding(.top, 40)
-            
+            }//.padding(.top, 40)
         }
     }
 }
 
-#Preview {
-    TopBarView()
-}
