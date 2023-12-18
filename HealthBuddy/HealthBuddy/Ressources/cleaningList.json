@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Sponge",
+        "quantity": 3,
+        "cleanValue": 10.0,
+        "healthValue": 0.0,
+        "happinessValue": -2,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 2,
+        "name": "Potion",
+        "quantity": 2,
+        "cleanValue": 0.0,
+        "healthValue": 10.0,
+        "happinessValue": -10,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 3,
+        "name": "Perfume",
+        "quantity": 3,
+        "cleanValue": 5.0,
+        "healthValue": 5.0,
+        "happinessValue": 10,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 100,
+        "name": "Magic Cream",
+        "quantity": 1,
+        "cleanValue": 0.0,
+        "healthValue": 0.0,
+        "happinessValue": 0,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 4,
+        "name": "TestClean 4",
+        "quantity": 3,
+        "cleanValue": 0.0,
+        "healthValue": 0.0,
+        "happinessValue": 0,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 5,
+        "name": "TestClean 5",
+        "quantity": 3,
+        "cleanValue": 0.0,
+        "healthValue": 0.0,
+        "happinessValue": 0,
+        "price": 10,
+        "isPremium": false
+    }
+]

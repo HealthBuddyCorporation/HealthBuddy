@@ -5,13 +5,16 @@
 ## User settings
 xcuserdata/
 
+# OS-specific files
+.DS_Store
+.Trashes
+Thumbs.db
+
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
 *.xccheckout
 
 ## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
-build/
-DerivedData/
 *.moved-aside
 *.pbxuser
 !default.pbxuser
@@ -88,3 +91,7 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+HealthBuddy/HealthBuddy.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+
+*.resolved

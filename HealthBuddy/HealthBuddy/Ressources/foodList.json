@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Carrot",
+        "quantity": 3,
+        "foodValue": 10.0,
+        "weightValue": 2.0,
+        "happinessValue": -4,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 2,
+        "name": "Meat",
+        "quantity": 1,
+        "foodValue": 30.0,
+        "weightValue": 10.0,
+        "happinessValue": 10,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 3,
+        "name": "Candy",
+        "quantity": 10,
+        "foodValue": -2.0,
+        "weightValue": 5.0,
+        "happinessValue": 50,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 100,
+        "name": "Super Mushroom",
+        "quantity": 100,
+        "foodValue": 0,
+        "weightValue": 0,
+        "happinessValue": 0,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 4,
+        "name": "Poison",
+        "quantity": 100,
+        "foodValue": 100,
+        "weightValue": 0,
+        "happinessValue": 0,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 5,
+        "name": "TestFood 5",
+        "quantity": 1,
+        "foodValue": 0,
+        "weightValue": 0,
+        "happinessValue": 0,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 6,
+        "name": "TestFood 6",
+        "quantity": 0,
+        "foodValue": 0,
+        "weightValue": 0,
+        "happinessValue": 0,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 7,
+        "name": "TestFood 7",
+        "quantity": 0,
+        "foodValue": 0,
+        "weightValue": 0,
+        "happinessValue": 0,
+        "price": 10,
+        "isPremium": false
+    }
+]

@@ -1,0 +1,84 @@
+[
+    {
+        "id": 1,
+        "name": "GameBoy",
+        "quantity": 3,
+        "cleanValue": -5.0,
+        "weightValue": 10.0,
+        "healthValue": -10.0,
+        "happinessValue": 20,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 2,
+        "name": "Cordes",
+        "quantity": 1,
+        "cleanValue": -10.0,
+        "weightValue": -5.0,
+        "healthValue": 0.0,
+        "happinessValue": 10,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 3,
+        "name": "Casque VR",
+        "quantity": 10,
+        "cleanValue": -10.0,
+        "healthValue": 2.0,
+        "happinessValue": -4,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 4,
+        "name": "TV",
+        "quantity": 5,
+        "cleanValue": -10.0,
+        "healthValue": 2.0,
+        "happinessValue": -4,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 100,
+        "name": "SEGA MEGADRIVE",
+        "quantity": 1,
+        "cleanValue": 0.0,
+        "healthValue": 0.0,
+        "happinessValue": 0,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 5,
+        "name": "testToy 1",
+        "quantity": 0,
+        "cleanValue": 0.0,
+        "healthValue": 0.0,
+        "happinessValue": 0,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 6,
+        "name": "testToy 2",
+        "quantity": 4,
+        "cleanValue": 0.0,
+        "healthValue": 0.0,
+        "happinessValue": 0,
+        "price": 10,
+        "isPremium": false
+    },
+    {
+        "id": 7,
+        "name": "TestToy 3",
+        "quantity": 0,
+        "cleanValue": 0.0,
+        "healthValue": 0.0,
+        "happinessValue": 0,
+        "price": 10,
+        "isPremium": false
+    }
+]
