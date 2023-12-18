@@ -24,6 +24,7 @@ struct HomeActivity: View {
                                 .offset(y: 21)
                                 .onReceive(timer) { _ in
                                     data.StatOverTime()
+                                    data.updateBuddy()
                                 }
                                 .onChange(of: data.buddy.hp){ hp in
                                     if(hp <= 0){
@@ -31,11 +32,17 @@ struct HomeActivity: View {
                                     }
                                 }
                         }else{
-                            ZStack{
-                                MainContentView()
-                                DeathView()
+                            if(!data.makeNewBud && !data.buddy.isAlive){
+                                ZStack{
+                                    MainContentView()
+                                    DeathView()
+                                }
+                                .offset(y: 21)
+                            }else{
+                                ZStack{
+                                    NewCharacterView()
+                                }
                             }
-                            .offset(y: 21)
                         }
                     case 1:
                         ScoreView()
@@ -55,11 +62,15 @@ struct HomeActivity: View {
                     }
                 }
                 Spacer()
-                BottomBarView(pageIndex: $pageIndex)
-                    .offset(y: -57)
+                if !data.makeNewBud{
+                    BottomBarView(pageIndex: $pageIndex)
+                        .offset(y: -57)
+                }
             }
-            ZStack{
-                SideBarView()
+            if (pageIndex == 0 && data.buddy.isAlive){
+                ZStack{
+                    SideBarView()
+                }
             }
         }.onChange(of: pageIndex){ id in
             print(id)

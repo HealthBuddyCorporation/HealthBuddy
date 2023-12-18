@@ -42,6 +42,9 @@ struct TrophyView: View {
     
     var body: some View {
         ZStack{
+            Rectangle()
+                .frame(height: 880)
+                .foregroundStyle(.clear)
             MainFrameBackgroundView()
             
             ScrollView {
@@ -57,12 +60,14 @@ struct TrophyView: View {
                             ForEach(items[sectionIndex]) { trophyItem in
                                 createTrophyButton(trophyItem: trophyItem)
                             }
-                            
+        
                         }
                     }
                 }
                 .padding(EdgeInsets(top: 0, leading: 330, bottom: 0, trailing: 330))
             }
+            .padding(EdgeInsets(top: 80, leading: 0, bottom: 80, trailing: 0))
+            .frame(height: 800)
         }
     }
     
