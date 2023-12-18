@@ -86,37 +86,23 @@ struct SettingsListView: View {
         }
     }
 
-struct CustomRowView: View {
-    var text: String
-    @Binding var isSwitchOn: Bool
-
-    var body: some View {
-        HStack {
-            Text(text)
-            Spacer()
-            Toggle("", isOn: $isSwitchOn)
-                .labelsHidden()
-        }
-    }
-}
-
-struct SleepOptionRowView: View {
-    @Binding var hours: Int
-    
-    var body: some View {
-        HStack {
-            Text("Sleep")
-            Spacer()
-            Picker("", selection: $hours) {
-                ForEach(1..<8) { hour in
-                    Text("\(hour)h\(hour == 1 ? "" : "")")
-                }
-            }
-            .labelsHidden()
-            .pickerStyle(SegmentedPickerStyle())
-        }
-    }
-}
+//struct SleepOptionRowView: View {
+//    @Binding var hours: Int
+//    
+//    var body: some View {
+//        HStack {
+//            Text("Sleep")
+//            Spacer()
+//            Picker("", selection: $hours) {
+//                ForEach(1..<8) { hour in
+//                    Text("\(hour)h\(hour == 1 ? "" : "")")
+//                }
+//            }
+//            .labelsHidden()
+//            .pickerStyle(SegmentedPickerStyle())
+//        }
+//    }
+//}
 
 struct SettingsListView_Previews: PreviewProvider {
     static var previews: some View {
