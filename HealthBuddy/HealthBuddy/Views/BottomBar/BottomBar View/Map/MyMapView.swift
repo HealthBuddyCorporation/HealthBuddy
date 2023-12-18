@@ -21,6 +21,9 @@ struct MapView: View {
 
     var body: some View {
         ZStack {
+            Rectangle()
+                .frame(height: 880)
+                .foregroundStyle(.clear)
             CustomMapView(coordinateRegion: $mapRegion, annotations: $customLocations, onNewLocation: { coordinate in
                 print("Adding new location")
                 locationName = ""
@@ -213,6 +216,6 @@ struct MapView: View {
         }
     }
 
-#Preview {
-    MyMapView()
-}
+//#Preview {
+//    MapView()
+//}

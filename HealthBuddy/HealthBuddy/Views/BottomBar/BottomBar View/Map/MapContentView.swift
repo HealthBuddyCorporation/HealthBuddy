@@ -110,60 +110,60 @@ class ContentViewModel: NSObject, ObservableObject, CLLocationManagerDelegate, M
     }
 }
 
-struct MapView: UIViewRepresentable {
-    @Binding var pins: [MapPin]
-    @Binding var region: MKCoordinateRegion
-
-    func makeUIView(context: Context) -> MKMapView {
-        let mapView = MKMapView()
-        mapView.delegate = context.coordinator
-        return mapView
-    }
-
-    func updateUIView(_ uiView: MKMapView, context: Context) {
-        updateAnnotations(on: uiView)
-    }
-
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
-    }
-
-    private func updateAnnotations(on mapView: MKMapView) {
-        mapView.removeAnnotations(mapView.annotations)
-
-        // Convertissez les MapPins en MKPointAnnotations
-        let mkAnnotations = pins.map { mapPin -> MKPointAnnotation in
-            let annotation = MKPointAnnotation()
-            annotation.coordinate = mapPin.coordinate
-            return annotation
-        }
-
-        mapView.addAnnotations(mkAnnotations)
-        mapView.setRegion(region, animated: true)
-    }
-
-    class Coordinator: NSObject, MKMapViewDelegate {
-        var parent: MapView
-
-        init(_ parent: MapView) {
-            self.parent = parent
-        }
-
-        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-            let identifier = "pin"
-            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-
-            if annotationView == nil {
-                annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-                annotationView?.canShowCallout = true
-            } else {
-                annotationView?.annotation = annotation
-            }
-
-            return annotationView
-        }
-    }
-}
+//struct MapView: UIViewRepresentable {
+//    @Binding var pins: [MapPin]
+//    @Binding var region: MKCoordinateRegion
+//
+//    func makeUIView(context: Context) -> MKMapView {
+//        let mapView = MKMapView()
+//        mapView.delegate = context.coordinator
+//        return mapView
+//    }
+//
+//    func updateUIView(_ uiView: MKMapView, context: Context) {
+//        updateAnnotations(on: uiView)
+//    }
+//
+//    func makeCoordinator() -> Coordinator {
+//        Coordinator(self)
+//    }
+//
+//    private func updateAnnotations(on mapView: MKMapView) {
+//        mapView.removeAnnotations(mapView.annotations)
+//
+//        // Convertissez les MapPins en MKPointAnnotations
+//        let mkAnnotations = pins.map { mapPin -> MKPointAnnotation in
+//            let annotation = MKPointAnnotation()
+//            annotation.coordinate = mapPin.coordinate
+//            return annotation
+//        }
+//
+//        mapView.addAnnotations(mkAnnotations)
+//        mapView.setRegion(region, animated: true)
+//    }
+//
+//    class Coordinator: NSObject, MKMapViewDelegate {
+//        var parent: MapView
+//
+//        init(_ parent: MapView) {
+//            self.parent = parent
+//        }
+//
+//        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//            let identifier = "pin"
+//            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+//
+//            if annotationView == nil {
+//                annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+//                annotationView?.canShowCallout = true
+//            } else {
+//                annotationView?.annotation = annotation
+//            }
+//
+//            return annotationView
+//        }
+//    }
+//}
 
 struct MapContentView_Previews: PreviewProvider {
     static var previews: some View {

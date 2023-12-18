@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeActivity: View {
     @EnvironmentObject var data :DataModel
     @State var pageIndex = 0
-    let timer = Timer.publish(every: 1000, on: .main, in: .common).autoconnect()
+    let timer = Timer.publish(every: 10, on: .main, in: .common).autoconnect()
     var body: some View {
         ZStack{
             VStack{
@@ -54,7 +54,7 @@ struct HomeActivity: View {
                         TrophyView()
                             .offset(y: 21)
                     case 4:
-                        MyMapView()
+                        MapView()
                             .offset(y: 21)
                     default:
                         MainContentView()
