@@ -13,8 +13,10 @@ struct MainActivity: View {
         VStack{
             HomeActivity()
                 .onAppear{
+                    data.getUser()
                     data.getBuddy()
                     data.getInventoriesList()
+                    data.getUserList()
                 }
         }
     }

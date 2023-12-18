@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ShopView: View {
-    
+    @EnvironmentObject var data :DataModel
     @State private var selectedSegment = 0
     
     var body: some View {
@@ -40,9 +40,11 @@ struct ShopView: View {
                         
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(1..<6) { index in
+                                ForEach(data.foodList) { food in
                                     ZStack{
-                                        ShoppingView()
+                                        if(!food.isPremium){
+                                            ShoppingView(food: food)
+                                        }
                                     }
                                 }
                             }.padding()
@@ -58,9 +60,9 @@ struct ShopView: View {
                         
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(6..<11) { index in
+                                ForEach(data.foodList) { index in
                                     ZStack{
-                                        ShoppingView()
+                                        ShoppingView(food: index)
                                     }
                                 }
                             }.padding()
@@ -76,9 +78,9 @@ struct ShopView: View {
                         
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(6..<11) { index in
+                                ForEach(data.foodList) { index in
                                     ZStack{
-                                        ShoppingView()
+                                        ShoppingView(food: index)
                                     }
                                 }
                             }.padding()
@@ -96,8 +98,10 @@ struct ShopView: View {
                         
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(11..<16) { index in
-                                    ShoppingView()
+                                ForEach(data.foodList) { food in
+                                    if(food.isPremium){
+                                        ShoppingView(food: food)
+                                    }
                                 }
                             }.padding()
                                 .frame(height: 200)
@@ -112,8 +116,8 @@ struct ShopView: View {
                         
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(16..<21) { index in
-                                    ShoppingView()
+                                ForEach(data.foodList) { index in
+                                    ShoppingView(food: index)
                                 }
                             }.padding()
                                 .frame(height: 200)
@@ -128,8 +132,8 @@ struct ShopView: View {
                         
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(16..<21) { index in
-                                    ShoppingView()
+                                ForEach(data.foodList) { index in
+                                    ShoppingView(food: index)
                                 }
                             }.padding()
                                 .frame(height: 200)
@@ -144,8 +148,8 @@ struct ShopView: View {
                         
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(16..<21) { index in
-                                    ShoppingView()
+                                ForEach(data.foodList) { index in
+                                    ShoppingView(food: index)
                                 }
                             }.padding()
                                 .frame(height: 200)
@@ -160,8 +164,8 @@ struct ShopView: View {
                         
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(16..<21) { index in
-                                    ShoppingView()
+                                ForEach(data.foodList) { index in
+                                    ShoppingView(food: index)
                                 }
                             }.padding()
                                 .frame(height: 200)
@@ -176,8 +180,8 @@ struct ShopView: View {
                         
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(16..<21) { index in
-                                    ShoppingView()
+                                ForEach(data.foodList) { index in
+                                    ShoppingView(food: index)
                                 }
                             }.padding()
                                 .frame(height: 200)
@@ -192,8 +196,8 @@ struct ShopView: View {
                         
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(16..<21) { index in
-                                    ShoppingView()
+                                ForEach(data.foodList) { index in
+                                    ShoppingView(food: index)
                                 }
                             }.padding()
                                 .frame(height: 200)

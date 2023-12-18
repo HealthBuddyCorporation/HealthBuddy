@@ -30,7 +30,7 @@ class LoginViewModel :ObservableObject{
         Task{
             do {
                 let returnedUserData = try await AuthenticationManager.shared.createUser(email: email, password: password)
-                let user = UserModel(id: returnedUserData.uid, username: username, email: returnedUserData.email!, profilPicPath: profilePicture)
+                let user = UserModel(id: returnedUserData.uid, username: username, email: returnedUserData.email!, profilePicture: profilePicture, score: 0, coins: 100, buddys: 100)
                 print("user id: \(user.id)")
                 FBDatabase.instance.createUser(user)
             } catch {

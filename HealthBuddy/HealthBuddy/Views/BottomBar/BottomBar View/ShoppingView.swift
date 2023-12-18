@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ShoppingView: View {
+    var food :Food
     
     var body: some View {
         ZStack {
@@ -37,7 +38,7 @@ struct ShoppingView: View {
                 .foregroundColor(.gray)
                 .padding(EdgeInsets(top: 30, leading: -75, bottom: 0, trailing: 0))
             
-            Text("Title food")
+            Text(food.name)
                 .padding(EdgeInsets(top: -60, leading: -80, bottom: 0, trailing: 0))
                 .foregroundColor(.white)
             
@@ -45,25 +46,25 @@ struct ShoppingView: View {
                 .foregroundColor(.gray)
                 .padding(EdgeInsets(top: 120, leading: -80, bottom: 0, trailing: 0))
             
-            Text("Info 1")
+            Text("Food: \(String(format: "%.0f", food.foodValue))")
                 .foregroundColor(.gray)
                 .padding(EdgeInsets(top: -20, leading: 40, bottom: 0, trailing: 0))
             
-            Text("Info 2")
+            Text("Weight: \(String(format: "%.0f", food.weightValue))")
                 .foregroundColor(.gray)
                 .padding(EdgeInsets(top: 20, leading: 40, bottom: 0, trailing: 0))
             
-            Text("Info 3")
+            Text("Joy: \(String(format: "%.0f", food.happinessValue))")
                 .foregroundColor(.gray)
                 .padding(EdgeInsets(top: 60, leading: 40, bottom: 0, trailing: 0))
             
-            Text("Info 4")
+            Text("Price: \(food.price)")
                 .foregroundColor(.gray)
                 .padding(EdgeInsets(top: 100, leading: 40, bottom: 0, trailing: 0))
         }
     }
 }
 
-#Preview {
-    ShoppingView()
-}
+//#Preview {
+//    ShoppingView()
+//}

@@ -20,7 +20,7 @@ class FBDatabase{
     }
     
     func createUser(_ user: UserModel){
-        self.ref.child("MainDB/Users/\(user.id)").setValue(["id":user.id, "username": user.username, "profilePicture": user.profilPicPath, "email": user.email, "coins": 100, "buddys": 100, "score": 0])
+        self.ref.child("MainDB/Users/\(user.id)").setValue(["id":user.id, "username": user.username, "profilePicture": user.profilePicture, "email": user.email, "coins": 100, "buddys": 100, "score": 0])
         self.ref.child("MainDB/Inventories/\(user.id)").child("foodlist").setValue([
             ["id": 0, "name": "Carrot", "quantity": 10, "foodValue": 5.0, "weightValue": 2.0, "happinessValue": -4, "price": 10, "isPremium": false],
             ["id": 1, "name": "Meat", "quantity": 5, "foodValue": 10.0, "weightValue": 10.0, "happinessValue": 10, "price": 10, "isPremium": false],

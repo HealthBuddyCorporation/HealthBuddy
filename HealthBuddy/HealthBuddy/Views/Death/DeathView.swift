@@ -11,6 +11,9 @@ struct DeathView: View {
     @EnvironmentObject var data :DataModel
     var body: some View {
         ZStack{
+            Rectangle()
+                .frame(height: 880)
+                .foregroundStyle(.clear)
             PopupBackgroundBox()
             
             VStack{

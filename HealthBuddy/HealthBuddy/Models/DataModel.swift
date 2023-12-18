@@ -8,12 +8,44 @@
 import Foundation
 
 class DataModel :ObservableObject {
+    @Published var user :UserModel = UserModel(id: "not found", username: "not found", email: "not found", profilePicture: "", score: 0, coins: 0, buddys: 0)
+    
     @Published var buddy :Buddy = Buddy(name: "Default")
     @Published var foodList :[Food] = load("foodList.json")
     @Published var cleanerList :[Cleaner] = load("cleaningList.json")
     @Published var toyList :[Toy] = load("toyList.json")
+    
+    
+    @Published var userList :[UserModel] = []
+    @Published var scoreList :[UserModel] = []
+    
+    
     @Published var makeNewBud :Bool = false
     
+    func getUser(){
+        guard let user = LoginViewModel.instance.session else { return }
+        FBDatabase.instance.ref.child("MainDB/Users/\(user.uid)").observe(.value){ snapshot in
+            guard let data = try? JSONSerialization.data(withJSONObject: snapshot.value as Any) else {return}
+            do{
+                self.user = try JSONDecoder().decode(UserModel.self, from: data)
+            }catch{
+                print("NO USER!")
+                print(error)
+            }
+        }
+    }
+    func getUserList(){
+        FBDatabase.instance.ref.child("MainDB/Users").observe(.childAdded){ snapshot, _ in
+            guard let data = try? JSONSerialization.data(withJSONObject: snapshot.value as Any) else { return }
+            do{
+                let temp = try JSONDecoder().decode(UserModel.self, from: data)
+                self.userList.append(temp)
+                self.scoreList = self.userList.sorted(by: ({ $0.score >= $1.score}))
+            }catch{
+                print("Not listening to new user")
+            }
+        }
+    }
     func getBuddy(){
         guard let user = LoginViewModel.instance.session else { return }
         FBDatabase.instance.ref.child("MainDB/Buddys/\(user.uid)").observe(.value){ snapshot in

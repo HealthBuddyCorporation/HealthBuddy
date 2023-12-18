@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ScoreView: View {
+    @EnvironmentObject var data :DataModel
     @State private var selectedSegment = 0
     let friendsSegment = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6","Item 7", "Item 8", "Item 9", "Item 10"]
     let localSegment = ["Text 1", "Text 2", "Text 3"]
@@ -39,11 +40,11 @@ struct ScoreView: View {
                 case 0:
                     HStack{
                         VStack{
-                            Text("$ User 3")
+                            Text("\(data.scoreList[2].username)")
                                 .font(.title2)
                                 .foregroundColor(.white)
                                 .bold()
-                            ProfilPictureView()
+                            ProfilPictureView(profilePic: data.scoreList[2].profilePicture)
                             
                             ZStack{
                                 BlurEffect(style: .systemMaterialLight)
@@ -58,7 +59,7 @@ struct ScoreView: View {
                                         .font(.headline)
                                         .foregroundColor(.gray)
                                     
-                                    Text("2034")
+                                    Text("\(data.scoreList[2].score)")
                                         .font(.headline)
                                         .foregroundColor(.gray)
                                         .padding(EdgeInsets(top: 40, leading: 0, bottom: 0, trailing: 0))
@@ -67,11 +68,11 @@ struct ScoreView: View {
                         }.padding(EdgeInsets(top: 80, leading: 0, bottom: 0, trailing: 0))
                         
                         VStack{
-                            Text("$ User 1")
+                            Text("\(data.scoreList[0].username)")
                                 .font(.title2)
                                 .foregroundColor(.white)
                                 .bold()
-                            ProfilPictureView()
+                            ProfilPictureView(profilePic: "\(data.scoreList[0].profilePicture)")
                             
                             ZStack {
                                 BlurEffect(style: .systemMaterialLight)
@@ -85,7 +86,7 @@ struct ScoreView: View {
                                     .font(.headline)
                                     .foregroundColor(.gray)
                                     .padding(EdgeInsets(top: 80, leading: 0, bottom: 0, trailing: 0))
-                                Text("3894")
+                                Text("\(data.scoreList[0].score)")
                                     .font(.headline)
                                     .foregroundColor(.gray)
                                     .padding(EdgeInsets(top: 120, leading: 0, bottom: 0, trailing: 0))
@@ -93,11 +94,11 @@ struct ScoreView: View {
                         }
                         
                         VStack{
-                            Text("$ User 2")
+                            Text("\(data.scoreList[1].username)")
                                 .font(.title2)
                                 .foregroundColor(.white)
                                 .bold()
-                            ProfilPictureView()
+                            ProfilPictureView(profilePic: "\(data.scoreList[1].profilePicture)")
                             
                             ZStack {
                                 BlurEffect(style: .systemMaterialLight)
@@ -112,7 +113,7 @@ struct ScoreView: View {
                                         .font(.headline)
                                         .foregroundColor(.gray)
                                         .padding(EdgeInsets(top: 40, leading: 0, bottom: 0, trailing: 0))
-                                    Text("3894")
+                                    Text("\(data.scoreList[1].score)")
                                         .font(.headline)
                                         .foregroundColor(.gray)
                                         .padding(EdgeInsets(top: 80, leading: 0, bottom: 0, trailing: 0))

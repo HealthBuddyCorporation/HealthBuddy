@@ -20,7 +20,7 @@ struct ProfilButtonView: View {
         Button(action: {
             isProfilViewActive.toggle()
         }) {
-            Image(systemName: "person.circle.fill")
+            Image(systemName: "person.circle")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 30, height: 30)
@@ -29,8 +29,8 @@ struct ProfilButtonView: View {
                 .background(Color.gray)
                 .clipShape(Circle())
         }
-        .fullScreenCover(isPresented: $isProfilViewActive) {
-            ProfilView(isActive: $isProfilViewActive)
+        .sheet(isPresented: $isProfilViewActive) {
+            ProfilView()
         }
     }
 }

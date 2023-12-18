@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42802B662B2D9AEB00D40B77 /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42802B652B2D9AEB00D40B77 /* MapPin.swift */; };
-		428E6F4A2B2F1EAD00871945 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E6F492B2F1EAD00871945 /* UserData.swift */; };
 		42802B5C2B27798900D40B77 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 42802B5B2B27798900D40B77 /* FirebaseAnalytics */; };
 		42802B5E2B27798900D40B77 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42802B5D2B27798900D40B77 /* FirebaseAnalyticsSwift */; };
 		42802B612B2795DA00D40B77 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 42802B602B2795DA00D40B77 /* FirebaseAuth */; };
 		42802B642B29CDDF00D40B77 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42802B632B29CDDF00D40B77 /* AuthenticationManager.swift */; };
+		42802B662B2D9AEB00D40B77 /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42802B652B2D9AEB00D40B77 /* MapPin.swift */; };
+		428E6F4A2B2F1EAD00871945 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E6F492B2F1EAD00871945 /* UserData.swift */; };
 		5725F9952B16292B00289B71 /* charLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F98C2B16292B00289B71 /* charLevelView.swift */; };
 		5725F9982B16292B00289B71 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9912B16292B00289B71 /* ProfilView.swift */; };
 		5725F9D42B16294F00289B71 /* TrophyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99E2B16294E00289B71 /* TrophyView.swift */; };
@@ -191,7 +191,7 @@
 		575498352B2F5B3000549B1D /* BigManIdle.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = BigManIdle.riv; sourceTree = "<group>"; };
 		5754983D2B2F9CAE00549B1D /* BigManGrossi.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = BigManGrossi.riv; sourceTree = "<group>"; };
 		5754983E2B2F9CAE00549B1D /* BigManMange.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = BigManMange.riv; sourceTree = "<group>"; };
-		575498432B2FA0C900549B1D /* BigManFaim.riv */ = {isa = PBXFileReference; lastKnownFileType = file; name = BigManFaim.riv; path = ../../../../../../Desktop/BigManFaim.riv; sourceTree = "<group>"; };
+		575498432B2FA0C900549B1D /* BigManFaim.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = BigManFaim.riv; sourceTree = "<group>"; };
 		575EAB942B208F76000E3AEC /* MapSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchView.swift; sourceTree = "<group>"; };
 		575EAB962B2093CB000E3AEC /* MapContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContentView.swift; sourceTree = "<group>"; };
 		575EAB982B209401000E3AEC /* MapActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapActionView.swift; sourceTree = "<group>"; };
@@ -642,7 +642,6 @@
 				575498432B2FA0C900549B1D /* BigManFaim.riv */,
 				5754983D2B2F9CAE00549B1D /* BigManGrossi.riv */,
 				5754983E2B2F9CAE00549B1D /* BigManMange.riv */,
-				F1AA75772B2C9F3C00199EE0 /* GoogleService-Info.plist */,
 				575EABA02B21ACA1000E3AEC /* mixing_animations.riv */,
 				F1619ADD2AB8280E00D8FCEE /* Preview Content */,
 				575EABA92B21C928000E3AEC /* ExtensionColor.swift */,
@@ -905,7 +904,6 @@
 				F1EA985C2B18CA33005309D2 /* toyList.json in Resources */,
 				575498402B2F9CAE00549B1D /* BigManGrossi.riv in Resources */,
 				575498362B2F5B3000549B1D /* BigManIdle.riv in Resources */,
-				F1AA75782B2C9F3C00199EE0 /* GoogleService-Info.plist in Resources */,
 				575498412B2F9CAE00549B1D /* BigManMange.riv in Resources */,
 				F1B7408C2B0C98F90084417F /* buddyData.json in Resources */,
 				F1EA985E2B18CA48005309D2 /* cleaningList.json in Resources */,
@@ -950,7 +948,7 @@
 				F1EA98502B18951A005309D2 /* SideBarInventoryWorldView.swift in Sources */,
 				F1EA983F2B1893FC005309D2 /* TopBarView.swift in Sources */,
 				5725F9EC2B16294F00289B71 /* SideBarInvetoryFoodView.swift in Sources */,
-				5725F9E42B16294F00289B71 /* SBInvetoryClothView.swift in Sources */,
+				5725F9E42B16294F00289B71 /* SBInventoryClothView.swift in Sources */,
 				5725F9D52B16294F00289B71 /* MyMapView.swift in Sources */,
 				575EAB972B2093CB000E3AEC /* MapContentView.swift in Sources */,
 				F1EA98532B189532005309D2 /* NewAccountPopup.swift in Sources */,
@@ -1010,7 +1008,6 @@
 				42802B662B2D9AEB00D40B77 /* MapPin.swift in Sources */,
 				F1E8F8CE2B21CFBF00B08B85 /* Data+Toy.swift in Sources */,
 				575EABA42B21C67B000E3AEC /* ProfilPictureView.swift in Sources */,
-				5725F9EB2B16294F00289B71 /* SideBarItemFiveView.swift in Sources */,
 				428E6F4A2B2F1EAD00871945 /* UserData.swift in Sources */,
 				575EABAA2B21C928000E3AEC /* ExtensionColor.swift in Sources */,
 				5725F9E32B16294F00289B71 /* SBInvetoryFoodView.swift in Sources */,

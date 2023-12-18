@@ -14,6 +14,7 @@
 import SwiftUI
 
 struct ProfilPictureView: View {
+    var profilePic :String
     var body: some View {
         VStack{
             ZStack{
@@ -21,18 +22,17 @@ struct ProfilPictureView: View {
                     .foregroundColor(.white)
                     .frame(width: 80, height: 80)
                     .cornerRadius(80)
-                
-                Image(systemName: "person.circle")
+                Image(uiImage: UIImage(named: "\(profilePic)")!)
                     .resizable()
                     .background(Color.gray)
                     .cornerRadius(40)
                     .frame(width: 70, height: 70)
                     .foregroundColor(.white)
-            }
+            }.padding(.top, 20)
         }
     }
 }
 
 #Preview {
-    ProfilPictureView()
+    ProfilPictureView(profilePic: "")
 }

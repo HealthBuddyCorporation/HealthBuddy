@@ -14,14 +14,14 @@
 import SwiftUI
 
 struct ProfilView: View {
-    @Binding var isActive: Bool
+    @EnvironmentObject var data :DataModel
     var body: some View {
         
         NavigationView {
             
             VStack{
-                ProfilPictureView()
-                ProfilInfoView(userData: UserData.init())
+                ProfilPictureView(profilePic: data.user.profilePicture)
+                ProfilInfoView(user: data.user)
                 ProfilListView(userData: UserData.init())
             }
         }
@@ -29,5 +29,6 @@ struct ProfilView: View {
 }
 
 #Preview {
-    ProfilView(isActive: .constant(true))
+    ProfilView()
+        .environmentObject(DataModel())
 }

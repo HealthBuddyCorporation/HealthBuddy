@@ -14,6 +14,7 @@
 import SwiftUI
 
 struct MoneyView: View {
+    @EnvironmentObject var data :DataModel
     var body: some View {
         
         ZStack{
@@ -21,10 +22,10 @@ struct MoneyView: View {
                 .frame(width: 400, height: 30)
             
             HStack{
-                Text("Credit:")
+                Text("Coins:")
                     .font(.system(size: 12))
                     .foregroundColor(.white)
-                Text("$AMMOUNT")
+                Text("\(data.user.coins)")
                     .font(.system(size: 12))
                     .foregroundColor(.white)
             }
@@ -34,7 +35,7 @@ struct MoneyView: View {
                 Text("Buddys:")
                     .font(.system(size: 12))
                     .foregroundColor(.white)
-                Text("$AMMOUNT")
+                Text("\(data.user.buddys)")
                     .font(.system(size: 12))
                     .foregroundColor(.white)
             }

@@ -14,17 +14,17 @@
 import SwiftUI
 
 struct ProfilInfoView: View {
-    @ObservedObject var userData: UserData
+    var user :UserModel
 
     var body: some View {
         VStack {
-            Text("\(userData.username)")
+            Text("\(user.username)")
                 .padding()
             
             HStack {
-                Text("User Score")
+                Text("Score: \(user.score)")
                     .offset(x: -50)
-                Text("User location")
+                Text("Région: Liège")
                     .offset(x: 50)
             }
         }
