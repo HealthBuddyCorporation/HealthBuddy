@@ -26,7 +26,7 @@ struct HealthBarView: View {
             VStack(alignment: .leading){
                 Rectangle()
                     .foregroundColor(.red)
-                    .frame(width: 70 * (data.buddy.hp/data.buddy.maxHP), height: 20)
+                    .frame(width: 70 * (data.buddy.hp/(data.buddy.maxHP)), height: 20)
                     .cornerRadius(3.0)
             }
             

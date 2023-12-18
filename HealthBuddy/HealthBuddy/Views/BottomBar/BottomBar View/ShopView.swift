@@ -13,6 +13,9 @@ struct ShopView: View {
     
     var body: some View {
         ZStack {
+            Rectangle()
+                .frame(height: 880)
+                .foregroundStyle(.clear)
             MainFrameBackgroundView()
         
             VStack {
@@ -43,6 +46,7 @@ struct ShopView: View {
                                     }
                                 }
                             }.padding()
+                                .frame(height: 200)
                         }
                         
                         Text("Cleanliness shop")
@@ -60,6 +64,7 @@ struct ShopView: View {
                                     }
                                 }
                             }.padding()
+                                .frame(height: 200)
                         }
                         
                         Text("Toy shop")
@@ -77,6 +82,7 @@ struct ShopView: View {
                                     }
                                 }
                             }.padding()
+                                .frame(height: 200)
                         }
                     }
                 } else {
@@ -94,6 +100,7 @@ struct ShopView: View {
                                     ShoppingView()
                                 }
                             }.padding()
+                                .frame(height: 200)
                         }
                         
                         Text("Premium Cleanliness")
@@ -109,6 +116,7 @@ struct ShopView: View {
                                     ShoppingView()
                                 }
                             }.padding()
+                                .frame(height: 200)
                         }
                         
                         Text("Premium Cloth")
@@ -124,6 +132,7 @@ struct ShopView: View {
                                     ShoppingView()
                                 }
                             }.padding()
+                                .frame(height: 200)
                         }
                         
                         Text("Premium Accessories")
@@ -139,6 +148,7 @@ struct ShopView: View {
                                     ShoppingView()
                                 }
                             }.padding()
+                                .frame(height: 200)
                         }
                         
                         Text("Premium Look")
@@ -154,6 +164,7 @@ struct ShopView: View {
                                     ShoppingView()
                                 }
                             }.padding()
+                                .frame(height: 200)
                         }
                         
                         Text("Premium World")
@@ -169,6 +180,7 @@ struct ShopView: View {
                                     ShoppingView()
                                 }
                             }.padding()
+                                .frame(height: 200)
                         }
                         
                         Text("Premium Toys")
@@ -184,13 +196,14 @@ struct ShopView: View {
                                     ShoppingView()
                                 }
                             }.padding()
+                                .frame(height: 200)
                         }
                     }
                     }
-                }.padding(EdgeInsets(top: 0, leading: 300, bottom: 0, trailing: 300))
-            }
+            }.padding(EdgeInsets(top: 100, leading: 300, bottom: 100, trailing: 300))
         }
     }
+}
 
 
 

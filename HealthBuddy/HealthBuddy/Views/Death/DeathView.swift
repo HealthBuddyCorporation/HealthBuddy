@@ -84,15 +84,13 @@ struct DeathView: View {
                                 .foregroundColor(.white)
                                 .font(.system(size: 17))
                         }
+
+                        Button("Découvrir un nouvel ami") {
+                            data.makeNewBud = true
+                        }.padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
                         
                     }
                 }
-                
-                Button("Ouvrir un oeuf") {
-                    data.buddy.hp = 100
-                    data.buddy.isAlive = true
-
-                }.padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
             }
         }
     }

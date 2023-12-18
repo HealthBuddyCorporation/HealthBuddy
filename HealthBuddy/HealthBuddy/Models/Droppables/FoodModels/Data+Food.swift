@@ -9,12 +9,16 @@ import Foundation
 
 extension DataModel{
     func feed(_ food :Food){
-        if(food.id == 100){
-            buddy.hp = buddy.maxHP
-            buddy.nutrition = 100
-            buddy.hygiene = 100
-            buddy.weight = 50
-            buddy.happiness = 100
+        if(food.id >= 100){
+            if(food.id == 100){
+                buddy.hp = buddy.maxHP
+                buddy.nutrition = 100
+                buddy.hygiene = 100
+                buddy.weight = 50
+                buddy.happiness = 100
+            }else{
+                buddy.hp = 0
+            }
         }
         else{
             buddy.nutrition += food.foodValue

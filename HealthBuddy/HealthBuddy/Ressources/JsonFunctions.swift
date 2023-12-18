@@ -28,3 +28,9 @@ func load<T :Decodable>(_ filename :String) -> T{
         fatalError("Could not parse \(filename) as \(T.self) :\n\(error)")
     }
 }
+
+func dateFormat(_ date: Date) -> String{
+    let formatter = DateFormatter()
+    formatter.dateFormat = "YY/MM/dd, HH:mm"
+    return formatter.string(from: date)
+}

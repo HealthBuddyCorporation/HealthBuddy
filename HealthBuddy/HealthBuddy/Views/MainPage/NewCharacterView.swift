@@ -9,11 +9,13 @@
 import SwiftUI
 
 struct NewCharacterView: View {
+    @EnvironmentObject var data :DataModel
     @State private var tapCount = 0
     @State private var showSquare = false
     @State private var showPlayButton = false
     @State private var showTextField = false
     @State private var textFieldText = ""
+    @State private var noName = false
     
     let motivationalPhrases = [
         "You can do it",
@@ -53,10 +55,23 @@ struct NewCharacterView: View {
                             .cornerRadius(10)
                             .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
                     }
-                    
+                    if noName {
+                        Text("A Buddy with no name is not tolerated here...Give him a cool name!")
+                            .frame(width: 300, height: 20)
+                            .padding()
+                            .foregroundStyle(.red)
+                            .cornerRadius(10)
+                            .padding(EdgeInsets(top: 20, leading: 0, bottom: 0, trailing: 0))
+                    }
                     if showPlayButton {
                         Button("Play now!") {
-                            
+                            if(textFieldText.isEmpty || textFieldText == ""){
+                                noName = true
+                            }else{
+                                FBDatabase.instance.createBuddy(Buddy(name: textFieldText))
+                                data.getBuddy()
+                                data.makeNewBud = false
+                            }
                         }
                         .padding()
                         .background(Color.blue)

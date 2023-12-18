@@ -10,5 +10,7 @@
     "level": 1,
     "currentXP": 10,
     "neededXP": 100,
+    "birthdate": "23/12/18, 01:59",
+    "lastUse": "23/12/18, 01:59",
     "isAlive": true
 }

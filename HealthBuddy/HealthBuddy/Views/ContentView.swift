@@ -12,15 +12,12 @@ struct ContentView: View {
     @EnvironmentObject var data :DataModel
     @EnvironmentObject var login :LoginViewModel
     var body: some View {
-//        if login.session != nil {
+        if login.session != nil {
             MainActivity()
-            .onAppear{
-                FBDatabase.instance.initialDB()
-            }
-//        }
-//        else {
-//            LoginPage()
-//        }
+        }
+        else {
+            LoginPage()
+        }
     }
 }
 

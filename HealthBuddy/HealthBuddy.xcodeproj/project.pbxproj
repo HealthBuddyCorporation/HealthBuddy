@@ -58,6 +58,7 @@
 		57C1FF7D2B2B824400D7CAB7 /* MainFrameBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1FF7C2B2B824400D7CAB7 /* MainFrameBackgroundView.swift */; };
 		57C1FF7F2B2C83D800D7CAB7 /* NewCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1FF7E2B2C83D800D7CAB7 /* NewCharacterView.swift */; };
 		65AD5DD22B2F4C4B007F5DBD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65AD5DD12B2F4C4B007F5DBD /* GoogleService-Info.plist */; };
+		65CCBD502B2FD2850034906C /* InitialDBFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CCBD4F2B2FD2850034906C /* InitialDBFile.swift */; };
 		F1619AD82AB8280D00D8FCEE /* HealthBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */; };
 		F1619ADC2AB8280E00D8FCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */; };
 		F1619ADF2AB8280E00D8FCEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1619ADE2AB8280E00D8FCEE /* Preview Assets.xcassets */; };
@@ -204,6 +205,7 @@
 		57C1FF7C2B2B824400D7CAB7 /* MainFrameBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFrameBackgroundView.swift; sourceTree = "<group>"; };
 		57C1FF7E2B2C83D800D7CAB7 /* NewCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCharacterView.swift; sourceTree = "<group>"; };
 		65AD5DD12B2F4C4B007F5DBD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		65CCBD4F2B2FD2850034906C /* InitialDBFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialDBFile.swift; sourceTree = "<group>"; };
 		F1619AD42AB8280D00D8FCEE /* HealthBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1619AD72AB8280D00D8FCEE /* HealthBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBuddyApp.swift; sourceTree = "<group>"; };
 		F1619ADB2AB8280E00D8FCEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -641,6 +643,7 @@
 			isa = PBXGroup;
 			children = (
 				F1AA75732B2C864100199EE0 /* FBDatabase.swift */,
+				65CCBD4F2B2FD2850034906C /* InitialDBFile.swift */,
 			);
 			path = FireBase;
 			sourceTree = "<group>";
@@ -731,7 +734,6 @@
 				F1B7409A2B0C990B0084417F /* TestViews */,
 				5749E3602B1F2BA800DA6482 /* PopupBackgroundBox.swift */,
 				5749E3642B1F321E00DA6482 /* PopupContentBackgroundBox.swift */,
-				57C1FF7E2B2C83D800D7CAB7 /* NewCharacterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -766,6 +768,7 @@
 				57C1FF692B29E2C700D7CAB7 /* BlurEffect.swift */,
 				575EAB9E2B21AA24000E3AEC /* CharacterView.swift */,
 				575EABB92B21D626000E3AEC /* LifeCycleBarView.swift */,
+				57C1FF7E2B2C83D800D7CAB7 /* NewCharacterView.swift */,
 				F1E8F8D42B21F77F00B08B85 /* StatsBars */,
 			);
 			path = MainPage;
@@ -951,6 +954,7 @@
 				F1EA984F2B189502005309D2 /* SideBarInvetoryAccessoriesView.swift in Sources */,
 				F1EA984B2B1894E4005309D2 /* HomeButtonView.swift in Sources */,
 				F1EA98612B18CABD005309D2 /* Cleaner.swift in Sources */,
+				65CCBD502B2FD2850034906C /* InitialDBFile.swift in Sources */,
 				F1B740952B0C99050084417F /* DataModel.swift in Sources */,
 				5749E3612B1F2BA800DA6482 /* PopupBackgroundBox.swift in Sources */,
 				5749E3652B1F321E00DA6482 /* PopupContentBackgroundBox.swift in Sources */,

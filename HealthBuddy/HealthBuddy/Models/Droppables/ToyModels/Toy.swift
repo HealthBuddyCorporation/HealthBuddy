@@ -16,8 +16,8 @@ struct Toy: Hashable, Codable, Identifiable, Transferable{
     var cleanValue :Double
     var healthValue :Double
     var happinessValue :Double
-    var price :Int = 10
-    var isPremium :Bool = false
+    var price :Int
+    var isPremium :Bool
 }
 
 extension Toy{

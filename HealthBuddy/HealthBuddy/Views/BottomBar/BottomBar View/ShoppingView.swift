@@ -11,6 +11,9 @@ struct ShoppingView: View {
     
     var body: some View {
         ZStack {
+            Rectangle()
+                .frame(height: 880)
+                .foregroundStyle(.clear)
             BlurEffect(style: .systemUltraThinMaterialLight)
                 .frame(width: 200, height: 150)
                 .cornerRadius(10)

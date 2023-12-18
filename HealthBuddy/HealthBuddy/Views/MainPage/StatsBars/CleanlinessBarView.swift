@@ -26,10 +26,10 @@ struct CleanlinessBarView: View {
             VStack(alignment: .leading){
                 Rectangle()
                     .foregroundColor(.blue)
-                    .frame(width: 70 * (data.buddy.hygiene/100), height: 20)
+                    .frame(width: 70 * ((data.buddy.hygiene)/100), height: 20)
                     .cornerRadius(3.0)
             }
-                Text("\(String(format: "%.0f", data.buddy.hygiene)) %")
+            Text("\(String(format: "%.0f", data.buddy.hygiene)) %")
                     .foregroundColor(.white)
                     .font(.system(size: 10))
             }
