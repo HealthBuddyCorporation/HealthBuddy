@@ -14,11 +14,14 @@
 import SwiftUI
 
 struct ProfilInfoView: View {
+    @ObservedObject var userData: UserData
+
     var body: some View {
-        VStack{
-            Text("User Name")
+        VStack {
+            Text("\(userData.username)")
                 .padding()
-            HStack{
+            
+            HStack {
                 Text("User Score")
                     .offset(x: -50)
                 Text("User location")
@@ -28,6 +31,3 @@ struct ProfilInfoView: View {
     }
 }
 
-#Preview {
-    ProfilInfoView()
-}

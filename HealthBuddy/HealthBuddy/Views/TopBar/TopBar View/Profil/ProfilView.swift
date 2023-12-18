@@ -16,19 +16,13 @@ import SwiftUI
 struct ProfilView: View {
     @Binding var isActive: Bool
     var body: some View {
-        ZStack{
-            HStack{
-                ZStack{
-                    Button("Close") {
-                        isActive = false
-                    }.padding(EdgeInsets(top: -380, leading: -180, bottom: 0, trailing: 0))
-                    
-                    VStack{
-                        ProfilPictureView()
-                        ProfilInfoView()
-                        ProfilListView()
-                    }.padding()
-                }
+        
+        NavigationView {
+            
+            VStack{
+                ProfilPictureView()
+                ProfilInfoView(userData: UserData.init())
+                ProfilListView(userData: UserData.init())
             }
         }
     }

@@ -12,6 +12,10 @@ struct MapButtonView: View {
     @State private var isMapViewActive = false
     
     var body: some View {
+        NavigationLink(destination: MyMapView(), isActive: $isMapViewActive) {
+            EmptyView()
+        }
+        .hidden()
         ZStack{
             Rectangle()
                 .foregroundColor(.gray)

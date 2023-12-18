@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42802B662B2D9AEB00D40B77 /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42802B652B2D9AEB00D40B77 /* MapPin.swift */; };
+		428E6F4A2B2F1EAD00871945 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E6F492B2F1EAD00871945 /* UserData.swift */; };
 		42802B5C2B27798900D40B77 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 42802B5B2B27798900D40B77 /* FirebaseAnalytics */; };
 		42802B5E2B27798900D40B77 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42802B5D2B27798900D40B77 /* FirebaseAnalyticsSwift */; };
 		42802B612B2795DA00D40B77 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 42802B602B2795DA00D40B77 /* FirebaseAuth */; };
@@ -14,7 +16,7 @@
 		5725F9952B16292B00289B71 /* charLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F98C2B16292B00289B71 /* charLevelView.swift */; };
 		5725F9982B16292B00289B71 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9912B16292B00289B71 /* ProfilView.swift */; };
 		5725F9D42B16294F00289B71 /* TrophyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99E2B16294E00289B71 /* TrophyView.swift */; };
-		5725F9D52B16294F00289B71 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99F2B16294E00289B71 /* MapView.swift */; };
+		5725F9D52B16294F00289B71 /* MyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99F2B16294E00289B71 /* MyMapView.swift */; };
 		5725F9D82B16294F00289B71 /* MapButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A52B16294E00289B71 /* MapButtonView.swift */; };
 		5725F9DA2B16294F00289B71 /* TrophyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A72B16294E00289B71 /* TrophyButtonView.swift */; };
 		5725F9DB2B16294F00289B71 /* ScoreButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9A82B16294E00289B71 /* ScoreButtonView.swift */; };
@@ -139,6 +141,8 @@
 
 /* Begin PBXFileReference section */
 		42802B632B29CDDF00D40B77 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		42802B652B2D9AEB00D40B77 /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		428E6F492B2F1EAD00871945 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		5725F9842B16290700289B71 /* BuildSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildSheet.swift; sourceTree = "<group>"; };
 		5725F9872B16292B00289B71 /* TopBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 		5725F98B2B16292B00289B71 /* charNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = charNameView.swift; sourceTree = "<group>"; };
@@ -150,7 +154,7 @@
 		5725F99C2B16294E00289B71 /* ShopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		5725F99D2B16294E00289B71 /* MainActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainActivity.swift; sourceTree = "<group>"; };
 		5725F99E2B16294E00289B71 /* TrophyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrophyView.swift; sourceTree = "<group>"; };
-		5725F99F2B16294E00289B71 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5725F99F2B16294E00289B71 /* MyMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMapView.swift; sourceTree = "<group>"; };
 		5725F9A02B16294E00289B71 /* ScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		5725F9A22B16294E00289B71 /* BottomBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
 		5725F9A52B16294E00289B71 /* MapButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapButtonView.swift; sourceTree = "<group>"; };
@@ -552,10 +556,11 @@
 		575EAB9A2B209446000E3AEC /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				5725F99F2B16294E00289B71 /* MapView.swift */,
+				5725F99F2B16294E00289B71 /* MyMapView.swift */,
 				575EAB982B209401000E3AEC /* MapActionView.swift */,
 				575EAB962B2093CB000E3AEC /* MapContentView.swift */,
 				575EAB942B208F76000E3AEC /* MapSearchView.swift */,
+				42802B652B2D9AEB00D40B77 /* MapPin.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -567,6 +572,7 @@
 				575EABA32B21C67B000E3AEC /* ProfilPictureView.swift */,
 				575EABA52B21C6EE000E3AEC /* ProfilInfoView.swift */,
 				575EABA72B21C759000E3AEC /* ProfilListView.swift */,
+				428E6F492B2F1EAD00871945 /* UserData.swift */,
 			);
 			path = Profil;
 			sourceTree = "<group>";
@@ -929,8 +935,8 @@
 				F1EA98502B18951A005309D2 /* SideBarInventoryWorldView.swift in Sources */,
 				F1EA983F2B1893FC005309D2 /* TopBarView.swift in Sources */,
 				5725F9EC2B16294F00289B71 /* SideBarInvetoryFoodView.swift in Sources */,
-				5725F9E42B16294F00289B71 /* SBInventoryClothView.swift in Sources */,
-				5725F9D52B16294F00289B71 /* MapView.swift in Sources */,
+				5725F9E42B16294F00289B71 /* SBInvetoryClothView.swift in Sources */,
+				5725F9D52B16294F00289B71 /* MyMapView.swift in Sources */,
 				575EAB972B2093CB000E3AEC /* MapContentView.swift in Sources */,
 				F1EA98532B189532005309D2 /* NewAccountPopup.swift in Sources */,
 				5725F9E12B16294F00289B71 /* SideBarView.swift in Sources */,
@@ -987,8 +993,11 @@
 				5725F9E52B16294F00289B71 /* SBInvetoryAccessoriesView.swift in Sources */,
 				F1AA75762B2C961500199EE0 /* UserModel.swift in Sources */,
 				F1EA98412B189428005309D2 /* SettingsButtonView.swift in Sources */,
+				42802B662B2D9AEB00D40B77 /* MapPin.swift in Sources */,
 				F1E8F8CE2B21CFBF00B08B85 /* Data+Toy.swift in Sources */,
 				575EABA42B21C67B000E3AEC /* ProfilPictureView.swift in Sources */,
+				5725F9EB2B16294F00289B71 /* SideBarItemFiveView.swift in Sources */,
+				428E6F4A2B2F1EAD00871945 /* UserData.swift in Sources */,
 				575EABAA2B21C928000E3AEC /* ExtensionColor.swift in Sources */,
 				5725F9E32B16294F00289B71 /* SBInvetoryFoodView.swift in Sources */,
 				F1EA984E2B189500005309D2 /* SideBarInventoryClothView.swift in Sources */,
@@ -1122,9 +1131,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthBuddy/Preview Content\"";
+				DEVELOPMENT_TEAM = N4VQ323GH2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HealthBuddy/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "L'application a besoin de connaître votre position pour afficher les points d'intérêts à proximité";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1151,9 +1162,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthBuddy/Preview Content\"";
+				DEVELOPMENT_TEAM = N4VQ323GH2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HealthBuddy/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "L'application a besoin de connaître votre position pour afficher les points d'intérêts à proximité";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

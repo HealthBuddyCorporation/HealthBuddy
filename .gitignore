@@ -93,3 +93,5 @@ fastlane/test_output
 iOSInjectionProject/
 
 HealthBuddy/HealthBuddy.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+
+*.resolved

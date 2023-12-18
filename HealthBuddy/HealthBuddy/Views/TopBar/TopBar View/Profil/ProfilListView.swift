@@ -14,24 +14,31 @@
 import SwiftUI
 
 struct ProfilListView: View {
+    @ObservedObject var userData: UserData
+
     var body: some View {
-        VStack{
+        VStack {
             List {
-                Text("Élément 1")
-                Text("Élément 2")
-                Text("Élément 3")
-                Text("Élément 4")
-                Text("Élément 5")
-                Text("Élément 6")
-                Text("Élément 7")
-                Text("Élément 8")
-                Text("Élément 9")
-                Text("Élément 10")
+                
+                DisclosureGroup("Change Email"){}
+                
+                DisclosureGroup("Change password"){}
+                
+                DisclosureGroup("Change username"){}
+                
+                DisclosureGroup("Change profile picture"){}
+                
+                DisclosureGroup("Description"){}
+                
+                DisclosureGroup("Trophy select"){}
+                
+                Text("Delete account")
+                    .foregroundColor(.red)
             }
         }.scrollContentBackground(.hidden)
     }
 }
 
-#Preview {
-    ProfilListView()
-}
+//#Preview {
+//    ProfilListView(userData: userData)
+//}

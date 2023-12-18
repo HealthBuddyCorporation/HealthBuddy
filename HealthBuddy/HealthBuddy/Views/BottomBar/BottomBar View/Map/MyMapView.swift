@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MapView: View {
+struct MyMapView: View {
     var body: some View {
         ZStack{
             VStack{
@@ -21,7 +21,7 @@ struct MapView: View {
                             .padding(EdgeInsets(top: 27, leading: 0, bottom: 0, trailing: 0))
                     
                         MapContentView()
-                        .padding(EdgeInsets(top: 170, leading: 0, bottom: 0, trailing: 0))
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                         
                         MapActionView()
                             .padding(EdgeInsets(top: 94, leading: 0, bottom: 0, trailing: 0))
@@ -33,5 +33,5 @@ struct MapView: View {
 }
 
 #Preview {
-    MapView()
+    MyMapView()
 }
