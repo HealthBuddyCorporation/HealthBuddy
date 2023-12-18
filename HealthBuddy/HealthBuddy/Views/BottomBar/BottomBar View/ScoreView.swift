@@ -10,8 +10,8 @@ import SwiftUI
 struct ScoreView: View {
     @State private var selectedSegment = 0
     let friendsSegment = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6","Item 7", "Item 8", "Item 9", "Item 10"]
-    let localSegment = ["Text 1", "Text 2", "Text 3"]
-    let nationalSegment = Image(systemName: "photo")
+    let localSegment = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10"]
+    let nationalSegment = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10"]
     
     var body: some View {
         ZStack {
@@ -37,89 +37,7 @@ struct ScoreView: View {
                 
                 switch selectedSegment {
                 case 0:
-                    HStack{
-                        VStack{
-                            Text("$ User 3")
-                                .font(.title2)
-                                .foregroundColor(.white)
-                                .bold()
-                            ProfilPictureView()
-                            
-                            ZStack{
-                                BlurEffect(style: .systemMaterialLight)
-                                    .frame(width: 100, height: 80)
-                                    .cornerRadius(2)
-                                ZStack{
-                                    Text("Third")
-                                        .foregroundColor(.gray)
-                                        .bold()
-                                        .padding(EdgeInsets(top: -30, leading: 0, bottom: 0, trailing: 0))
-                                    Text("Score")
-                                        .font(.headline)
-                                        .foregroundColor(.gray)
-                                    
-                                    Text("2034")
-                                        .font(.headline)
-                                        .foregroundColor(.gray)
-                                        .padding(EdgeInsets(top: 40, leading: 0, bottom: 0, trailing: 0))
-                                }
-                            }
-                        }.padding(EdgeInsets(top: 80, leading: 0, bottom: 0, trailing: 0))
-                        
-                        VStack{
-                            Text("$ User 1")
-                                .font(.title2)
-                                .foregroundColor(.white)
-                                .bold()
-                            ProfilPictureView()
-                            
-                            ZStack {
-                                BlurEffect(style: .systemMaterialLight)
-                                    .frame(width: 100, height: 160)
-                                    .cornerRadius(2)
-                                Text("First")
-                                    .foregroundColor(.gray)
-                                    .bold()
-                                    .padding(EdgeInsets(top: -60, leading: 0, bottom: 0, trailing: 0))
-                                Text("Score")
-                                    .font(.headline)
-                                    .foregroundColor(.gray)
-                                    .padding(EdgeInsets(top: 80, leading: 0, bottom: 0, trailing: 0))
-                                Text("3894")
-                                    .font(.headline)
-                                    .foregroundColor(.gray)
-                                    .padding(EdgeInsets(top: 120, leading: 0, bottom: 0, trailing: 0))
-                            }
-                        }
-                        
-                        VStack{
-                            Text("$ User 2")
-                                .font(.title2)
-                                .foregroundColor(.white)
-                                .bold()
-                            ProfilPictureView()
-                            
-                            ZStack {
-                                BlurEffect(style: .systemMaterialLight)
-                                    .frame(width: 100, height: 120)
-                                    .cornerRadius(2)
-                                ZStack {
-                                    Text("Second")
-                                        .foregroundColor(.gray)
-                                        .bold()
-                                        .padding(EdgeInsets(top: -40, leading: 0, bottom: 0, trailing: 0))
-                                    Text("Score")
-                                        .font(.headline)
-                                        .foregroundColor(.gray)
-                                        .padding(EdgeInsets(top: 40, leading: 0, bottom: 0, trailing: 0))
-                                    Text("3894")
-                                        .font(.headline)
-                                        .foregroundColor(.gray)
-                                        .padding(EdgeInsets(top: 80, leading: 0, bottom: 0, trailing: 0))
-                                }
-                            }
-                        }.padding(EdgeInsets(top: 40, leading: 0, bottom: 0, trailing: 0))
-                    }
+                    PodiumView()
                     
                     List(friendsSegment, id: \.self) { item in
                         
@@ -142,51 +60,75 @@ struct ScoreView: View {
                                 }
                             }
                         }.listRowBackground(Color.white.opacity(0.5))
+                            .foregroundColor(.white)
+                            .bold()
                     }.scrollContentBackground(.hidden)
                     .padding()
                     
                 case 1:
-                    ForEach(localSegment, id: \.self) { text in
-                        Text(text)
+                    PodiumView()
+                    
+                    List(localSegment, id: \.self) { item in
                         
+                        DisclosureGroup(item) {
+                            HStack{
+                                Text("Last run :")
+                                    .font(.headline)
+                                Text("Today")
+                            }
+                            HStack{
+                                Text("Record :")
+                                    .font(.headline)
+                                Text("2300 Buddys")
+                            }
+                            HStack{
+                                Text("Like :")
+                                    .font(.headline)
+                                Button("Like Me") {
+                                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                                }
+                            }
+                        }.listRowBackground(Color.white.opacity(0.5))
+                            .foregroundColor(.white)
+                            .bold()
                     }
-                    .padding()
-                        List {
-                        Text("Item 1")
-                        Text("Item 2")
-                        Text("Item 3")
-                        Text("Item 4")
-                        Text("Item 5")
-                        Text("Item 6")
-                        Text("Item 7")
-                        Text("Item 8")
-                        Text("Item 9")
-                        Text("Item 10")
-                    }.listRowBackground(Color.white.opacity(0.5))
                     .scrollContentBackground(.hidden)
                     .padding()
                     
                 case 2:
-                    nationalSegment
+                    
+                    Image(systemName: "photo")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(height: 100)
                         .padding()
                     
-                    List {
-                        Text("Item 1")
-                        Text("Item 2")
-                        Text("Item 3")
-                        Text("Item 4")
-                        Text("Item 5")
-                        Text("Item 6")
-                        Text("Item 7")
-                        Text("Item 8")
-                        Text("Item 9")
-                        Text("Item 10")
-                    }.scrollContentBackground(.hidden)
+                    List(nationalSegment, id: \.self) { item in
+                        
+                        DisclosureGroup(item) {
+                            HStack{
+                                Text("Last run :")
+                                    .font(.headline)
+                                Text("Today")
+                            }
+                            HStack{
+                                Text("Record :")
+                                    .font(.headline)
+                                Text("2300 Buddys")
+                            }
+                            HStack{
+                                Text("Like :")
+                                    .font(.headline)
+                                Button("Like Me") {
+                                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                                }
+                            }
+                        }.listRowBackground(Color.white.opacity(0.5))
+                            .foregroundColor(.white)
+                            .bold()
+                    }
+                    .scrollContentBackground(.hidden)
                     .padding()
-                    
                     
                 default:
                     EmptyView()

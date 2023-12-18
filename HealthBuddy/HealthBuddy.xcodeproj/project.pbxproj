@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42802B662B2D9AEB00D40B77 /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42802B652B2D9AEB00D40B77 /* MapPin.swift */; };
-		428E6F4A2B2F1EAD00871945 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E6F492B2F1EAD00871945 /* UserData.swift */; };
 		42802B5C2B27798900D40B77 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 42802B5B2B27798900D40B77 /* FirebaseAnalytics */; };
 		42802B5E2B27798900D40B77 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42802B5D2B27798900D40B77 /* FirebaseAnalyticsSwift */; };
 		42802B612B2795DA00D40B77 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 42802B602B2795DA00D40B77 /* FirebaseAuth */; };
 		42802B642B29CDDF00D40B77 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42802B632B29CDDF00D40B77 /* AuthenticationManager.swift */; };
+		42802B662B2D9AEB00D40B77 /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42802B652B2D9AEB00D40B77 /* MapPin.swift */; };
+		428E6F4A2B2F1EAD00871945 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E6F492B2F1EAD00871945 /* UserData.swift */; };
+		5716FB642B3065CE0082F8C9 /* PodiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5716FB632B3065CE0082F8C9 /* PodiumView.swift */; };
 		5725F9952B16292B00289B71 /* charLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F98C2B16292B00289B71 /* charLevelView.swift */; };
 		5725F9982B16292B00289B71 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F9912B16292B00289B71 /* ProfilView.swift */; };
 		5725F9D42B16294F00289B71 /* TrophyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5725F99E2B16294E00289B71 /* TrophyView.swift */; };
@@ -147,6 +148,7 @@
 		42802B632B29CDDF00D40B77 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		42802B652B2D9AEB00D40B77 /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
 		428E6F492B2F1EAD00871945 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		5716FB632B3065CE0082F8C9 /* PodiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodiumView.swift; sourceTree = "<group>"; };
 		5725F9842B16290700289B71 /* BuildSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildSheet.swift; sourceTree = "<group>"; };
 		5725F9872B16292B00289B71 /* TopBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 		5725F98B2B16292B00289B71 /* charNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = charNameView.swift; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 		5725F99B2B16294E00289B71 /* BottomBar View */ = {
 			isa = PBXGroup;
 			children = (
+				5716FB632B3065CE0082F8C9 /* PodiumView.swift */,
 				5725F9A02B16294E00289B71 /* ScoreView.swift */,
 				5725F99C2B16294E00289B71 /* ShopView.swift */,
 				5725F99E2B16294E00289B71 /* TrophyView.swift */,
@@ -951,7 +954,7 @@
 				F1EA98502B18951A005309D2 /* SideBarInventoryWorldView.swift in Sources */,
 				F1EA983F2B1893FC005309D2 /* TopBarView.swift in Sources */,
 				5725F9EC2B16294F00289B71 /* SideBarInvetoryFoodView.swift in Sources */,
-				5725F9E42B16294F00289B71 /* SBInvetoryClothView.swift in Sources */,
+				5725F9E42B16294F00289B71 /* SBInventoryClothView.swift in Sources */,
 				5725F9D52B16294F00289B71 /* MyMapView.swift in Sources */,
 				575EAB972B2093CB000E3AEC /* MapContentView.swift in Sources */,
 				F1EA98532B189532005309D2 /* NewAccountPopup.swift in Sources */,
@@ -999,6 +1002,7 @@
 				F1B0F13A2B20899E004F9BFA /* Toy.swift in Sources */,
 				F1EA98442B189473005309D2 /* BuildSheet.swift in Sources */,
 				5725F9F62B16299100289B71 /* WatchView.swift in Sources */,
+				5716FB642B3065CE0082F8C9 /* PodiumView.swift in Sources */,
 				F1EA98512B189528005309D2 /* LoginPage.swift in Sources */,
 				F1EA98482B189490005309D2 /* ScoreView.swift in Sources */,
 				575EABB62B21D282000E3AEC /* HungryBarView.swift in Sources */,
@@ -1012,7 +1016,6 @@
 				42802B662B2D9AEB00D40B77 /* MapPin.swift in Sources */,
 				F1E8F8CE2B21CFBF00B08B85 /* Data+Toy.swift in Sources */,
 				575EABA42B21C67B000E3AEC /* ProfilPictureView.swift in Sources */,
-				5725F9EB2B16294F00289B71 /* SideBarItemFiveView.swift in Sources */,
 				428E6F4A2B2F1EAD00871945 /* UserData.swift in Sources */,
 				575EABAA2B21C928000E3AEC /* ExtensionColor.swift in Sources */,
 				5725F9E32B16294F00289B71 /* SBInvetoryFoodView.swift in Sources */,
