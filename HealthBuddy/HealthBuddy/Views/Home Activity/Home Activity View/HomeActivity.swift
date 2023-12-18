@@ -47,7 +47,7 @@ struct HomeActivity: View {
                         TrophyView()
                             .offset(y: 21)
                     case 4:
-                        MyMapView()
+                        MapView()
                             .offset(y: 21)
                     default:
                         MainContentView()
