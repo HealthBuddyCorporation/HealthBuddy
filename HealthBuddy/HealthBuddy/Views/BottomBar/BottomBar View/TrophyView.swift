@@ -98,7 +98,7 @@ struct TrophyItemView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 60, height: 60)
-                .foregroundColor(.customColor)
+                .foregroundColor(.mainYellow)
                 .frame(width: 90, height: 90)
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.white, lineWidth: 2))
@@ -115,6 +115,10 @@ struct TrophyItemView: View {
         .cornerRadius(10)
         .shadow(radius: 5)
     }
+}
+
+extension Color {
+    static let mainYellow = Color("MainYellow")
 }
 
 #Preview {
