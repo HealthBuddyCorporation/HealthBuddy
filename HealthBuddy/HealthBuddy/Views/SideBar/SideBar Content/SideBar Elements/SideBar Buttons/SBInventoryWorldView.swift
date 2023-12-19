@@ -23,7 +23,7 @@ struct SBInventoryWorldView: View {
                 .frame(width: 25, height: 25)
                 .foregroundColor(.gray)
                 .padding(2)
-                .background(Color.customColor)
+                .background(Color.mainYellow)
                 .clipShape(Circle())
         }
     }

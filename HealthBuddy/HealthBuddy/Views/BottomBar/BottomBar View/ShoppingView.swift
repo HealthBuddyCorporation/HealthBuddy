@@ -35,7 +35,7 @@ struct ShoppingView: View {
             Image(systemName: "tornado.circle.fill")
                 .resizable()
                 .frame(width: 55, height: 55)
-                .foregroundColor(.gray)
+                .foregroundColor(.mainYellow)
                 .padding(EdgeInsets(top: 30, leading: -75, bottom: 0, trailing: 0))
             
             Text(food.name)
