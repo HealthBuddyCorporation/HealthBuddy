@@ -10,7 +10,7 @@ import MapKit
 
 struct MapView: View {
     @State private var mapRegion = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 34.0522, longitude: -118.2437),
+        center: CLLocationCoordinate2D(latitude: 50.5937, longitude: 5.5600),
         span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
     )
     @State private var customLocations = [MyPointAnnotation]()
