@@ -122,26 +122,23 @@ struct ScoreView: View {
                         }.padding(EdgeInsets(top: 40, leading: 0, bottom: 0, trailing: 0))
                     }
                     
-                    List(friendsSegment, id: \.self) { item in
+                    List(data.scoreList) { item in
                         
-                        DisclosureGroup(item) {
+                        DisclosureGroup(item.username) {
                             HStack{
-                                Text("Last run :")
+                                ProfilPictureView(profilePic: item.profilePicture)
+                            }
+                            HStack{
+                                Text("Last online : ")
                                     .font(.headline)
                                 Text("Today")
                             }
                             HStack{
                                 Text("Record :")
                                     .font(.headline)
-                                Text("2300 Buddys")
+                                Text("\(item.score)")
                             }
-                            HStack{
-                                Text("Like :")
-                                    .font(.headline)
-                                Button("Like Me") {
-                                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                                }
-                            }
+                            
                         }.listRowBackground(Color.white.opacity(0.5))
                     }.scrollContentBackground(.hidden)
                     .padding()
@@ -231,23 +228,26 @@ struct ScoreView: View {
                         }.padding(EdgeInsets(top: 40, leading: 0, bottom: 0, trailing: 0))
                     }
                     
-                    List(localSegment, id: \.self) { item in
+                    List(data.scoreList) { item in
                         
-                        DisclosureGroup(item) {
+                        DisclosureGroup(item.username) {
                             HStack{
-                                Text("Last run :")
+                                ProfilPictureView(profilePic: item.profilePicture)
+                            }
+                            HStack{
+                                Text("Last online:")
                                     .font(.headline)
                                 Text("Today")
                             }
                             HStack{
                                 Text("Record :")
                                     .font(.headline)
-                                Text("2300 Buddys")
+                                Text("\(item.score)")
                             }
                             HStack{
-                                Text("Like :")
+                                Text("Add Friend:")
                                     .font(.headline)
-                                Button("Like Me") {
+                                Button("<3") {
                                     /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                                 }
                             }

@@ -9,6 +9,7 @@ import Foundation
 
 extension DataModel{
     func play(_ toy :Toy){
+        guard let user = LoginViewModel.instance.session else { return }
         if(toy.id == 100){
             buddy.hp = buddy.maxHP
             buddy.nutrition = 100
@@ -32,6 +33,7 @@ extension DataModel{
         }
         if let index = toyList.firstIndex(of: toy){
             toyList[index].quantity -= 1
+            FBDatabase.instance.ref.child("MainDB/Inventories/\(user.uid)/toylist/\(toy.id)").setValue(toy.toDictionary)
         }
     }
 }

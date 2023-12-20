@@ -18,6 +18,7 @@ class DataModel :ObservableObject {
     
     @Published var userList :[UserModel] = []
     @Published var scoreList :[UserModel] = []
+    @Published var buddyList :[Buddy] = []
     
     
     @Published var makeNewBud :Bool = false
@@ -41,6 +42,7 @@ class DataModel :ObservableObject {
                 let temp = try JSONDecoder().decode(UserModel.self, from: data)
                 self.userList.append(temp)
                 self.scoreList = self.userList.sorted(by: ({ $0.score >= $1.score}))
+                print(self.scoreList)
             }catch{
                 print("Not listening to new user")
             }
