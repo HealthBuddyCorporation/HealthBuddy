@@ -34,6 +34,7 @@ extension DataModel{
         if let index = toyList.firstIndex(of: toy){
             toyList[index].quantity -= 1
             FBDatabase.instance.ref.child("MainDB/Inventories/\(user.uid)/toylist/\(toy.id)").setValue(toy.toDictionary)
+            updateBuddy()
         }
     }
 }

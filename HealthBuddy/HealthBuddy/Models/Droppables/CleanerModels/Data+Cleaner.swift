@@ -34,6 +34,7 @@ extension DataModel{
         if let index = cleanerList.firstIndex(of: cleaner){
             cleanerList[index].quantity -= 1
             FBDatabase.instance.ref.child("MainDB/Inventories/\(user.uid)/cleanerlist/\(cleaner.id)").setValue(cleaner.toDictionary)
+            updateBuddy()
         }
     }
 }

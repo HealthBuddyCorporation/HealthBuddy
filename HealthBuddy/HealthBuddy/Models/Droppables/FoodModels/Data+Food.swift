@@ -9,6 +9,17 @@ import Foundation
 
 extension DataModel{
     func feed(_ food :Food){
+        currentAnimation = "BigManEat"
+        print(currentAnimation)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+            if(self.buddy.weight >= 80){
+                self.currentAnimation = "BigManFat"
+            }else{
+                self.currentAnimation = "BigManIdle"
+                print(self.currentAnimation)
+            }
+        }
+        
         guard let user = LoginViewModel.instance.session else { return }
         if(food.id >= 100){
             if(food.id == 100){
@@ -41,6 +52,7 @@ extension DataModel{
         if let index = foodList.firstIndex(of: food){
             foodList[index].quantity -= 1
             FBDatabase.instance.ref.child("MainDB/Inventories/\(user.uid)/foodlist/\(food.id)").setValue(food.toDictionary)
+            updateBuddy()
         }
     }
 }

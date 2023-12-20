@@ -20,6 +20,7 @@ class DataModel :ObservableObject {
     @Published var scoreList :[UserModel] = []
     @Published var buddyList :[Buddy] = []
     
+    @Published var currentAnimation = "BigManIdle"
     
     @Published var makeNewBud :Bool = false
     
@@ -61,6 +62,15 @@ class DataModel :ObservableObject {
     }
     func updateBuddy(){
         guard let user = LoginViewModel.instance.session else { return }
+        if(buddy.weight >= 80){
+            currentAnimation = "BigManFat"
+        }
+        if(buddy.nutrition <= 40){
+            currentAnimation = "BigManHungry"
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+                self.currentAnimation = "BigManIdle"
+            }
+        }
         buddy.lastUse = dateFormat(Date())
         FBDatabase.instance.ref.child("MainDB/Buddys/\(user.uid)").setValue(buddy.toDictionary)
     }
