@@ -51,7 +51,7 @@ struct ShopView: View {
                                 .frame(height: 200)
                         }
                         
-                        Text("Cleanliness shop")
+                        Text("Hygiene shop")
                             .padding()
                             .foregroundColor(.white)
                             .font(.largeTitle)
@@ -60,9 +60,11 @@ struct ShopView: View {
                         
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(data.foodList) { index in
+                                ForEach(data.cleanerList) { index in
                                     ZStack{
-                                        ShoppingView(food: index)
+                                        if(!index.isPremium){
+                                            ShoppingView(cleaner: index)
+                                        }
                                     }
                                 }
                             }.padding()
@@ -78,9 +80,11 @@ struct ShopView: View {
                         
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(data.foodList) { index in
+                                ForEach(data.toyList) { index in
                                     ZStack{
-                                        ShoppingView(food: index)
+                                        if(!index.isPremium){
+                                            ShoppingView(toy: index)
+                                        }
                                     }
                                 }
                             }.padding()
@@ -107,7 +111,7 @@ struct ShopView: View {
                                 .frame(height: 200)
                         }
                         
-                        Text("Premium Cleanliness")
+                        Text("Premium Hygiene")
                             .padding()
                             .foregroundColor(.white)
                             .font(.largeTitle)
@@ -116,8 +120,28 @@ struct ShopView: View {
                         
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(data.foodList) { index in
-                                    ShoppingView(food: index)
+                                ForEach(data.cleanerList) { index in
+                                    if(index.isPremium){
+                                        ShoppingView(cleaner: index)
+                                    }
+                                }
+                            }.padding()
+                                .frame(height: 200)
+                        }
+                        
+                        Text("Premium Toys")
+                            .padding()
+                            .foregroundColor(.white)
+                            .font(.largeTitle)
+                            .bold()
+                            .shadow(radius: 10)
+                        
+                        ScrollView(.horizontal) {
+                            HStack {
+                                ForEach(data.toyList) { index in
+                                    if(index.isPremium){
+                                        ShoppingView(toy: index)
+                                    }
                                 }
                             }.padding()
                                 .frame(height: 200)
@@ -172,22 +196,6 @@ struct ShopView: View {
                         }
                         
                         Text("Premium World")
-                            .padding()
-                            .foregroundColor(.white)
-                            .font(.largeTitle)
-                            .bold()
-                            .shadow(radius: 10)
-                        
-                        ScrollView(.horizontal) {
-                            HStack {
-                                ForEach(data.foodList) { index in
-                                    ShoppingView(food: index)
-                                }
-                            }.padding()
-                                .frame(height: 200)
-                        }
-                        
-                        Text("Premium Toys")
                             .padding()
                             .foregroundColor(.white)
                             .font(.largeTitle)
